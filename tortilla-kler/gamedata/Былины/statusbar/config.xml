@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plugindata>
+  <baseparams>
+    <dsu value="о"/>
+    <hp value="H"/>
+    <mn value="з"/>
+    <mv value="M"/>
+  </baseparams>
+  <levels>
+    <array index="1" value="1000" native="1"/>
+    <array index="2" value="7249" native="1"/>
+    <array index="3" value="13499" native="1"/>
+    <array index="4" value="23499" native="1"/>
+    <array index="5" value="43499" native="1"/>
+    <array index="6" value="68499" native="1"/>
+    <array index="7" value="118499" native="1"/>
+    <array index="8" value="193499" native="1"/>
+    <array index="9" value="318499" native="1"/>
+    <array index="10" value="493499" native="1"/>
+    <array index="11" value="743499" native="1"/>
+    <array index="12" value="1068499" native="1"/>
+    <array index="13" value="1468499" native="1"/>
+    <array index="14" value="2043499" native="1"/>
+    <array index="15" value="2768499" native="1"/>
+    <array index="16" value="3618499" native="1"/>
+    <array index="17" value="4618499" native="1"/>
+    <array index="18" value="5775999" native="1"/>
+    <array index="19" value="7075999" native="1"/>
+    <array index="20" value="8950999" native="1"/>
+    <array index="21" value="11450999" native="1"/>
+    <array index="22" value="14575999" native="1"/>
+    <array index="23" value="18325999" native="1"/>
+    <array index="24" value="22700999" native="1"/>
+    <array index="25" value="27700999" native="1"/>
+    <array index="26" value="37500999" native="1"/>
+    <array index="27" value="55000999" native="1"/>
+    <array index="28" value="82500999" native="1"/>
+    <array index="29" value="117500999" native="1"/>
+    <array index="30" value="160000999" native="1"/>
+    <array index="31" value="235000999" native="1"/>
+  </levels>
+  <levregexp>
+    <key value="^Уровень          Опыт            Макс на урв."/>
+    <level value="^\[[0-9 ]+\] +([0-9,]+)"/>
+    <separators value=","/>
+    <skipprompt value="^Листать :.*"/>
+  </levregexp>
+  <maxparams>
+    <hp value="1"/>
+    <hpid value="r1"/>
+    <mn value="1"/>
+    <mnid value="r3"/>
+    <mv value="2"/>
+    <mvid value="r1"/>
+    <xp value="1"/>
+    <xpid value="r2"/>
+  </maxparams>
+  <regexp>
+    <r1 value="^Вы можете выдержать [0-9]+\(([0-9]+)\).*, и пройти [0-9]+\(([0-9]+)\)"/>
+    <r2 value="^Ваш опыт - ([0-9]+)"/>
+    <r3 value="^Ваша магическая энергия [0-9]+\(([0-9]+)\) и вы восстанавливаете [0-9]+ в сек\."/>
+  </regexp>
+</plugindata>

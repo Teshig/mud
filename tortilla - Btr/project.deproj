@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <file>
+    <filename>plugins\status.lua</filename>
+  </file>
+  <file>
+    <filename>plugins\testPlugin.lua</filename>
+  </file>
+  <templates></templates>
+</project>

@@ -6,59 +6,38 @@
     <mn value="з"/>
     <mv value="M"/>
   </baseparams>
-  <maxparams>
-    <hp value="1"/>
-    <hpid value="r1"/>
-    <mv value="2"/>
-    <mvid value="r1"/>
-    <xp value="1"/>
-    <xpid value="r2"/>
-    <mn value="1"/>
-    <mnid value="r3"/>
-  </maxparams>
-  <regexp>
-    <r1 value="^Вы можете выдержать [0-9]+\(([0-9]+)\).*, и пройти [0-9]+\(([0-9]+)\)"/>
-    <r2 value="^Ваш опыт - ([0-9]+)"/>
-    <r3 value="^Ваша магическая энергия [0-9]+\(([0-9]+)\) и вы восстанавливаете [0-9]+ в сек\."/>
-  </regexp>
-  <levregexp>
-    <key value="^Уровень          Опыт            Макс на урв."/>
-    <level value="^\[[0-9 ]+\] +([0-9,]+)"/>
-    <separators value=","/>
-    <skipprompt value="^Листать :.*"/>
-  </levregexp>
   <levels>
-    <array index="1" value="0"/>
-    <array index="2" value="2000"/>
-    <array index="3" value="4000"/>
-    <array index="4" value="8000"/>
-    <array index="5" value="14000"/>
-    <array index="6" value="24000"/>
-    <array index="7" value="39000"/>
-    <array index="8" value="69000"/>
-    <array index="9" value="119000"/>
-    <array index="10" value="189000"/>
-    <array index="11" value="289000"/>
-    <array index="12" value="419000"/>
-    <array index="13" value="579000"/>
-    <array index="14" value="800000"/>
-    <array index="15" value="1070000"/>
-    <array index="16" value="1340000"/>
-    <array index="17" value="1660000"/>
-    <array index="18" value="2030000"/>
-    <array index="19" value="2450000"/>
-    <array index="20" value="2950000"/>
-    <array index="21" value="3950000"/>
-    <array index="22" value="5250000"/>
-    <array index="23" value="6750000"/>
-    <array index="24" value="8450000"/>
-    <array index="25" value="10350000"/>
-    <array index="26" value="14000000"/>
-    <array index="27" value="21000000"/>
-    <array index="28" value="31000000"/>
-    <array index="29" value="44000000"/>
-    <array index="30" value="64000000"/>
-    <array index="31" value="79000000"/>
+    <array index="1" value="1000" native="1"/>
+    <array index="2" value="13499" native="1"/>
+    <array index="3" value="25999" native="1"/>
+    <array index="4" value="45999" native="1"/>
+    <array index="5" value="85999" native="1"/>
+    <array index="6" value="135999" native="1"/>
+    <array index="7" value="235999" native="1"/>
+    <array index="8" value="385999" native="1"/>
+    <array index="9" value="635999" native="1"/>
+    <array index="10" value="985999" native="1"/>
+    <array index="11" value="1485999" native="1"/>
+    <array index="12" value="2135999" native="1"/>
+    <array index="13" value="2935999" native="1"/>
+    <array index="14" value="4085999" native="1"/>
+    <array index="15" value="5535999" native="1"/>
+    <array index="16" value="7235999" native="1"/>
+    <array index="17" value="9235999" native="1"/>
+    <array index="18" value="11550999" native="1"/>
+    <array index="19" value="14150999" native="1"/>
+    <array index="20" value="17900999" native="1"/>
+    <array index="21" value="22900999" native="1"/>
+    <array index="22" value="29150999" native="1"/>
+    <array index="23" value="36650999" native="1"/>
+    <array index="24" value="45400999" native="1"/>
+    <array index="25" value="55400999" native="1"/>
+    <array index="26" value="75000999" native="1"/>
+    <array index="27" value="110000999" native="1"/>
+    <array index="28" value="165000999" native="1"/>
+    <array index="29" value="235000999" native="1"/>
+    <array index="30" value="320000999" native="1"/>
+    <array index="31" value="470000999" native="1"/>
   </levels>
   <levregexp>
     <key value="^Уровень          Опыт            Макс на урв."/>
@@ -66,4 +45,19 @@
     <separators value=","/>
     <skipprompt value="^Листать :.*"/>
   </levregexp>
+  <maxparams>
+    <hp value="1"/>
+    <hpid value="r1"/>
+    <mn value="1"/>
+    <mnid value="r3"/>
+    <mv value="2"/>
+    <mvid value="r1"/>
+    <xp value="1"/>
+    <xpid value="r2"/>
+  </maxparams>
+  <regexp>
+    <r1 value="^Вы можете выдержать [0-9]+\(([0-9]+)\).*, и пройти [0-9]+\(([0-9]+)\)"/>
+    <r2 value="^Ваш опыт - ([0-9]+)"/>
+    <r3 value="^Ваша магическая энергия [0-9]+\(([0-9]+)\) и вы восстанавливаете [0-9]+ в сек\."/>
+  </regexp>
 </plugindata>

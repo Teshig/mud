@@ -1,0 +1,1313 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+  <viewsize value="3000"/>
+  <cmdsize value="30"/>
+  <systemcmds value="0"/>
+  <newlinecmds value="1"/>
+  <clearbar value="1"/>
+  <disableya value="0"/>
+  <disableosc value="1"/>
+  <historytab value="1"/>
+  <plogs value="1"/>
+  <plogswnd value="0"/>
+  <softscroll value="0"/>
+  <unknowncmd value="0"/>
+  <anyfont value="0"/>
+  <disablealt value="1"/>
+  <tray value="0"/>
+  <disablemccp value="0"/>
+  <codepage value="win"/>
+  <logformat value="txt"/>
+  <prompt value="0"/>
+  <ptemplate value=""/>
+  <rebar value="2;60160;168;1;1;60161;131;1;1;"/>
+  <colors>
+    <color id="background" r="20" g="30" b="30"/>
+    <color id="0" r="64" g="64" b="64"/>
+    <color id="1" r="128" g="0" b="0"/>
+    <color id="2" r="0" g="128" b="0"/>
+    <color id="3" r="128" g="128" b="0"/>
+    <color id="4" r="0" g="64" b="128"/>
+    <color id="5" r="128" g="0" b="128"/>
+    <color id="6" r="0" g="128" b="128"/>
+    <color id="7" r="192" g="192" b="192"/>
+    <color id="8" r="128" g="128" b="128"/>
+    <color id="9" r="255" g="0" b="0"/>
+    <color id="10" r="0" g="255" b="0"/>
+    <color id="11" r="255" g="255" b="0"/>
+    <color id="12" r="0" g="128" b="255"/>
+    <color id="13" r="255" g="0" b="255"/>
+    <color id="14" r="0" g="255" b="255"/>
+    <color id="15" r="255" g="255" b="255"/>
+  </colors>
+  <font italic="0" bold="400" height="10" name="Consolas"/>
+  <actions>
+    <action key="^Вам лучше встать на ноги!" value="встать" group="default"/>
+    <action key="^Вы получили право клановой мести %0!" value="#var pkCurrentTarget %(4)0;колдовать *$kastMassStun* .%(4)0;колдовать *$kastAgro* .%(4)0;" group="warlock"/>
+    <action key="^Вы получили право еще раз отомстить %0!" value="#var pkCurrentTarget %(4)0;колдовать *$kastMassStun* .%(4)0;колдовать *$kastAgro* .%(4)0;" group="warlock"/>
+    <action key="^Вы получили право отомстить %0!" value="#var pkCurrentTarget %(4)0;колдовать *$kastMassStun* .%(4)0;колдовать *$kastAgro* .%(4)0;" group="warlock"/>
+    <action key="^%0 отомстил%% вам." value="#var pkCurrentTarget %0;колдовать *$kastMassStun* .%0;колдовать *$kastAgro* .%0;" group="warlock"/>
+    <action key="^Вы обнаружили руку %0 в своем кармане." value="#var pkCurrentTarget %0;колдовать *$kastStun* .%0;колдовать *$kastAgro* .%0;" group="warlock"/>
+    <action key="-[ дизарм ]-&gt; Вас." value="поднять $dressPrime;поднять $dressDouble;поднять $dressOff;вооружиться $dressPrime;держ $dressOff;вооружиться $dressDouble" group="default"/>
+    <action key="^%% выпал%% из ваших рук." value="поднять $dressPrime;поднять $dressDouble;вооружиться $dressPrime;вооружиться $dressDouble" group="default"/>
+    <action key="^%% выпал%% из вашей руки." value="поднять $dressPrime;поднять $dressDouble;поднять $dressOff;вооружиться $dressPrime;держ $dressOff;вооружиться $dressDouble" group="default"/>
+    <action key="^%% слетел%% с вашей руки." value="поднять $dressShield;одеть $dressShield;" group="default"/>
+    <action key="^%% слетел%% с вашей головы." value="поднять $dressHead;одеть $dressHead;" group="default"/>
+    <action key="^Мощный удар ноги %% изуродовал вам правую руку." value="поднять $dressPrime;поднять $dressDouble;вооружиться $dressPrime;вооружиться $dressDouble" group="default"/>
+    <action key="^Мощный удар ноги %% изуродовал вам левую руку." value="поднять $dressOff;держ $dressOff;" group="default"/>
+    <action key="^Вы ослепли!" value="эмоция -[ СЛЕП ]-;взять $metkaAntiblind $dressBackpack;убрать $dressOff;держать $metkaAntiblind;применить $metkaAntiblind я;убрать $metkaAntiblind;положить $metkaAntiblind $dressBackpack;держ $dressOff" group="default"/>
+    <action key="^Бросок %% угодил вам в горло. Вы прикусили язык!" value="эмоция -[ МОЛЧИТ ]-." group="default"/>
+    <action key="^Вы не в состоянии вымолвить ни слова." value="эмоция -[ МОЛЧИТ ]-." group="default"/>
+    <action key="^Вы оглохли." value="эмоция -[ ГЛУХОЙ ]-." group="default"/>
+    <action key="^К вам вернулась способность видеть." value="эмоция -[ снова ВИЖУ ]-." group="default"/>
+    <action key="^К вам вернулась способность разговаривать." value="эмоция -[ снова ГОВОРЮ ]-." group="default"/>
+    <action key="^К вам вернулась способность слышать." value="эмоция -[ снова СЛЫШУ ]-." group="default"/>
+    <action key="^Вы почувствовали себя отравленным." value="вз $metkaAntidot $dressBackpack;пить $metkaAntidot;положить $metkaAntidot $dressBackpack;" group="default"/>
+    <action key="^Ваш опыт повысился" value="взять все.труп; взять все все.труп; брос все.труп" group="loot"/>
+    <action key="^Здесь лежит %% кун." value="вз кун" group="loot"/>
+    <action key="^[-!-] опознание " value="опознать возврат" group="default"/>
+    <action key="^Вы зачитали %%, который рассыпался в прах." value="вооружиться $dressPrime;держ $dressOff;вооружиться $dressDouble" group="default"/>
+    <action key="^Зеленый подорожник растет здесь.%%" value="взять все.подорож; пол все.подорож $dressBackpack" group="default"/>
+    <action key="^Вы спите и не могете думать больше ни о чем." value="проснуться" group="default"/>
+    <action key="^Вы расслаблены и отдыхаете. И далась вам эта магия?" value="встать" group="default"/>
+    <action key="^Похоже, в этой позе Вы много не наколдуете." value="встать" group="default"/>
+    <action key="^Нет... Вы слишком расслаблены" value="встать" group="default"/>
+    <action key="|| Вы %0, %% ||" value="#var personName %0" group="init"/>
+    <action key="^%0 сказал%% вам : '%1'" value="#wout 1 {rgb90,90,90 b rgb20,30,30} $TIME: {rgb120,115,190 b rgb20,30,30} %0 -&gt; {rgb90,80,150 b rgb20,30,30} %1" group="default"/>
+    <action key="^Вы сказали %0 : '%1'" value="#wout 1 {rgb90,90,90 b rgb20,30,30} $TIME: {rgb160,100,160 b rgb20,30,30} %0 &lt;- {rgb130,80,130 b rgb20,30,30} %1" group="default"/>
+    <action key="^%0 сообщил%% группе : '%1'" value="#wout 1 {rgb90,90,90 b rgb20,30,30} $TIME: {rgb90,75,170 b rgb20,30,30} %0 группе: {rgb90,75,170 b rgb20,30,30} %1" group="default"/>
+    <action key="^* В связи с проблемами перевода фразы ANYKEY нажмите ENTER *" value="#log $personName-$DATE" group="default"/>
+    <action key="^Select one :$" value="2" group="default"/>
+    <action key="^Вы пропали в пустоте этого мира." value="зев" group="default"/>
+    <action key="^$partyMaster --- %0." value="%0" group="autoBotMovement"/>
+    <action key="^$partyMaster сообщил%% группе : '$personName сделай %0'" value="%0" group="autoBotKler"/>
+    <action key="^%0|Оч.тяж.ран|%%| Да  |%%|%%|%%|%%|%%" value="колдовать *$kastHeal* .%0" group="autoBotKler"/>
+    <action key="^%0| Тяж.ранен|%%| Да  |%%|%%|%%|%%|%%" value="колдовать *$kastHeal* .%0" group="autoBotKler"/>
+    <action key="^%0|  Ранен   |%%| Да  |%%|%%|%%|%%|%%" value="колдовать *$kastHeal* .%0" group="autoBotKler"/>
+    <action key="^%0|Оч.тяж.ран| Да  |%%|%%" value="колдовать *$kastHeal* %0" group="autoBotKler"/>
+    <action key="^%0| Тяж.ранен| Да  |%%|%%" value="колдовать *$kastHeal* %0" group="autoBotKler"/>
+    <action key="^%0|  Ранен   | Да  |%%|%%" value="колдовать *$kastHeal* %0" group="autoBotKler"/>
+    <action key="^Ваша группа состоит из:" value="#wout 2 {rgb90,90,90 b rgb20,30,30} $TIME: {rgb90,75,170 b rgb20,30,30} Ваша группа состоит из:" group="default"/>
+    <action key="^%0|%1|%%|%3|%4|%%|%%|%%|%8" value="#wout 2 {rgb90,90,90 b rgb20,30,30} $TIME: {rgb180,180,180 b rgb20,30,30} %0|%1|%3|%4|%8" group="default"/>
+    <action key="$^&lt;для освещения&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressLight %1.%2.%3" group="init"/>
+    <action key="$^&lt;правый указательный палец&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressFingerR %1.%2.%3" group="init"/>
+    <action key="$^&lt;левый указательный палец&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressFingerL %1.%2.%3" group="init"/>
+    <action key="$^&lt;на шее&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressNeck %1.%2.%3" group="init"/>
+    <action key="$^&lt;на груди&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressChest %1.%2.%3" group="init"/>
+    <action key="$^&lt;на теле&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressBody %1.%2.%3" group="init"/>
+    <action key="$^&lt;на голове&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressHead %1.%2.%3" group="init"/>
+    <action key="$^&lt;на ногах&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressLegs %1.%2.%3" group="init"/>
+    <action key="$^&lt;на ступнях&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressFeet %1.%2.%3" group="init"/>
+    <action key="$^&lt;на кистях&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressDukes %1.%2.%3" group="init"/>
+    <action key="$^&lt;на руках&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressHands %1.%2.%3" group="init"/>
+    <action key="$^&lt;щит&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressShield %1.%2.%3" group="init"/>
+    <action key="$^&lt;на плечах&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressShoulders %1.%2.%3" group="init"/>
+    <action key="$^&lt;на поясе&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressCorset %1.%2.%3" group="init"/>
+    <action key="$^&lt;на правом запястье&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressWristR %1.%2.%3" group="init"/>
+    <action key="$^&lt;на левом запястье&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressWristL %1.%2.%3" group="init"/>
+    <action key="$^&lt;в правой руке&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressPrime %1.%2.%3" group="init"/>
+    <action key="$^&lt;в левой руке&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressOff %1.%2.%3" group="init"/>
+    <action key="$^&lt;в обеих руках&gt; +([a-zA-Zа-яА-Я]+)(?: ([a-zA-Zа-яА-Я]+))?(?: ([a-zA-Zа-яА-Я]+))* +&lt;[a-zA-Zа-яА-Я ]+&gt;(?: (?:...*|\(.*\)))?$" value="#var dressDouble %1.%2.%3" group="init"/>
+  </actions>
+  <aliases>
+    <alias key="дис" value="#disconnect" group="default"/>
+    <alias key="конлокал" value="#connect localhost 4000" group="default"/>
+    <alias key="кон110" value="#connect bylins.su 110" group="default"/>
+    <alias key="кон4000" value="#connect bylins.su 4000" group="default"/>
+    <alias key="рек" value="зачит свиток.возвр %0;взять свиток.возвр $dressBackpack;убр свиток.возвр;держ $dressOff;вооружиться $dressDouble" group="default"/>
+    <alias key="вой" value="приказ всем войти пент;войти пент" group="default"/>
+    <alias key="крит" value="взять $svitokKrit $dressBackpack;зачит $svitokKrit %0;держ $dressOff;вооружиться $dressDouble" group="default"/>
+    <alias key="хил" value="взять $svitokHeal $dressBackpack;зачит $svitokHeal %0;держ $dressOff;вооружиться $dressDouble" group="default"/>
+    <alias key="пол" value="положить %0 $dressBackpack" group="default"/>
+    <alias key="взя" value="взять %0 $dressBackpack" group="default"/>
+    <alias key="санк" value="взять $dressSunk $dressBackpack;убрать $dressUnsunk;од $dressSunk;держ $dressSunk;вооружиться $dressSunk;положить $dressUnsunk $dressBackpack;" group="default"/>
+    <alias key="несанк" value="взять $dressUnsunk $dressBackpack;убрать $dressSunk;од $dressUnsunk;держ $dressUnsunk;вооружиться $dressUnsunk;положить $dressSunk $dressBackpack;" group="default"/>
+    <alias key="воор" value="взять $dressDouble;взять $dressPrime;взять $dressOff;вооружиться $dressDouble;вооружиться $dressPrime;держать $dressOff;" group="default"/>
+    <alias key="э" value="приказ всем спасти %0;зачит возвр %0;взять возвр $dressBackpack;гг %0 эвакуирован;держ $dressOff;вооружиться $dressDouble" group="default"/>
+    <alias key="лут" value="взять все.труп;взять все все.труп;брос все.труп" group="default"/>
+    <alias key="фре" value="взять $metkaFresh $dressBackpack;пить $metkaFresh;положить $metkaFresh $dressBackpack" group="default"/>
+    <alias key="взч" value="взять боч.черн.колд $dressBackpack;#%0 {пить боч.черн.колд};положить боч.черн.колд $dressBackpack" group="default"/>
+    <alias key="алк" value="взять $metkaAlko $dressBackpack;#%0 {пить $metkaAlko};положить $metkaAlko $dressBackpack" group="default"/>
+    <alias key="опох" value="взять $metkaAlko $dressBackpack;опохм $metkaAlko;положить $metkaAlko $dressBackpack" group="default"/>
+    <alias key="перевяз" value="взять бинты $dressBackpack;перевязать;положить бинты $dressBackpack" group="default"/>
+    <alias key="хъ" value="взять синим $dressBackpack; пить синим; положить синим $dressBackpack;" group="default"/>
+    <alias key="чинить" value="сня все;чин все; од все; вооружиться $dressPrime; держать $dressOff;" group="default"/>
+    <alias key="откр" value="открыть %0 с;открыть %0 в;открыть %0 ю;открыть %0 з;открыть %0 вв;открыть %0 вн;" group="default"/>
+    <alias key="отпер" value="отпереть %0 с;отпереть %0 в;отпереть %0 ю;отпереть %0 з;отпереть %0 вв;отпереть %0 вн;открыть %0 с;открыть %0 в;открыть %0 ю;открыть %0 з;открыть %0 вв;открыть %0 вн;" group="default"/>
+    <alias key="п" value="приказ всем %0" group="warlock"/>
+    <alias key="пр" value="гг $partyDoll %0" group="warlock"/>
+    <alias key="па" value="приказ всем убить %0" group="warlock"/>
+    <alias key="р" value="приказ всем спасти %0" group="warlock"/>
+    <alias key="аг" value="прик всем уб %0;колд *$kastAgro* %0" group="warlock"/>
+    <alias key="й" value="колдовать *$kastй* %0" group="warlock"/>
+    <alias key="ц" value="колдовать *$kastц* %0" group="warlock"/>
+    <alias key="у" value="колдовать *$kastу* %0" group="warlock"/>
+    <alias key="к" value="колдовать *$kastк* %0" group="warlock"/>
+    <alias key="е" value="колдовать *$kastе* %0" group="warlock"/>
+    <alias key="н" value="колдовать *$kastн* %0" group="warlock"/>
+    <alias key="г" value="колдовать *$kastг* %0" group="warlock"/>
+    <alias key="ш" value="колдовать *$kastш* %0" group="warlock"/>
+    <alias key="щ" value="колдовать *$kastщ* %0" group="warlock"/>
+    <alias key="з" value="колдовать *$kastз* %0" group="warlock"/>
+    <alias key="х" value="колдовать *$kastх* %0" group="warlock"/>
+    <alias key="ъ" value="колдовать *$kastъ* %0" group="warlock"/>
+    <alias key="ф" value="колдовать *$kastф* %0" group="warlock"/>
+    <alias key="м" value="колдовать *молч* %0" group="warlock"/>
+    <alias key="раз" value="колдовать *разв.маг* %0" group="warlock"/>
+    <alias key="защ" value="колдовать *защита* %0" group="warlock"/>
+    <alias key="сил" value="колдовать *сила* %0" group="warlock"/>
+    <alias key="заб" value="забыть *%0" group="warlock"/>
+    <alias key="зауч" value="заучить *%0" group="warlock"/>
+    <alias key="дет" value="колдовать *вид.невид* %0" group="warlock"/>
+    <alias key="клон" value="колдовать *$kast40*" group="warlock"/>
+    <alias key="реклон" value="прик всем след я;колдовать *$kast40*" group="warlock"/>
+    <alias key="обкаст" value="колдовать *$kast33* %0;колдовать *$kast35* %0;колдовать *$kast36* %0;колдовать *$kast37* %0;" group="warlock"/>
+    <alias key="лог" value="#clog %0-$DATE" group="default"/>
+    <alias key="лутон" value="#group on loot" group="default"/>
+    <alias key="лутоф" value="#group off loot" group="default"/>
+    <alias key="файтон" value="#group on fight" group="default"/>
+    <alias key="файтоф" value="#group off fight" group="default"/>
+    <alias key="инит" value="#group on init;экипировка все;счет все;#wait '1' '#group off init'" group="default"/>
+    <alias key="инеяд" value="куп 10 колба.серой.жид;нацарапать %0 $metkaAntidot;вылить %0 земля;#10 {лить колба.серой.жид $metkaAntidot};положить $metkaAntidot $dressBackpack" group="default"/>
+    <alias key="ифреш" value="куп 10 красный.пузырек;нацарапать %0 $metkaFresh;вылить %0 земля;#10 {лить красный.пузырек $metkaFresh};положить $metkaFresh $dressBackpack" group="default"/>
+    <alias key="ибухло" value="куп 20 чекушка.водкой;нацарапать %0 $metkaAlko;вылить %0 земля;#20 {лить чекушка.водкой $metkaAlko;бросить чекушка};положить $metkaAlko $dressBackpack" group="default"/>
+    <alias key="идвур" value="#var dressDouble %0" group="default"/>
+    <alias key="игруп" value="#group on init;груп;#wait '1' '#group off init'" group="default"/>
+    <alias key="иоф" value="#var dressOff %0" group="default"/>
+    <alias key="исум" value="#var dressBackpack %0" group="default"/>
+    <alias key="исанк" value="#var dressSunk %0" group="default"/>
+    <alias key="инесанк" value="#var dressUnsunk %0" group="default"/>
+    <alias key="итанк" value="#var partyTank %0" group="default"/>
+    <alias key="ибро2" value="#var partyMember02 %0" group="default"/>
+    <alias key="ибро3" value="#var partyMember03 %0" group="default"/>
+    <alias key="ибро4" value="#var partyMember04 %0" group="default"/>
+    <alias key="ибро5" value="#var partyMember05 %0" group="default"/>
+    <alias key="ибро6" value="#var partyMember06 %0" group="default"/>
+    <alias key="ибро7" value="#var partyMember07 %0" group="default"/>
+    <alias key="ибро8" value="#var partyMember08 %0" group="default"/>
+    <alias key="ибро9" value="#var partyMember09 %0" group="default"/>
+    <alias key="ибро10" value="#var partyMember10 %0" group="default"/>
+    <alias key="ибро11" value="#var partyMember11 %0" group="default"/>
+    <alias key="ибро12" value="#var partyMember12 %0" group="default"/>
+    <alias key="икастагро" value="#var kastAgro %0" group="warlock"/>
+    <alias key="икастмас" value="#var kastMassAgro %0" group="warlock"/>
+    <alias key="икастмасстан" value="#var kastMassStun %0" group="warlock"/>
+    <alias key="икастстан" value="#var kastStun %0" group="warlock"/>
+    <alias key="икастй" value="#var kastй %0" group="warlock"/>
+    <alias key="икастц" value="#var kastц %0" group="warlock"/>
+    <alias key="икасту" value="#var kastу %0" group="warlock"/>
+    <alias key="икастк" value="#var kastк %0" group="warlock"/>
+    <alias key="икасте" value="#var kastе %0" group="warlock"/>
+    <alias key="икастн" value="#var kastн %0" group="warlock"/>
+    <alias key="икастг" value="#var kastг %0" group="warlock"/>
+    <alias key="икастш" value="#var kastш %0" group="warlock"/>
+    <alias key="икастщ" value="#var kastщ %0" group="warlock"/>
+    <alias key="икастз" value="#var kastз %0" group="warlock"/>
+    <alias key="икастх" value="#var kastх %0" group="warlock"/>
+    <alias key="икастъ" value="#var kastъ %0" group="warlock"/>
+    <alias key="икастф" value="#var kastф %0" group="warlock"/>
+    <alias key="икасты" value="#var kastы %0" group="warlock"/>
+    <alias key="икаств" value="#var kastв %0" group="warlock"/>
+    <alias key="икаста" value="#var kastа %0" group="warlock"/>
+    <alias key="икастп" value="#var kastп %0" group="warlock"/>
+    <alias key="икастр" value="#var kastр %0" group="warlock"/>
+    <alias key="икасто" value="#var kastо %0" group="warlock"/>
+    <alias key="икастл" value="#var kastл %0" group="warlock"/>
+    <alias key="икастд" value="#var kastд %0" group="warlock"/>
+    <alias key="икастж" value="#var kastж %0" group="warlock"/>
+    <alias key="икастэ" value="#var kastэ %0" group="warlock"/>
+    <alias key="икастя" value="#var kastя %0" group="warlock"/>
+    <alias key="икастч" value="#var kastч %0" group="warlock"/>
+    <alias key="икастс" value="#var kastс %0" group="warlock"/>
+    <alias key="икастм" value="#var kastм %0" group="warlock"/>
+    <alias key="икасти" value="#var kastи %0" group="warlock"/>
+    <alias key="икастт" value="#var kastт %0" group="warlock"/>
+    <alias key="икасть" value="#var kastь %0" group="warlock"/>
+    <alias key="икастб" value="#var kastб %0" group="warlock"/>
+    <alias key="икастю" value="#var kastю %0" group="warlock"/>
+    <alias key="икаст." value="#var kast. %0" group="warlock"/>
+    <alias key="икаст\" value="#var kast\ %0" group="warlock"/>
+    <alias key="автоследон" value="#group on autoBotMovement" group="default"/>
+    <alias key="автоследоф" value="#group off autoBotMovement" group="default"/>
+    <alias key="ахилон" value="#timer enable;#group on autoBotHeal" group="autoBotKler"/>
+    <alias key="ахилоф" value="#timer disable;#group off autoBotHeal" group="autoBotKler"/>
+  </aliases>
+  <hotkeys>
+    <hotkey key="`" value="~" group="default"/>
+    <hotkey key="Alt+`" value="бежать" group="default"/>
+    <hotkey key="MUL" value="взять все" group="default"/>
+    <hotkey key="ADD" value="встать" group="default"/>
+    <hotkey key="MIN" value="отступ" group="default"/>
+    <hotkey key="NUM8" value="n" group="default"/>
+    <hotkey key="NUM2" value="s" group="default"/>
+    <hotkey key="NUM4" value="w" group="default"/>
+    <hotkey key="NUM6" value="e" group="default"/>
+    <hotkey key="NUM7" value="up" group="default"/>
+    <hotkey key="NUM1" value="down" group="default"/>
+    <hotkey key="Alt+NUM8" value="гг $partyTank ступай север" group="default"/>
+    <hotkey key="Alt+NUM2" value="гг $partyTank ступай юг" group="default"/>
+    <hotkey key="Alt+NUM4" value="гг $partyTank ступай запад" group="default"/>
+    <hotkey key="Alt+NUM6" value="гг $partyTank ступай восток" group="default"/>
+    <hotkey key="Alt+NUM7" value="гг $partyTank ступай вверх" group="default"/>
+    <hotkey key="Alt+NUM1" value="гг $partyTank ступай вниз" group="default"/>
+    <hotkey key="NUM0" value="огл" group="default"/>
+    <hotkey key="F12" value="~;зачит возвр;взять возвр $dressBackpack;держ $dressOff;гг $personName среколился" group="default"/>
+    <hotkey key="NUMDEL" value="группа" group="default"/>
+    <hotkey key="NUM5" value="смотр" group="default"/>
+    <hotkey key="F1" value="приказ всем спасти .$personName" group="warlock"/>
+    <hotkey key="F2" value="приказ всем спасти .$partyMember02" group="warlock"/>
+    <hotkey key="F3" value="приказ всем спасти .$partyMember03" group="warlock"/>
+    <hotkey key="F4" value="приказ всем спасти .$partyMember04" group="warlock"/>
+    <hotkey key="F5" value="приказ всем спасти .$partyMember05" group="warlock"/>
+    <hotkey key="F6" value="приказ всем спасти .$partyMember06" group="warlock"/>
+    <hotkey key="F7" value="приказ всем спасти .$partyMember07" group="warlock"/>
+    <hotkey key="F8" value="приказ всем спасти .$partyMember08" group="warlock"/>
+    <hotkey key="F9" value="приказ всем спасти .$partyTank;зачит возвр .$partyTank; взять возвр $dressBackpack;зачит возвр" group="warlock"/>
+    <hotkey key="NUM9" value="колдовать *$kastMassAgro*" group="warlock"/>
+    <hotkey key="Ctrl+NUM9" value="колдовать *$kastAgro*" group="warlock"/>
+    <hotkey key="NUM3" value="колдовать *$kastMassStun*" group="warlock"/>
+  </hotkeys>
+  <subs>
+    <sub key="^Лазурная пентаграмма возникла в воздухе." value="{rgb110,140,255 b rgb20,30,30} [ --- ПЕНТА --- ]" group="default"/>
+    <sub key="^Вы запечатали магией все входы." value="[ --- КОМНАТА ЗАПЕЧАТАНА --- ]" group="default"/>
+    <sub key="^%0 запечатал%% магией все входы." value="%0 [ --- КОМНАТА ЗАПЕЧАТАНА --- ]" group="default"/>
+    <sub key="^Вы почти полностью запечатали магией все входы." value="[ печать фейл ]" group="default"/>
+    <sub key="^%0 почти полностью запечатал%% магией все входы." value="%0 [ печать фейл ]" group="default"/>
+    <sub key="^Вы очень плохо запечатали магией все входы." value="[ печать фейл ]" group="default"/>
+    <sub key="^%0 очень плохо запечатал%% магией все входы." value="%0 [ печать фейл ]" group="default"/>
+    <sub key="^%0 сбежал%% на %1." value="%0 -флик- %1." group="default"/>
+    <sub key="^%0 тихо удалился отсюда." value="%0 --- хз." group="default"/>
+    <sub key="^%0 %1 снизу." value="%0 +++ снизу." group="default"/>
+    <sub key="^%0 %1 вниз." value="%0 --- вниз." group="default"/>
+    <sub key="^%0 %1 сверху." value="%0 +++ сверху." group="default"/>
+    <sub key="^%0 %1 вверх." value="%0 --- вверх." group="default"/>
+    <sub key="^%0 приш%% с %1." value="%0 +++ %1." group="default"/>
+    <sub key="^%0 уш%% на %1." value="%0 --- %1." group="default"/>
+    <sub key="^%0 приехал%% с %1." value="%0 +++ %1." group="default"/>
+    <sub key="^%0 уехал%% на %1." value="%0 --- %1." group="default"/>
+    <sub key="^%0 прилетел%% с %1." value="%0 +++ %1." group="default"/>
+    <sub key="^%0 улетел%% на %1." value="%0 --- %1." group="default"/>
+    <sub key="^%0 приплыл%% с %1." value="%0 +++ %1." group="default"/>
+    <sub key="^%0 уплыл%% на %1." value="%0 --- %1." group="default"/>
+    <sub key="^%0 приполз%% с %1." value="%0 +++ %1." group="default"/>
+    <sub key="^%0 уполз%% на %1." value="%0 --- %1." group="default"/>
+    <sub key="^%0 прискакал%% с %1." value="%0 +++ %1." group="default"/>
+    <sub key="^%0 ускакал%% на %1." value="%0 --- %1." group="default"/>
+    <sub key="^%0 прибежал%% с %1." value="%0 +++ %1." group="default"/>
+    <sub key="^%0 убежал%% на %1." value="%0 --- %1." group="default"/>
+    <sub key="^%0 прекратил%% прятаться." value="%0 [из хайда]." group="default"/>
+    <sub key="^%0 прекратил%% маскироваться." value="%0 [из хайда]." group="default"/>
+    <sub key="...слеп%%" value="[ СЛЕП ]" group="default"/>
+    <sub key="...парализован%%" value="[ ЗАМЕР ]" group="default"/>
+    <sub key="...окутан%% сверкающим коконом" value="( ЗБ )" group="default"/>
+    <sub key="...окружен%% ледяным щитом" value="( лед.щит )" group="default"/>
+    <sub key="...светится ярким сиянием" value="( санка )" group="default"/>
+    <sub key="...перелива%% всеми цветами" value="( призма )" group="default"/>
+    <sub key="..серебристая аур%%" value="( зеркало )" group="default"/>
+    <sub key="невидимость" value="инвиз" group="default"/>
+    <sub key="освящение" value="[ САНКА ]" group="default"/>
+    <sub key="летит" value="[ ПОЛЕТ ]" group="default"/>
+    <sub key="дышать водой" value="[ ДЫШКА ]" group="default"/>
+    <sub key="огненная аура" value="огн.аура" group="default"/>
+    <sub key="воздушная аура" value="возд.аура" group="default"/>
+    <sub key="ледяная аура" value="лед.аура" group="default"/>
+    <sub key="определение невидимости" value="детект" group="default"/>
+    <sub key="определение магии" value="о.магии" group="default"/>
+    <sub key="инфравидение" value="инфра" group="default"/>
+    <sub key="доблесть" value="добла" group="default"/>
+    <sub key="защита от света" value="з.от.света" group="default"/>
+    <sub key="настороженность" value="насторожка" group="default"/>
+    <sub key="ускорение" value="ускор" group="default"/>
+    <sub key="^%0 попытал%% %% %1 - неудачно." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% ударить вас, но не рассчитал%% и промахнул%%." value="%0 -- вас." group="fight"/>
+    <sub key="^%1 сумел%% избежать удара %0." value="%0 -- %1." group="fight"/>
+    <sub key="^Ваша рука не достигла %1 - нужно было лучше тренироваться.." value="Вы -- %1." group="fight"/>
+    <sub key="^%0 промазал%%, когда хотел%% ударить вас." value="%0 -- вас." group="fight"/>
+    <sub key="^Удар %0 прошел мимо %1." value="%0 -- %1." group="fight"/>
+    <sub key="^Вы попытались ободрать %%, но %1 - не липка." value="Вы -- %1." group="fight"/>
+    <sub key="^%0 попытал%% ободрать вас - скорняк из н%% неважнецкий." value="%0 -- вас." group="fight"/>
+    <sub key="^Вы попытались ободрать %1, но не смогли." value="Вы -- %1." group="fight"/>
+    <sub key="^%0 промахнул%%, когда пытал%% ободрать вас." value="%0 -- вас." group="fight"/>
+    <sub key="^%0 не смог%% ободрать %1 - %% просто промазал%%." value="%0 -- %1." group="fight"/>
+    <sub key="^Вы попытались хлестнуть %1 - недолет." value="Вы -- %1." group="fight"/>
+    <sub key="^%0 попытал%% хлестнуть %1, но промахнул%%." value="%0 -- %1." group="fight"/>
+    <sub key="^Вы избежали попытки %0 хлестнуть вас." value="%0 -- вас." group="fight"/>
+    <sub key="^Попытка %0 хлестнуть %1 оказалась неудачной." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% рубануть %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% укусить %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% огреть %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^Ваш сокрушающий удар не достиг %1." value="Вы -- %1." group="fight"/>
+    <sub key="^%0 попытал%% сокрушить %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% резануть %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^Ваши шаловливые коготки не смогли дотянуться до %1." value="Вы -- %1." group="fight"/>
+    <sub key="^%0 попытал%% оцарапать вас. Ну %% с такими шутками." value="%0 -- вас." group="fight"/>
+    <sub key="^%0 попытал%% оцарапать %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% подстрелить %1, но %%" value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% пырнуть %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% уколоть %1, но промахнул%%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% проткнуть %1, но %% удар не достиг цели." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% ткнуть %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% лягнуть %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% боднуть %1, но %%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% клюнуть %1, но %% старания не достигли цели." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% ужалить %1, но промахнул%%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% пнуть %1, но промахнул%%." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 попытал%% пнуть %1. Займите же %% ловкости." value="%0 -- %1." group="fight"/>
+    <sub key="^%0 промахнул%%, когда пытал%% пнуть %1." value="%0 -- %1." group="fight"/>
+    <sub key="^Мощный пинок %0 не достиг %1" value="%0 -- %1." group="fight"/>
+    <sub key="^Ваши доспехи полностью поглотили удар %0." value="%0 -- вас." group="fight"/>
+    <sub key="^Доспехи %1 полностью поглотили ваш удар." value="Вы -- %1." group="fight"/>
+    <sub key="^Доспехи %1 полностью поглотили удар %0." value="%0 -- %1." group="fight"/>
+    <sub key="^Вы перехватили атаку %0." value="%0 -- вас." group="fight"/>
+    <sub key="^%1 перехватил%% вашу атаку." value="Вы -- %1." group="fight"/>
+    <sub key="^%1 перехватил%% атаку %0." value="%0 -- %1." group="fight"/>
+    <sub key="^Вы уклонились от атаки %0." value="%0 -- вас." group="fight"/>
+    <sub key="^%1 уклонил%% от вашей атаки" value="Вы -- %1." group="fight"/>
+    <sub key="^%1 уклонил%% от атаки %0" value="%0 -- %1." group="fight"/>
+    <sub key="^Вы полностью отклонили атаку %0." value="%0 -- вас." group="fight"/>
+    <sub key="^%1 полностью отклонил%% вашу атаку" value="Вы -- %1." group="fight"/>
+    <sub key="^%1 полностью отклонил%% атаку %0" value="%0 -- %1." group="fight"/>
+    <sub key="^Вы полностью отразили атаку %0." value="%0 -- вас." group="fight"/>
+    <sub key="^%1 полностью отразил%% вашу атаку" value="Вы -- %1." group="fight"/>
+    <sub key="^%1 полностью отразил%% атаку %0" value="%0 -- %1." group="fight"/>
+    <sub key="^Вы %% пнули %1. Теперь %% наложат гипс." value="Вы пнули %1." group="fight"/>
+    <sub key="^%0 %% пнул%% вас, %% просто изверг." value="%0 пнул вас." group="fight"/>
+    <sub key="^%0 %% пнул%% %1. Морда %% искривилась в гримасе боли." value="%0 пнул %1." group="fight"/>
+    <sub key="^Вы %% пнули%% %1, %% аж скрючило от боли." value="Вы пнули %1." group="fight"/>
+    <sub key="^%0 %% пнул%% вас. Ваши глаза на лоб полезли от этой дикой боли." value="%0 пнул вас." group="fight"/>
+    <sub key="^%0 %% пнул%% %1. Теперь %% дико вращает глазами от боли." value="%0 пнул %1." group="fight"/>
+    <sub key="^%1 погиб%% от мощного удара ноги %0." value="%0 пнул %1." group="fight"/>
+    <sub key="^%0 убил%% %1 своим ядреным пинком." value="%0 пнул %1." group="fight"/>
+    <sub key="^Внезапно %0 уколол%% вас в спину. Но отомстите вы %% попозже." value="%0 -[ СТАБ ]-&gt; вас." group="default"/>
+    <sub key="^Мастерским ударом в спину %0 отправил%% %1 к праотцам." value="%0 -[ СТАБ ]-&gt; %1." group="default"/>
+    <sub key="^Внезапно %0 уколол%% вас в спину." value="%0 -[ СТАБ ]-&gt; вас." group="default"/>
+    <sub key="^%0 нанизал%% %1 на свое оружие. %% теперь словно поросёнок на вертеле." value="%0 -[ СТАБ ]-&gt; %1." group="default"/>
+    <sub key="^%0 воткнул%% свое оружие в спину %1. Ща начнется убивство." value="%0 -[ СТАБ ]-&gt; %1." group="default"/>
+    <sub key="^%0 нанес%% вам удар своим оружием, и этот факт вас не радует." value="%0 -[ СТАБ ]-&gt; вас." group="default"/>
+    <sub key="^%0 нанес%% удар своим оружием в спину %1." value="%0 -[ СТАБ ]-&gt; %1." group="default"/>
+    <sub key="^%0 попытал%% нанести %1 удар в спину, но %% заметили%%." value="%0 -[ фейл стаб ]-&gt; %1." group="default"/>
+    <sub key="^Вам удалось избежать коварного удара %0." value="%0 -[ фейл стаб ]-&gt; вас." group="default"/>
+    <sub key="^%0 не попал%% своим оружием в спину %1." value="%0 -[ фейл стаб ]-&gt; %1." group="default"/>
+    <sub key="^Удар %0 надолго отбил у вас охоту вставать." value="%0 -[ БАШ ]-&gt; вас." group="default"/>
+    <sub key="^%1 завалил%% на землю от удара %1, да так и остал%% лежать." value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^%0 завалил%% %1 на землю %% мощным ударом." value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^%0 завалил%% %1 на землю мощным ударом." value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^%1 полетел%% на землю от мощного удара %0" value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^%1 рухнул%% на землю и рассыпал%% после мощного удара %0." value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^Вы завалили %1 на землю." value="Вы -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^%0 завалил%% %1 на землю. Поднимайтесь!" value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^Одним ударом %0 повалил%% %1 на землю." value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^Ваш мощный пинок выбил пару зубов %1, усадив %% на землю!" value="Вы -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^Мощный удар ноги %0 попал точно в голову, свалив %1 с ног." value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^Мощный пинок %0 выбил пару зубов %1, усадив %% на землю!" value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^Ваш мощнейший удар сбил %1 с ног." value="Вы -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^%0 своим оглушающим ударом сбил%% %1 с ног." value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^Оглушающий удар %0 сбил вас с ног." value="%0 -[ БАШ ]-&gt; вас." group="default"/>
+    <sub key="^Попадание копья повалило %1 наземь." value="Вы -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^Копье %0 попало вам в колено. Вы рухнули наземь! Кажется, ваши приключения сейчас закончатся..." value="%0 -[ БАШ ]-&gt; вас." group="default"/>
+    <sub key="^Копье %0 сбило %1 наземь!" value="%0 -[ БАШ ]-&gt; %1." group="default"/>
+    <sub key="^%0 обреченно повалил%% на землю." value="%0 -[ НА ЖОПЕ ]-&gt; %1." group="default"/>
+    <sub key="^Богатырский удар %0 сбил вас с ног." value="%0 -[ НА ЖОПЕ ]-&gt; вас." group="default"/>
+    <sub key="^Ваш богатырский удар задел %1" value="Вы -[ ЛАГ 1 ]-&gt; %1." group="default"/>
+    <sub key="^Ваше сознание затуманилось после удара %0" value="%0 -[ ЛАГ 1 ]-&gt; вас." group="default"/>
+    <sub key="^%1 содрогнул%% от богатырского удара %0." value="%0 -[ ЛАГ 1 ]-&gt; %1." group="default"/>
+    <sub key="^Ваш богатырский удар пошатнул %1" value="Вы -[ ЛАГ 2 ]-&gt; %1." group="default"/>
+    <sub key="^Ваше сознание помутилось после удара %0" value="%0 -[ ЛАГ 2 ]-&gt; вас." group="default"/>
+    <sub key="^%1 пошатнул%% от богатырского удара %0." value="%0 -[ ЛАГ 2 ]-&gt; %1." group="default"/>
+    <sub key="^Ваш богатырский удар сотряс %1" value="Вы -[ ЛАГ 2 ]-&gt; %1." group="default"/>
+    <sub key="^Ваше сознание померкло после удара %0" value="%0 -[ ЛАГ 2 ]-&gt; вас." group="default"/>
+    <sub key="^%1 зашатал%% от богатырского удара %0." value="%0 -[ ЛАГ 2 ]-&gt; %1." group="default"/>
+    <sub key="^Ваша мощная атака оглушила %1." value="Вы -[ ОГЛУШИЛ 2 ]-&gt; %1." group="default"/>
+    <sub key="^Ваше сознание слегка помутилось после удара %0." value="%0 -[ ОГЛУШИЛ 2 ]-&gt; вас." group="default"/>
+    <sub key="^%0 оглушил%% %1." value="%0 -[ ОГЛУШИЛ 2 ]-&gt; %1." group="default"/>
+    <sub key="^%0 мощным ударом оглушил%% %1." value="Вы -[ ОГЛУШИЛ ]-&gt; %1." group="default"/>
+    <sub key="^Попадание булавы ошеломило %1." value="Вы -[ ОГЛУШИЛ ]-&gt; %1." group="default"/>
+    <sub key="^Брошенная %0 булава врезалась вам в лоб! Какие красивые звёздочки вокруг..." value="%0 -[ ОГЛУШИЛ ]-&gt; вас." group="default"/>
+    <sub key="^Попадание булавы %0 ошеломило %1!" value="%0 -[ ОГЛУШИЛ ]-&gt; %1." group="default"/>
+    <sub key="^Сильно пнув в челюсть, вы заставили %1 замолчать." value="Вы -[ МОЛЧА ]-&gt; %1." group="default"/>
+    <sub key="^Мощный удар ноги %0 попал вам точно в челюсть, заставив %1 замолчать." value="%0 -[ МОЛЧА ]-&gt; %1." group="default"/>
+    <sub key="^Сильно пнув ногой в челюсть %1, %0 застави%% %% замолчать." value="%0 -[ МОЛЧА ]-&gt; %1." group="default"/>
+    <sub key="^Меткое попадание вашего кинжала заставило %1 умолкнуть." value="Вы -[ МОЛЧА ]-&gt; %1." group="default"/>
+    <sub key="^Бросок %0 угодил вам в горло. Вы прикусили язык!" value="%0 -[ МОЛЧА ]-&gt; вас." group="default"/>
+    <sub key="^Меткое попадание %0 заставило %1 умолкнуть!" value="%0 -[ МОЛЧА ]-&gt; %1." group="default"/>
+    <sub key="^Камблук вашего сапога надолго запомнится %1, %% теперь даже бить вас нечем." value="Вы -[ ИЗ СТРОЯ ]-&gt; %1." group="default"/>
+    <sub key="^Мощный удар ноги %0 вывел %1 из строя." value="%0 -[ ИЗ СТРОЯ ]-&gt; %1." group="default"/>
+    <sub key="^Каблук сапога %0 надолго запомнится %1, %% теперь даже биться нечем." value="%0 -[ ИЗ СТРОЯ ]-&gt; %1." group="default"/>
+    <sub key="^%0 слишком сильн%% для вас, чтобы сбить %% с ног." value="Вы -[ фейл баш ]-&gt; %1." group="default"/>
+    <sub key="^%0 хотел%% завалить %1, но, не рассчитав сил, упал%% сам%%." value="%0 -[ фейл баш ]-&gt; %1." group="default"/>
+    <sub key="^%1 избежал%% попытки %0 завалить %%." value="%0 -[ фейл баш ]-&gt; %1." group="default"/>
+    <sub key="^Вы попытались завалить %1. Вот так и сидите." value="Вы -[ фейл баш ]-&gt; %1." group="default"/>
+    <sub key="^%0 неумело попытал%% завалить вас." value="%0 -[ фейл баш ]-&gt; вас." group="default"/>
+    <sub key="^Вы попытались сбить %1, но упали сами. Учитесь." value="Вы -[ фейл баш ]-&gt; %1." group="default"/>
+    <sub key="^%0 попытал%% сбить %1 с ног, но, в итоге, приземлил%% сам%%." value="%0 -[ фейл баш ]-&gt; %1." group="default"/>
+    <sub key="^%0 попытал%% завалить %1, но не тут-то было." value="%0 -[ фейл баш ]-&gt; %1." group="default"/>
+    <sub key="^%0 ловко выбил%% %% из ваших рук." value="%0 -[ дизарм ]-&gt; вас." group="default"/>
+    <sub key="^%0 ловко выбил%% %% из рук %1." value="%0 -[ дизарм ]-&gt; %1." group="default"/>
+    <sub key="^%0 ловко подсек%% %1, усадив на попу." value="%0 -[ ТРИП ]-&gt; %1." group="default"/>
+    <sub key="^%0 ловко подсек%% %1, уронив %% на землю." value="%0 -[ ТРИП ]-&gt; %1." group="default"/>
+    <sub key="^%0 подсечь %1, но упал%% сам%%." value="%0 -[ фейл трип ]-&gt; %1." group="default"/>
+    <sub key="^Ваше сознание затуманилось после удара %0." value="%0 -[ МОЛОТ ]-&gt; Вас." group="default"/>
+    <sub key="^Ваше сознание померкло после удара %0." value="%0 -[ МОЛОТ ]-&gt; Вас." group="default"/>
+    <sub key="^Ваше сознание %% помутилось после удара %0." value="%0 -[ МОЛОТ ]-&gt; Вас." group="default"/>
+    <sub key="^%0 героически спас%% %1!" value="%0 -[ реск ]-&gt; %1." group="default"/>
+    <sub key="^Вы были спасены %0. Вы чувствуете себя Иудой!" value="%0 -[ реск ]-&gt; вас." group="default"/>
+    <sub key="^%0 %% на %1 и %% : 'порча'." value="%0 - прокла -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... проклят ты пред всеми скотами.'." value="%0 - прокла -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'с глаз долой исчезни'." value="%0 - рекол -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... ступай с миром.'." value="%0 - рекол -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'исчезните с глаз моих'." value="%0 - груп.рукол -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... вам говорю, ступайте с миром.'." value="%0 - груп.рукол -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'опуташа в путины железны'." value="%0 - приковать -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... да поищешь уйти, да не возможешь'." value="%0 - приковать -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'падоша в тернии'." value="%0 -[ страх ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... убойся того, кто по убиении ввергнет в геенну.'." value="%0 -[ страх ]-&gt; %1." group="casts"/>
+    <sub key="^%0 произнес%% : 'Поврещу сташивые души их в скарядие!'." value="%0 -[ масс.страх ]-." group="casts"/>
+    <sub key="^%0 произнес%% : '... и затмил ужас разум их.'." value="%0 -[ масс.страх ]-." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'сети ловчи'." value="%0 - сеть -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... терны и сети на пути коварного.'." value="%0 - сеть -&gt; %1." group="casts"/>
+    <sub key="^%0 произнес%% : 'порча их'." value="%0 - масс.прокля -." group="casts"/>
+    <sub key="^%0 произнес%% : '... прокляты вы пред всеми скотами.'." value="%0 - масс.прокля -." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'немочь'." value="%0 - медла -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '...и помедлил еще семь дней других.'." value="%0 - медла -&gt; %1." group="casts"/>
+    <sub key="^%0 произнес%% : 'тернии им'." value="%0 - масс.медла -." group="casts"/>
+    <sub key="^%0 произнес%% : '... загорожу путь их тернами.'." value="%0 - масс.медла -." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'згола яростен'." value="%0 - нофлик -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и ярость его загорелась в нем.'." value="%0 - нофлик -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'разум аки мутный омут'." value="%0 - минус разум -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и безумие его с ним.'." value="%0 - минус разум -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'оглохни'." value="%0 - глухота -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и глухота поразит тебя.'." value="%0 - глухота -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'да застит уши твои'." value="%0 - длит.глухота -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и будь глухим надолго.'." value="%0 - длит.глухота -&gt; %1." group="casts"/>
+    <sub key="^%0 произнес%% : 'будьте глухи'." value="%0 - масс.глухота -." group="casts"/>
+    <sub key="^%0 произнес%% : '... и не будут слышать уши ваши.'." value="%0 - масс.глухота -." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'пыль поднимется столбами'." value="%0 - пылевая буря -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и пыль поглотит вас.'." value="%0 - пылевая буря -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'да невзлюбит тебя воздух'." value="%0 - звук.волна -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и даже воздух покарает тебя.'." value="%0 - звук.волна -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Будут слезы твои, аки камень на сердце'." value="%0 - плач -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и постигнет твой дух угнетение вечное.'." value="%0 - плач -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'будь живот аки буява с шерстнями.'." value="%0 - забвение -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... опадет на тебя чернь страшная.'." value="%0 - забвение -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Яко небытие нещадно к вам, али время вернулось вспять.'." value="%0 - бремя времени -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и время не властно над ними.'." value="%0 - бремя времени -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'зрети супостат охабиша'." value="%0 - пыль -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '...и бросали пыль на воздух.'." value="%0 - пыль -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Чтоб твои зенки вылезли!'." value="%0 -[ слепота ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... поразит тебя Господь слепотою.'." value="%0 -[ слепота ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'згола застить очеса'." value="%0 -[ слепота ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... поразит тебя Господь слепотою навечно.'." value="%0 -[ слепота ]-&gt; %1." group="casts"/>
+    <sub key="^%0 произнес%% : 'их очеса непотребны'." value="%0 -[ масс.слепота ]-." group="casts"/>
+    <sub key="^%0 произнес%% : '... и Он поразил их слепотою.'." value="%0 -[ масс.слепота ]-." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'преторгоста'." value="%0 - истощить энергию -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... да иссякнут соки, питающие тело.'." value="%0 - истощить энергию -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'типун тебе на язык!'." value="%0 -[ молча ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... да замкнутся уста твои.'." value="%0 -[ молча ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'згола не прерчет'." value="%0 -[ молча ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... исходящее из уст твоих, да не осквернит слуха.'." value="%0 -[ молча ]-&gt; %1." group="casts"/>
+    <sub key="^%0 произнес%% : 'их уста непотребны'." value="%0 -[ масс.молча ]-." group="casts"/>
+    <sub key="^%0 произнес%% : '... да замкнутся уста ваши.'." value="%0 -[ масс.молча ]-." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'иже дремлет'." value="%0 -[ сон ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... на веки твои тяжесть покладет.'." value="%0 -[ сон ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'будет слеп и глух, аки мертвец'." value="%0 -[ ШОК ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... кто делает или глухим, или слепым.'." value="%0 -[ ШОК ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'земля тутнет'." value="%0 -[ ЗЕМЛЕТРЯС ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... в тот же час произошло великое землетрясение.'." value="%0 -[ ЗЕМЛЕТРЯС ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'аки околел'." value="%0 -[ оцепа ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... замри.'." value="%0 -[ оцепа ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'згола аки околел'." value="%0 -[ длит.оцепа ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... замри надолго.'." value="%0 -[ длит.оцепа ]-&gt; %1." group="casts"/>
+    <sub key="^%0 произнес%% : 'их окалеть'." value="%0 -[ масс.оцепа ]-." group="casts"/>
+    <sub key="^%0 произнес%% : '... замрите.'." value="%0 -[ масс.оцепа ]-." group="casts"/>
+    <sub key="^%0 произнес%% : 'торже, яко вихор'." value="%0 -[ ШТОРМ ]-." group="casts"/>
+    <sub key="^%0 произнес%% : '... и град, величиною в талант, падет с неба.'." value="%0 -[ ШТОРМ ]-." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Умри!'." value="%0 -[ КРУГ ПУСТОТЫ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и услышав слова сии - пал бездыханен.'." value="%0 -[ КРУГ ПУСТОТЫ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'да обратит тебя Чернобог в мертвый камень!'." value="%0 -[ КАМ.ПРОКЛА ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и проклял его именем Господним.'." value="%0 -[ КАМ.ПРОКЛА ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'пусть каменья падут'." value="%0 -[ КАМНЕПАД ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и обрушатся камни с небес.'." value="%0 -[ КАМНЕПАД ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'узри огонь!'." value="%0 - горящие руки -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... простер руку свою к огню.'." value="%0 - горящие руки -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'засти очи им'." value="%0 - яр.блик -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... свет пламени из средины огня.'." value="%0 - яр.блик -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Разрази тебя Перун!'." value="%0 - шаровая -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и путь для громоносной молнии.'." value="%0 - шаровая -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'шаровая молния'." value="%0 - шаровая -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'хладну персты воскладаше'." value="%0 - лед.косание -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... которые черны от льда.'." value="%0 - лед.косание -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'хлад и мраз исторгнути'." value="%0 - лед.стрелы -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и из воды делается лед.'." value="%0 - лед.стрелы -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'долой нощи'." value="%0 - изгнать зло -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... грешников преследует зло, а праведникам воздается добром.'." value="%0 - изгнать зло -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'свет сгинь'." value="%0 - рассеять свет -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и тьма свет накроет.'." value="%0 - рассеять свет -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'огненну солнце'." value="%0 -[ ФАЕР ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... да ниспадет огонь с неба, и пожрет их.'." value="%0 -[ ФАЕР ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'згола скверна'." value="%0 - вред -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и жестокою болью во всех костях твоих.'." value="%0 - вред -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'грянет гром'." value="%0 - молния -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и были громы и молнии.'." value="%0 - молния -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'ворожья стрела'." value="%0 - маг.стрела -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... остры стрелы Твои.'." value="%0 - маг.стрела -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'трутизна'." value="%0 - яд -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и пошлю на них зубы зверей и яд ползающих по земле.'." value="%0 - яд -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'воскладше огненну персты'." value="%0 - обж.хватка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и дано буде жечь врагов огнем.'." value="%0 - обж.хватка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'глаголят небеса'." value="%0 - цепь молний -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... понесутся меткие стрелы молний из облаков.'." value="%0 - цепь молний -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'створисте огненну струя'." value="%0 - огн.поток -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и ввергне их в озеро огненное.'." value="%0 - огн.поток -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Велес, упокой мертвых'." value="%0 - силы света -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и предоставь мертвым погребать своих мертвецов.'." value="%0 - силы света -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'язвень голки уведати'." value="%0 -[ вопль ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '...но в полночь раздался крик.'." value="%0 -[ вопль ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'гнев божиа не минути'." value="%0 -[ ГНЕВ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и воспламенится гнев Господа, и Он скоро истребит тебя.'." value="%0 -[ ГНЕВ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'жги аки смола горячая'." value="%0 - кислота -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... подобно мучению от скорпиона.'." value="%0 - кислота -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'да коснется тебя Чернобог'." value="%0 -[ дрын ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... плоть твоя и тело твое будут истощены.'." value="%0 -[ дрын ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... будет чувствовать боль.'." value="%0 - л.вред -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'скверна'." value="%0 - ср.вред -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... постигнут тебя муки.'." value="%0 - ср.вред -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'сильна скверна'." value="%0 -[ КР.ВРЕД ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... боль и муки схватили.'." value="%0 -[ КР.ВРЕД ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Порчу воздух !!!'." value="%0 -[ яд.туман ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '...и зловонное дыхание его.'." value="%0 -[ яд.туман ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Вждати бурю обло створити.'." value="%0 -[ ВИХРЬ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'И поднялась великая буря...'." value="%0 -[ ВИХРЬ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 произнес%% : 'Абие велий вихрь деяти!'." value="%0 -[ БУРЯ ]-." group="casts"/>
+    <sub key="^%0 произнес%% : '...творит молнии при дожде, изводит ветер из хранилищ Своих.'." value="%0 -[ БУРЯ ]-." group="casts"/>
+    <sub key="^%0 произнес%% : 'суд божиа не минути'." value="%0 -[ СУД БОГОВ ]-." group="casts"/>
+    <sub key="^%0 произнес%% : '... какою мерою мерите, такою отмерено будет и вам.'." value="%0 -[ СУД БОГОВ ]-." group="casts"/>
+    <sub key="^%0 взглянул%% на %1 и бросил : 'суд божиа не минути'." value="%0 -[ СУД БОГОВ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 взглянул%% на %1 и бросил : '... какою мерою мерите, такою отмерено будет и вам.'." value="%0 -[ СУД БОГОВ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'веют ветры'." value="%0 - лед.ветер -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... подует северный холодный ветер.'." value="%0 - лед.ветер -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'идти дождю стрелами'." value="%0 -[ М.ДОЖДЬ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и камни, величиною в талант, падут с неба.'." value="%0 -[ М.ДОЖДЬ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'гой еси'." value="%0 - крит -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... да зарубцуются гноища твои.'." value="%0 - крит -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'целите раны'." value="%0 - серьезка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... да уменьшатся раны твои.'." value="%0 - серьезка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'згола гой еси'." value="%0 -[ ХИЛ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... тебе говорю, встань.'." value="%0 -[ ХИЛ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 прикрыл%% глаза и прошептал%% : 'згола гой еси'." value="%0 -[ ХИЛ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 прикрыл%% глаза и прошептал%% : '... тебе говорю, встань.'." value="%0 -[ ХИЛ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 пробормотал%% : 'згола гой еси'." value="%0 -[ ХИЛ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 пробормотал%% : '... тебе говорю, встань.'." value="%0 -[ ХИЛ ]-&gt; %1." group="casts"/>
+    <sub key="^%0 произнес%% : 'други, гой еси'." value="%0 -[ ГХ ]-." group="casts"/>
+    <sub key="^%0 произнес%% : '... вам говорю, встаньте.'." value="%0 -[ ГХ ]-." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'иже во святых'." value="%0 - санка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... буде святым, аки Господь наш свят.'." value="%0 - санка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'иже во святых, други'." value="%0 - груп.санка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... будьте святы, аки Господь наш свят.'." value="%0 - груп.санка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'вериги и цепи железные изорву'." value="%0 - разбитые оковы -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и цепи упали с рук его.'." value="%0 - разбитые оковы -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'будут тени и туман, и мрак ночной'." value="%0 - мантия теней -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... распростираются вечерние тени.'." value="%0 - мантия теней -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'буде быстр аки прежде'." value="%0 - снять оцепу -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... встань, и ходи.'." value="%0 - снять оцепу -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'глаголите'." value="%0 - снять молчу -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... слова из уст мудрого - благодать'." value="%0 - снять молчу -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'буде полон здоровья'." value="%0 - увелич.жизнь -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... крепкое тело лучше несметного богатства.'." value="%0 - увелич.жизнь -&gt; %1." group="casts"/>
+    <sub key="^%0 пробормотал%% : 'буде полон здоровья'." value="%0 - увелич.жизнь -&gt; %1." group="casts"/>
+    <sub key="^%0 пробормотал%% : '... крепкое тело лучше несметного богатства.'." value="%0 - увелич.жизнь -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'и ворога оберегись'." value="%0 - волш.щит -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... руками своими да защитит он себя'." value="%0 - волш.щит -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'падош'." value="%0 - л.вред -&gt; %1." group="casts"/>
+    <sub key="^%0 прикрыл%% глаза и прошептал%% : 'Живый в помощи Вышняго'." value="%0 -[ ЗБ ]-&gt; себя." group="casts"/>
+    <sub key="^%0 прикрыл%% глаза и прошептал%% : '... благословен буде Грядый во имя Господне.'." value="%0 -[ ЗБ ]-&gt; себя." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Стрибог, даруй прибежище'." value="%0 -[ возд.щит ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... защита от ветра и покров от непогоды.'." value="%0 -[ возд.щит ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'изыде ворожба'." value="%0 - развейка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... выйди, дух нечистый.'." value="%0 - развейка -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Хорс, даруй прибежище'." value="%0 -[ огн.щит ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... душа горячая, как пылающий огонь.'." value="%0 -[ огн.щит ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Морена, даруй прибежище'." value="%0 -[ лед.щит ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... а снег и лед выдерживали огонь и не таяли.'." value="%0 -[ лед.щит ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'гладь воды отразит'." value="%0 -[ груп.зеркало ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... воздай им по делам их, по злым поступкам их.'." value="%0 -[ груп.зеркало ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'Аз воздам!'." value="%0 -[ зеркало ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... и воздам каждому из вас.'." value="%0 -[ зеркало ]-&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'окружен радугой'." value="%0 - призма -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... явится радуга в облаке.'." value="%0 - призма -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : 'други, буде окружены радугой'." value="%0 - груп.призма -&gt; %1." group="casts"/>
+    <sub key="^%0 %% на %1 и %% : '... взгляни на радугу, и прославь Сотворившего ее.'." value="%0 - груп.призма -&gt; %1." group="casts"/>
+    <sub key="^%0 замер%% на месте!" value="%0 -[ ЗАМЕР ]-" group="default"/>
+    <sub key="^%0 замерл%% на месте, не в силах пошевельнуться." value="%0 -[ ЗАМЕР ]-" group="default"/>
+    <sub key="^%0 повалило на землю." value="%0 -[ НА ЖОПЕ ]-" group="default"/>
+    <sub key="^%0 мертв%%, е%% душа медленно подымается в небеса." value="%0 -[ УМЕР ]- ." group="default"/>
+    <sub key="^%0 ослеп!" value="%0 -[ СЛЕП ]-." group="default"/>
+    <sub key="^%0 позеленел%% от действия яда." value="%0 -[ отравлен ]-." group="default"/>
+    <sub key="^%1 теперь прикован%% к %0." value="%0 -[ не сбежит ]-&gt; %1." group="default"/>
+    <sub key="^Вы не сможете покинуть %0." value="%0 -[ не сбежит ]-&gt; вас." group="default"/>
+    <sub key="^Теперь %0 не сможет сбежать из боя!" value="%0 -[ НЕ СБЕЖИТ ]-." group="default"/>
+    <sub key="^Вас обуяло безумие!" value="Вы -[ НЕ СБЕЖИТ ]-." group="default"/>
+    <sub key="^%0 покрыла зеркальная пелена." value="%0 -[ В ЗЕРКАЛЕ ]-." group="default"/>
+    <sub key="^Вас покрыло зеркало магии." value="Вы -[ В ЗЕРКАЛЕ ]-." group="default"/>
+    <sub key="^%0 покрыл%% сверкающим коконом." value="%0 -[ В ЗБ ]-." group="default"/>
+    <sub key="^Вас покрыл голубой кокон." value="Вы -[ В ЗБ ]-." group="default"/>
+    <sub key="^%0 покрыла призматическая аура." value="%0 -[ в призме ]-." group="default"/>
+    <sub key="^Вас покрыла призматическая аура." value="Вы -[ в призме ]-." group="default"/>
+    <sub key="^%0 покрыла невидимая паутина, сковывая %% движения!" value="%0 -[ НЕ СБЕЖИТ ]-." group="default"/>
+    <sub key="^Вас покрыла невидимая паутина!" value="Вы -[ НЕ СБЕЖИТ ]-." group="default"/>
+    <sub key="^%0 прозрел%%." value="%0 -[ снова ВИДИТ ]-." group="default"/>
+    <sub key="^%0 оглушило." value="%0 -[ ОГЛУШЕН ]-." group="default"/>
+    <sub key="^%0 прикусил%% язык!" value="%0 -[ МОЛЧИТ ]-." group="default"/>
+    <sub key="^Вы попытались очнуться, но снова заснули и упали наземь." value="Вы -[ СПИТ ]-." group="default"/>
+    <sub key="^%0 попытал%% очнуться, но снова заснул%% и упал%% наземь." value="%0 -[ СПИТ ]-." group="default"/>
+    <sub key="^%0 прилег%% подремать." value="%0 -[ СПИТ ]-." group="default"/>
+    <sub key="^Вы слишком устали... Спать... Спа..." value="Вы -[ СПИТ ]-." group="default"/>
+    <sub key="^Меткое попадание вашего кинжала заставило %0 умолкнуть." value="%0 -[ МОЛЧИТ ]-." group="default"/>
+    <sub key="^%0 прибыл%% на зов и вступил%% в битву на стороне %1." value="%0 [ суммон и асист ] %1" group="default"/>
+    <sub key="^%0 вступил%% в битву на стороне %1." value="%0 -[ асист ]-&gt; %1" group="default"/>
+    <sub key="^Магический кокон полностью поглотил удар %0" value="%0 ( по ЗБ ) вас." group="fight"/>
+    <sub key="^Магический кокон вокруг %1 полностью поглотил ваш удар." value="Вы ( по ЗБ ) %1." group="fight"/>
+    <sub key="^Магический кокон вокруг %1 полностью поглотил удар %0" value="%0 ( по ЗБ ) %1." group="fight"/>
+    <sub key="^Вы не смогли уклониться от атаки %0" value="%0 &gt; вас." group="fight"/>
+    <sub key="^%1 не сумел%% уклониться от вашей атаки" value="Вы &gt; %1." group="fight"/>
+    <sub key="^%1 не сумел%% уклониться от атаки %0" value="%0 &gt; %1." group="fight"/>
+    <sub key="^Вы немного уклонились от атаки %0" value="%0 &gt; вас." group="fight"/>
+    <sub key="^%1 %% уклонил%% от вашей атаки" value="Вы &gt; %1." group="fight"/>
+    <sub key="^%1 %% уклонил%% от атаки %0" value="%0 &gt; %1." group="fight"/>
+    <sub key="^Вы не смогли отбить атаку %0" value="%0 &gt; вас." group="fight"/>
+    <sub key="^%1 не сумел%% отбить вашу атаку" value="Вы &gt; %1." group="fight"/>
+    <sub key="^%1 не сумел%% отбить атаку %0" value="%0 &gt; %1." group="fight"/>
+    <sub key="^Вы %% отклонили атаку %0" value="%0 &gt; вас." group="fight"/>
+    <sub key="^%1 %% отклонил%% вашу атаку" value="Вы &gt; %1." group="fight"/>
+    <sub key="^%1 %% отклонил%% атаку %0" value="%0 &gt; %1." group="fight"/>
+    <sub key="^Вы не смогли отразить атаку %0" value="%0 &gt; вас." group="fight"/>
+    <sub key="^%1 не сумел%% отразить вашу атаку" value="Вы &gt; %1." group="fight"/>
+    <sub key="^%1 не сумел%% отразить атаку %0" value="%0 &gt; %1." group="fight"/>
+    <sub key="^Вы %% отразили атаку %0" value="%0 &gt; вас." group="fight"/>
+    <sub key="^%1 %% отразил%% вашу атаку" value="Вы &gt; %1." group="fight"/>
+    <sub key="^%1 %% отразил%% атаку %0" value="%0 &gt; %1." group="fight"/>
+    <sub key="ударили" value=" &gt; " group="fight"/>
+    <sub key="ударил" value=" &gt; " group="fight"/>
+    <sub key="ударила" value=" &gt; " group="fight"/>
+    <sub key="ободрали" value=" &gt; " group="fight"/>
+    <sub key="ободрал" value=" &gt; " group="fight"/>
+    <sub key="ободрала" value=" &gt; " group="fight"/>
+    <sub key="хлестнули" value=" &gt; " group="fight"/>
+    <sub key="хлестнул" value=" &gt; " group="fight"/>
+    <sub key="хлестнула" value=" &gt; " group="fight"/>
+    <sub key="рубанули" value=" &gt; " group="fight"/>
+    <sub key="рубанул" value=" &gt; " group="fight"/>
+    <sub key="рубанула" value=" &gt; " group="fight"/>
+    <sub key="укусили" value=" &gt; " group="fight"/>
+    <sub key="укусил" value=" &gt; " group="fight"/>
+    <sub key="укусила" value=" &gt; " group="fight"/>
+    <sub key="огрели" value=" &gt; " group="fight"/>
+    <sub key="огрел" value=" &gt; " group="fight"/>
+    <sub key="огрела" value=" &gt; " group="fight"/>
+    <sub key="сокрушили" value=" &gt; " group="fight"/>
+    <sub key="сокрушил" value=" &gt; " group="fight"/>
+    <sub key="сокрушила" value=" &gt; " group="fight"/>
+    <sub key="резанули" value=" &gt; " group="fight"/>
+    <sub key="резанул" value=" &gt; " group="fight"/>
+    <sub key="резанула" value=" &gt; " group="fight"/>
+    <sub key="оцарапали" value=" &gt; " group="fight"/>
+    <sub key="оцарапал" value=" &gt; " group="fight"/>
+    <sub key="оцарапала" value=" &gt; " group="fight"/>
+    <sub key="подстрелили" value=" &gt; " group="fight"/>
+    <sub key="подстрелил" value=" &gt; " group="fight"/>
+    <sub key="подстрелила" value=" &gt; " group="fight"/>
+    <sub key="пырнули" value=" &gt; " group="fight"/>
+    <sub key="пырнул" value=" &gt; " group="fight"/>
+    <sub key="пырнула" value=" &gt; " group="fight"/>
+    <sub key="укололи" value=" &gt; " group="fight"/>
+    <sub key="уколол" value=" &gt; " group="fight"/>
+    <sub key="уколола" value=" &gt; " group="fight"/>
+    <sub key="ткнули" value=" &gt; " group="fight"/>
+    <sub key="ткнул" value=" &gt; " group="fight"/>
+    <sub key="ткнула" value=" &gt; " group="fight"/>
+    <sub key="лягнули" value=" &gt; " group="fight"/>
+    <sub key="лягнул" value=" &gt; " group="fight"/>
+    <sub key="лягнула" value=" &gt; " group="fight"/>
+    <sub key="боднули" value=" &gt; " group="fight"/>
+    <sub key="боднул" value=" &gt; " group="fight"/>
+    <sub key="боднула" value=" &gt; " group="fight"/>
+    <sub key="клюнули" value=" &gt; " group="fight"/>
+    <sub key="клюнул" value=" &gt; " group="fight"/>
+    <sub key="клюнула" value=" &gt; " group="fight"/>
+    <sub key="ужалили" value=" &gt; " group="fight"/>
+    <sub key="ужалил" value=" &gt; " group="fight"/>
+    <sub key="ужалила" value=" &gt; " group="fight"/>
+    <sub key="легонько" value="[..5]" group="fight"/>
+    <sub key="слегка" value="[..11]" group="fight"/>
+    <sub key="очень сильно" value="[..45]" group="fight"/>
+    <sub key="чрезвычайно сильно" value="[..55]" group="fight"/>
+    <sub key="сильно" value="[..35]" group="fight"/>
+    <sub key="ЧРЕЗВЫЧАЙНО БОЛЬНО" value="[..176]" group="fight"/>
+    <sub key="НЕВЫНОСИМО БОЛЬНО" value="[..216]" group="fight"/>
+    <sub key="ОЧЕНЬ БОЛЬНО" value="[..136]" group="fight"/>
+    <sub key="БОЛЬНО" value="[..96]" group="fight"/>
+    <sub key="ЖЕСТОКО" value="[..256]" group="fight"/>
+    <sub key="УЖАСНО" value="[..296]" group="fight"/>
+    <sub key="УБИЙСТВЕННО" value="[..400]" group="fight"/>
+    <sub key="СМЕРТЕЛЬНО" value="[400+]" group="fight"/>
+    <sub key="Магия %0 потерпела неудачу и развеялась по воздуху." value="%0 &gt; ( НОУ МАГИК )" group="fight"/>
+    <sub key="^льняные бинты" value="льняные бинты (+ 50)" group="default"/>
+    <sub key="^плотные льняные бинты" value="плотные льняные бинты (+ 100)" group="default"/>
+    <sub key="^шелковые бинты" value="шелковые бинты (+ 200)" group="default"/>
+    <sub key="^плотные шелковые бинты" value="плотные шелковые бинты (+ 400)" group="default"/>
+    <sub key="^хлопковые бинты" value="хлопковые бинты (+ 800)" group="default"/>
+    <sub key="^плотные хлопковые бинты" value="плотные хлопковые бинты (+ 1600)" group="default"/>
+    <sub key="^Кузнец сказал вам : '%0'" value="Кузнец уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Хитрый лавочник сказал вам : '%0'" value="Хитрый лавочник уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Травник сказал вам : '%0'" value="Травник уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Рыжий трактирщик сказал вам : '%0'" value="Рыжий трактирщик уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Седой воин сказал вам : '%0'" value="Седой воин уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Странствующий торговец сказал вам : '%0'" value="Странствующий торговец уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Толстый хозяин харчевни сказал вам : '%0'" value="Странствующий торговец уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Молодая травница сказала вам : '%0'" value="Молодая травница уведомила вас : '%0'" group="npcActions"/>
+    <sub key="^Дочка ведуньи сказала вам : '%0'" value="Дочка ведуньи уведомила вас : '%0'" group="npcActions"/>
+    <sub key="^Чернобородый кузнец сказал вам : '%0'" value="Чернобородый кузнец уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Княгиня сказала вам : '%0'" value="Княгиня уведомила вас : '%0'" group="npcActions"/>
+    <sub key="^Старая ведунья сказала вам : '%0'" value="Старая ведунья уведомила вас : '%0'" group="npcActions"/>
+    <sub key="^Вышгородский купец сказал вам : '%0'" value="Вышгородский купец уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Индус сказал вам : '%0'" value="Индус уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Торговец сказал вам : '%0'" value="Торговец уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Мудрый иноземец сказал вам : '%0'" value="Мудрый иноземец уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Ждан-коваль сказал вам : '%0'" value="Ждан-коваль уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Молодой цыган сказал вам : '%0'" value="Молодой цыган уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Старый цыган сказал вам : '%0'" value="Старый цыган уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Землемер сказал вам : '%0'" value="Землемер уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Пастух сказал вам : '%0'" value="Пастух уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Отшельник сказал вам : '%0'" value="Отшельник уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Пленник сказал вам : '%0'" value="Пленник уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Седой лесоруб сказал вам : '%0'" value="Седой лесоруб уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Хозяин заведения сказал вам : '%0'" value="Хозяин заведения уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Новгородский купчина сказал вам : '%0'" value="Новгородский купчина уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Новгородский кузнец сказал вам : '%0'" value="Новгородский кузнец уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Мужичок-болотник сказал вам : '%0'" value="Мужичок-болотник уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Новгородский лоточник сказал вам : '%0'" value="Новгородский лоточник уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Уставший рыбак сказал вам : '%0'" value="Уставший рыбак уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Хозяйка сказала вам : '%0'" value="Хозяйка уведомила вас : '%0'" group="npcActions"/>
+    <sub key="^Старейшина сказал вам : '%0'" value="Старейшина уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Хромой приказчик сказал вам : '%0'" value="Хромой приказчик уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Ведунья сказала вам : '%0'" value="Ведунья уведомила вас : '%0'" group="npcActions"/>
+    <sub key="^Рыжая девушка сказала вам : '%0'" value="Рыжая девушка уведомила вас : '%0'" group="npcActions"/>
+    <sub key="^Бабка Прасковья сказала вам : '%0'" value="Бабка Прасковья уведомила вас : '%0'" group="npcActions"/>
+    <sub key="^Древняя старуха сказала вам : '%0'" value="Древняя старуха уведомила вас : '%0'" group="npcActions"/>
+    <sub key="^Трактирщик сказал вам : '%0'" value="Трактирщик уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Ремесленник сказал вам : '%0'" value="Ремесленник уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Слепой ведун сказал вам : '%0'" value="Слепой ведун уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Серьезный тучный купец с проседью в волосах сказал вам : '%0'" value="Серьезный тучный купец с проседью в волосах уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Веселый корчмарь Горазд сказал вам : '%0'" value="Веселый корчмарь Горазд уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Мудрый седовласый знахарь сказал вам : '%0'" value="Мудрый седовласый знахарь уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Мастер кузнечного дела сказал вам : '%0'" value="Мастер кузнечного дела уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Старик Финн сказал вам : '%0'" value="Старик Финн уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Корчмарь Федул сказал вам : '%0'" value="Корчмарь Федул уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Аука сказал вам : '%0'" value="Аука уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Микула-лавочник сказал вам : '%0'" value="Микула-лавочник уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Толстый кабатчик сказал вам : '%0'" value="Толстый кабатчик уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Кожевник сказал вам : '%0'" value="Кожевник уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Паромщик сказал вам : '%0'" value="Паромщик уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Кузнец Своята сказал вам : '%0'" value="Кузнец Своята уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Аксений сказал вам : '%0'" value="Аксений уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Знахарь сказал вам : '%0'" value="Знахарь уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Ученик кузнеца сказал вам : '%0'" value="Ученик кузнеца уведомил вас : '%0'" group="npcActions"/>
+    <sub key="^Торговец снедью сказал вам : '%0'" value="Торговец снедью уведомил вас : '%0'" group="npcActions"/>
+  </subs>
+  <asubs/>
+  <gags>
+    <gag key="Вы желаете, чтобы ваши раны не кровоточили так %%!" group="default"/>
+    <gag key="^Снежный ковер лежит у вас под ногами." group="default"/>
+    <gag key="^Вы занялись переливанием %% в %% с %%." group="default"/>
+    <gag key="^Вы просто увязаете в грязи." group="default"/>
+    <gag key="^У вас под ногами %% толстый лед." group="default"/>
+    <gag key="^Тоненький ледок вот-вот проломится под вами." group="default"/>
+    <gag key="^Вы не можете это 'отпереть'." group="default"/>
+    <gag key="^Вы никогда не сможете отпереть это!" group="default"/>
+    <gag key="^А вы уже стоите." group="default"/>
+    <gag key="^Вооружиться чем?" group="default"/>
+    <gag key="^Вы не видите ничего похожего на %%" group="default"/>
+    <gag key="^У вас нет ничего похожего на %%" group="default"/>
+    <gag key="^Что вы хотите взять?" group="default"/>
+    <gag key="^Вы не видите здесь '%%'." group="default"/>
+    <gag key="^Вы бросили труп %%." group="default"/>
+    <gag key="^Вы подняли %%." group="default"/>
+    <gag key="^Труп %% пуст." group="default"/>
+    <gag key="^%0 поднял%% труп %%." group="default"/>
+    <gag key="^%0 бросил%% труп %%." group="default"/>
+    <gag key="^У вас нет 'труп'." group="default"/>
+    <gag key="^Вы не видите 'труп'." group="default"/>
+    <gag key="^Вы выпили %% из %% зельем." group="default"/>
+    <gag key="^Вы почувствовали себя немножко лучше." group="default"/>
+    <gag key="^На КОГО Вы хотите ЭТО колдовать?" group="default"/>
+    <gag key="^Тяжеловато найти цель вашего заклинания!" group="default"/>
+    <gag key="^Вы полностью насытились." group="default"/>
+    <gag key="^Вы взяли %% из %%." group="default"/>
+    <gag key="^Вы положили %% в %%." group="default"/>
+    <gag key="^%% положил%% %% в %%." group="default"/>
+    <gag key="^%% взял%% %% из %%." group="default"/>
+    <gag key="^Наконец ваши занятия окончены. Вы с улыбкой захлопнули свой часослов." group="default"/>
+    <gag key="^Вы дописали заклинание %% в свой часослов." group="default"/>
+    <gag key="^%% надел%% %% вокруг %%." group="default"/>
+    <gag key="^%% надел%% %% на %%." group="default"/>
+    <gag key="^%% водрузил%% %% на %%." group="default"/>
+    <gag key="^%% облачил%% в %%." group="default"/>
+    <gag key="^%% обул%% %%." group="default"/>
+    <gag key="^%% прекратил%% использовать %%." group="default"/>
+    <gag key="^Божественная сила покинула тело %%." group="default"/>
+    <gag key="^%% свет озарил %%, наполнив тело божественной силой." group="default"/>
+    <gag key="^%% на %% потускнел%% и угас%% - колдовская сила покинула %%." group="default"/>
+    <gag key="^%% засиял на %% и %% наполнила колдовская сила." group="default"/>
+    <gag key="^Вы никогда не сможете открыть это!" group="default"/>
+    <gag key="^Вы не можете это 'открыть'." group="default"/>
+    <gag key="^Двойник %% вспыхнул и рассыпался в прах." group="fight"/>
+    <gag key="^Удар двойника %% прошел мимо %%." group="fight"/>
+    <gag key="^%% сумел%% избежать удара двойника %%." group="fight"/>
+    <gag key="^Двойник %% сумел избежать удара %%." group="fight"/>
+    <gag key="^Двойник %% закричал от боли, когда в него попала молния, пущенная %%" group="fight"/>
+    <gag key="^%% ударил%% двойника %%." group="fight"/>
+    <gag key="^Двойник %% ударил %%." group="fight"/>
+    <gag key="^%% лягнул%% двойника %%." group="fight"/>
+    <gag key="^%% укусил%% двойника %%." group="fight"/>
+    <gag key="^%% попытал%% %% двойника %%, но %%." group="fight"/>
+    <gag key="^%% боднул%% двойника %%." group="fight"/>
+    <gag key="^%% не вынес%% такого удара и скончал%% на месте." group="fight"/>
+    <gag key=" Похоже, что %% не выдержал%% удара и погиб%%." group="fight"/>
+    <gag key="^Доспехи %% полностью поглотили удар двойника %%." group="fight"/>
+    <gag key="^%% насмерть. Бедный %%!" group="fight"/>
+    <gag key="^В %% попал каменный луч, исходящий от %%." group="fight"/>
+    <gag key="^Вдруг над головой %% возникла яркая вспышка." group="fight"/>
+    <gag key="^На мгновение %% исчезл%% из поля зрения противника." group="fight"/>
+    <gag key="^%% отклонил %% атаку" group="fight"/>
+    <gag key="^%% не сумел уклониться от %% атаки" group="fight"/>
+    <gag key="^%% испустил поток жаркого багрового пламени!" group="fight"/>
+    <gag key="^Меткое попадание %% тяжело ранило %%." group="fight"/>
+    <gag key="^Шаровая молния, посланная %%, ударила %% в лицо.." group="fight"/>
+    <gag key="^Доспехи %% полностью поглотили %% удар." group="fight"/>
+    <gag key="^Кровушка стынет в жилах от предсмертного крика %%." group="fight"/>
+    <gag key="^Ваш мощный пинок отправил %% к праотцам." group="fight"/>
+    <gag key="^Вы отвесили %% смачного пинка. Больше %% ничего не понадобится." group="fight"/>
+    <gag key="^Вы невольно взглянули на вспышку света, вызванную %%, и ваши глаза заслезились." group="fight"/>
+    <gag key="^%% удовлетворенно потер руки - его огненный шар опалил %%!" group="fight"/>
+    <gag key="^Вас окружило пламя огненного шара, выпущенного %%!" group="fight"/>
+    <gag key="^Огненный шар %% накрыл %%." group="fight"/>
+    <gag key="^%% не смог%% блокировать попытку %% сбить %%." group="fight"/>
+    <gag key="^Кислота, которой плеснул%% %%, покрыла %% с головы до пят." group="fight"/>
+    <gag key="^Вы встретились взглядом с %%, и у вас появилось ощущение, что горлу чего-то не хватает." group="fight"/>
+    <gag key="^%% поднял%% руки к небу и оно осветилось яркими вспышками!" group="fight"/>
+    <gag key="^%% сплел%% руки в замысловатом жесте, и все потускнело!" group="fight"/>
+    <gag key="^%% указал%% на %% обвиняющим жестом, заставив е%% содрогнуться." group="fight"/>
+    <gag key="^%% опустил%% руки, и земля задрожала!" group="fight"/>
+    <gag key="^%% вызвал%% землетрясение, в результате которого %% был%% ранен%%." group="fight"/>
+    <gag key="^%% зашатал%%, пытаясь удержать равновесие." group="fight"/>
+    <gag key="^%% издал%% непонятный звук." group="fight"/>
+    <gag key="^%% не смог%% перехватить %%." group="fight"/>
+    <gag key="^%% окутал %% щит." group="fight"/>
+  </gags>
+  <highlights>
+    <highlight key="^%% -флик- %%." value="txt[75,180,255],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="^%% --- %%." value="txt[75,180,255],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="^%% +++ %%." value="txt[75,255,195],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ фейл баш ]-&gt;" value="txt[210,180,30],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ фейл трип ]-&gt;" value="txt[210,180,30],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ БАШ ]-&gt;" value="txt[255,240,0],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ ТРИП ]-&gt;" value="txt[255,240,0],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ МОЛОТ ]-&gt;" value="txt[255,240,0],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ ОГЛУШ-сбил ]-&gt;" value="txt[255,240,0],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ ОГЛУШ ]-&gt;" value="txt[255,240,0],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ ЗАМЕР ]-" value="txt[235,55,255],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ ГНЕВ ]-&gt;" value="txt[255,65,135],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="-[ ХИЛ ]-" value="txt[60,255,35],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="%% -[ зеркало ]-&gt; %%" value="txt[255,180,255],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="%% -[ УМЕР ]- %%" value="txt[0,185,160],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="( ЗБ )" value="txt[255,255,255],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+    <highlight key="^%% уведомил%% вас : '%%'" value="txt[83,139,172],bkg[28,28,36],ubi[0,0,0]" group="default"/>
+    <highlight key="^Аукцион : %%" value="txt[83,139,172],bkg[28,28,36],ubi[0,0,0]" group="default"/>
+    <highlight key="^Базар : %%" value="txt[83,139,172],bkg[28,28,36],ubi[0,0,0]" group="default"/>
+    <highlight key="^%% сообщил%% группе : '%%'" value="txt[105,95,190],bkg[28,28,36],ubi[0,0,0]" group="default"/>
+    <highlight key="[system] %%" value="txt[0,128,255],bkg[20,30,30],ubi[0,0,0]" group="default"/>
+  </highlights>
+  <timers>
+    <timer key="1" value="1;группа" group="autoBotKler"/>
+  </timers>
+  <groups>
+    <group key="default" value="1"/>
+    <group key="warlock" value="1"/>
+    <group key="PK" value="1"/>
+    <group key="fight" value="1"/>
+    <group key="casts" value="1"/>
+    <group key="npcActions" value="1"/>
+    <group key="autoBotKler" value="1"/>
+    <group key="autoBotMovement" value="0"/>
+    <group key="autoBotHeal" value="1"/>
+    <group key="init" value="0"/>
+    <group key="loot" value="0"/>
+    <group key="off" value="0"/>
+    <group key="kvest" value="0"/>
+  </groups>
+  <tabwords/>
+  <variables>
+    <var key="pkActionAgro" value="колдовать *$kastMassStun*;"/>
+    <var key="pkCurrentTarget" value=""/>
+    <var key="pkTarget01" value=""/>
+    <var key="pkTarget02" value=""/>
+    <var key="pkTarget03" value=""/>
+    <var key="pkTarget04" value=""/>
+    <var key="pkTarget05" value=""/>
+    <var key="pkTarget06" value=""/>
+    <var key="pkTarget07" value=""/>
+    <var key="pkTarget08" value=""/>
+    <var key="pkTarget09" value=""/>
+    <var key="pkTarget10" value=""/>
+    <var key="pkTarget11" value=""/>
+    <var key="pkTarget12" value=""/>
+    <var key="svitokHeal" value="свиток.заморск"/>
+    <var key="svitokKrit" value="подорожник"/>
+    <var key="dressBackpack" value="сумка.мастера"/>
+    <var key="dressBody" value="прочный.доспех.каракурта"/>
+    <var key="dressChest" value="амулет.хозяюшки."/>
+    <var key="dressCorset" value="темные.крылья."/>
+    <var key="dressDouble" value=""/>
+    <var key="dressDukes" value="перчатки.из.чешуи"/>
+    <var key="dressFeet" value="прозрачные.сапожки."/>
+    <var key="dressFingerL" value="зеленое.кольцо."/>
+    <var key="dressFingerR" value="кольцо.с.сапфиром"/>
+    <var key="dressHands" value="рукава.из.паутины"/>
+    <var key="dressHead" value="шапка.колдуньи."/>
+    <var key="dressLegs" value="племенные.штаны.знахаря"/>
+    <var key="dressLight" value=""/>
+    <var key="dressNeck" value="бисерное.ожерелье."/>
+    <var key="dressOff" value="череп.пуст"/>
+    <var key="dressPrime" value="паучья.трость."/>
+    <var key="dressShield" value=""/>
+    <var key="dressShoulders" value="туманный.панцирь.предков"/>
+    <var key="dressSunk" value="резное.зап"/>
+    <var key="dressUnsunk" value="ус.морж"/>
+    <var key="dressWristL" value="резное.запястье."/>
+    <var key="dressWristR" value="амулет.с.хвост"/>
+    <var key="partyMember01" value="Шелди"/>
+    <var key="partyMember02" value=""/>
+    <var key="partyMember03" value=""/>
+    <var key="partyMember04" value="Ухмыл"/>
+    <var key="partyMember05" value=""/>
+    <var key="partyMember06" value=""/>
+    <var key="partyMember07" value=""/>
+    <var key="partyMember08" value=""/>
+    <var key="partyMember09" value=""/>
+    <var key="partyMember10" value=""/>
+    <var key="partyMember11" value=""/>
+    <var key="partyMember12" value=""/>
+    <var key="partyTank" value="Ухмыл"/>
+    <var key="partyDoll" value="Ухмыл"/>
+    <var key="partyMaster" value="Годна"/>
+    <var key="personName" value="Шерил"/>
+    <var key="metkaAntidot" value="антидот"/>
+    <var key="metkaFresh" value="фреш"/>
+    <var key="metkaAlko" value="бухло"/>
+    <var key="kastй" value="оцепенение"/>
+    <var key="kastц" value="гнев богов"/>
+    <var key="kastу" value="огненный шар"/>
+    <var key="kastк" value=""/>
+    <var key="kastе" value="метеоритный дождь"/>
+    <var key="kastн" value="камнепад"/>
+    <var key="kastг" value=""/>
+    <var key="kastш" value="кислота"/>
+    <var key="kastщ" value="шаровая молния"/>
+    <var key="kastз" value="молния"/>
+    <var key="kastх" value="обжигающая хватка"/>
+    <var key="kastъ" value="горящие руки"/>
+    <var key="kastф" value=""/>
+    <var key="kastы" value=""/>
+    <var key="kastв" value=""/>
+    <var key="kastа" value=""/>
+    <var key="kastп" value=""/>
+    <var key="kastр" value=""/>
+    <var key="kastо" value=""/>
+    <var key="kastл" value=""/>
+    <var key="kastд" value=""/>
+    <var key="kastж" value=""/>
+    <var key="kastэ" value=""/>
+    <var key="kastя" value=""/>
+    <var key="kastч" value=""/>
+    <var key="kastс" value=""/>
+    <var key="kastм" value=""/>
+    <var key="kastи" value=""/>
+    <var key="kastт" value=""/>
+    <var key="kastь" value=""/>
+    <var key="kastб" value="создать свет"/>
+    <var key="kastю" value="опр.магии"/>
+    <var key="kast." value="видеть невидимое"/>
+    <var key="kast\" value="полет"/>
+    <var key="kast36" value="сила"/>
+    <var key="kast37" value="защита"/>
+    <var key="kast38" value="инвиз"/>
+    <var key="kast39" value="развеять магию"/>
+    <var key="kast40" value="клонирование"/>
+    <var key="kastAgro" value="огненный шар"/>
+    <var key="kastMassAgro" value="метеоритный дождь"/>
+    <var key="kastMassStun" value="ледяной шторм"/>
+    <var key="kastStun" value="оцепенение"/>
+    <var key="kastHeal" value="исцеление"/>
+    <var key="kastGroupHeal" value="групповое исцеление"/>
+  </variables>
+  <messages>
+    <actions value="0"/>
+    <aliases value="0"/>
+    <subs value="0"/>
+    <antisubs value="0"/>
+    <hotkeys value="0"/>
+    <highlights value="0"/>
+    <gags value="0"/>
+    <groups value="0"/>
+    <vars value="0"/>
+    <timers value="0"/>
+    <tabwords value="0"/>
+  </messages>
+  <displays>
+    <display width="1920" height="1200">
+      <mainwindow left="320" right="1848" top="197" bottom="1035" fullscreen="0"/>
+      <findwindow left="200" right="584" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="1367" right="1717" top="218" bottom="540" side="4" lastside="4" width="350" height="322"/>
+        <window name="Окно 2" left="853" right="1655" top="384" bottom="714" side="5" lastside="4" width="802" height="330"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="jmc3import.dll" value="1"/>
+        <plugin key="historyfilter.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="statusbar.lua" value="1"/>
+        <plugin key="reconnect.lua" value="0"/>
+        <plugin key="colorgamecmd.lua" value="1"/>
+        <plugin key="clickpad.dll" value="2">
+          <windows>
+            <window name="Игровая панель Clickpad" left="108" right="192" top="1015" bottom="1122" side="4" lastside="4" width="84" height="107"/>
+            <window name="Настройки Clickpad" left="192" right="860" top="299" bottom="697" side="5" lastside="5" width="668" height="398"/>
+            <window name="Иконка для кнопки" left="200" right="780" top="350" bottom="850" side="5" lastside="5" width="580" height="500"/>
+          </windows>
+        </plugin>
+        <plugin key="tray.dll" value="1"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="affects.lua" value="1"/>
+        <plugin key="faq.lua" value="2"/>
+        <plugin key="bmap.lua" value="1">
+          <windows>
+            <window name="Автокарта Былин" left="1327" right="1658" top="542" bottom="842" side="4" lastside="4" width="331" height="300"/>
+          </windows>
+        </plugin>
+        <plugin key="autosbor.lua" value="0"/>
+        <plugin key="autoalias.lua" value="2"/>
+        <plugin key="autoresc.lua" value="2"/>
+        <plugin key="bell.lua" value="2"/>
+        <plugin key="bellcmd.lua" value="1"/>
+        <plugin key="cmdfilter.lua" value="1"/>
+        <plugin key="enterb.lua" value="2"/>
+        <plugin key="generic.lua" value="2"/>
+        <plugin key="helpers.lua" value="2"/>
+        <plugin key="inveq.lua" value="0"/>
+        <plugin key="lor.lua" value="0"/>
+        <plugin key="mapper.dll" value="2"/>
+        <plugin key="miner.lua" value="2"/>
+        <plugin key="msdpmapper.lua" value="2"/>
+        <plugin key="pcrecalc.dll" value="2"/>
+        <plugin key="send.lua" value="2"/>
+        <plugin key="sound.dll" value="2"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="spit.lua" value="2"/>
+        <plugin key="status.lua" value="1"/>
+        <plugin key="tick.lua" value="1">
+          <windows>
+            <window name="Тик" left="245" right="325" top="945" bottom="1025" side="4" lastside="4" width="80" height="80"/>
+          </windows>
+        </plugin>
+        <plugin key="timeline.lua" value="2"/>
+        <plugin key="trswitch.lua" value="2"/>
+        <plugin key="voice.lua" value="2"/>
+        <plugin key="write.lua" value="2"/>
+        <plugin key="testPlugin.lua" value="2"/>
+      </plugins>
+    </display>
+    <display width="1920" height="1080">
+      <mainwindow left="240" right="1680" top="135" bottom="945" fullscreen="0"/>
+      <findwindow left="200" right="648" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="87" right="524" top="87" bottom="337" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 2" left="174" right="611" top="174" bottom="424" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 3" left="261" right="698" top="261" bottom="511" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 4" left="348" right="785" top="348" bottom="598" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 5" left="435" right="872" top="435" bottom="685" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 6" left="522" right="959" top="522" bottom="772" side="5" lastside="4" width="437" height="250"/>
+      </windows>
+      <plugins>
+        <plugin key="jmc3import.dll" value="1"/>
+        <plugin key="historyfilter.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="statusbar.lua" value="1"/>
+        <plugin key="reconnect.lua" value="0"/>
+        <plugin key="colorgamecmd.lua" value="1"/>
+        <plugin key="clickpad.dll" value="2"/>
+        <plugin key="tray.dll" value="1"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="affects.lua" value="1"/>
+        <plugin key="faq.lua" value="2"/>
+        <plugin key="bmap.lua" value="1">
+          <windows>
+            <window name="Автокарта Былин" left="1260" right="1635" top="394" bottom="769" side="4" lastside="4" width="375" height="375"/>
+          </windows>
+        </plugin>
+        <plugin key="autosbor.lua" value="0"/>
+        <plugin key="autoalias.lua" value="2"/>
+        <plugin key="autoresc.lua" value="2"/>
+        <plugin key="bell.lua" value="2"/>
+        <plugin key="bellcmd.lua" value="1"/>
+        <plugin key="cmdfilter.lua" value="2"/>
+        <plugin key="enterb.lua" value="2"/>
+        <plugin key="generic.lua" value="2"/>
+        <plugin key="helpers.lua" value="2"/>
+        <plugin key="inveq.lua" value="0"/>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="mapper.dll" value="2"/>
+        <plugin key="miner.lua" value="2"/>
+        <plugin key="msdpmapper.lua" value="2"/>
+        <plugin key="pcrecalc.dll" value="2"/>
+        <plugin key="send.lua" value="2"/>
+        <plugin key="sound.dll" value="2"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="spit.lua" value="2"/>
+        <plugin key="status.lua" value="1"/>
+        <plugin key="tick.lua" value="1">
+          <windows>
+            <window name="Тик" left="100" right="200" top="250" bottom="350" side="4" lastside="4" width="100" height="100"/>
+          </windows>
+        </plugin>
+        <plugin key="timeline.lua" value="2"/>
+        <plugin key="trswitch.lua" value="2"/>
+        <plugin key="voice.lua" value="2"/>
+        <plugin key="write.lua" value="2"/>
+        <plugin key="testPlugin.lua" value="2"/>
+      </plugins>
+    </display>
+    <display width="6400" height="1800">
+      <mainwindow left="4252" right="6188" top="656" bottom="1694" fullscreen="0"/>
+      <findwindow left="200" right="648" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="5734" right="6171" top="784" bottom="1034" side="4" lastside="4" width="437" height="250"/>
+        <window name="Окно 2" left="174" right="611" top="174" bottom="424" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 3" left="261" right="698" top="261" bottom="511" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 4" left="348" right="785" top="348" bottom="598" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 5" left="435" right="872" top="435" bottom="685" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 6" left="522" right="959" top="522" bottom="772" side="5" lastside="4" width="437" height="250"/>
+      </windows>
+      <plugins>
+        <plugin key="jmc3import.dll" value="1"/>
+        <plugin key="historyfilter.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="statusbar.lua" value="1"/>
+        <plugin key="reconnect.lua" value="0"/>
+        <plugin key="colorgamecmd.lua" value="1"/>
+        <plugin key="clickpad.dll" value="2"/>
+        <plugin key="tray.dll" value="1"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="affects.lua" value="1"/>
+        <plugin key="faq.lua" value="2"/>
+        <plugin key="bmap.lua" value="1">
+          <windows>
+            <window name="Автокарта Былин" left="5774" right="6149" top="1031" bottom="1406" side="4" lastside="4" width="375" height="375"/>
+          </windows>
+        </plugin>
+        <plugin key="autosbor.lua" value="0"/>
+        <plugin key="autoalias.lua" value="2"/>
+        <plugin key="autoresc.lua" value="2"/>
+        <plugin key="bell.lua" value="2"/>
+        <plugin key="bellcmd.lua" value="1"/>
+        <plugin key="cmdfilter.lua" value="2"/>
+        <plugin key="enterb.lua" value="2"/>
+        <plugin key="generic.lua" value="2"/>
+        <plugin key="helpers.lua" value="2"/>
+        <plugin key="inveq.lua" value="0"/>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="mapper.dll" value="2"/>
+        <plugin key="miner.lua" value="2"/>
+        <plugin key="msdpmapper.lua" value="2"/>
+        <plugin key="pcrecalc.dll" value="2"/>
+        <plugin key="send.lua" value="2"/>
+        <plugin key="sound.dll" value="2"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="spit.lua" value="2"/>
+        <plugin key="status.lua" value="1"/>
+        <plugin key="tick.lua" value="1">
+          <windows>
+            <window name="Тик" left="4117" right="4217" top="1548" bottom="1648" side="4" lastside="4" width="100" height="100"/>
+          </windows>
+        </plugin>
+        <plugin key="timeline.lua" value="2"/>
+        <plugin key="trswitch.lua" value="2"/>
+        <plugin key="voice.lua" value="2"/>
+        <plugin key="write.lua" value="2"/>
+        <plugin key="testPlugin.lua" value="2"/>
+      </plugins>
+    </display>
+    <display width="3840" height="1200">
+      <mainwindow left="2315" right="3755" top="138" bottom="948" fullscreen="0"/>
+      <findwindow left="200" right="584" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="70" right="420" top="70" bottom="270" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 2" left="140" right="490" top="140" bottom="340" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="jmc3import.dll" value="1"/>
+        <plugin key="historyfilter.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="statusbar.lua" value="1"/>
+        <plugin key="reconnect.lua" value="1"/>
+        <plugin key="colorgamecmd.lua" value="1"/>
+        <plugin key="clickpad.dll" value="2"/>
+        <plugin key="tray.dll" value="1"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="affects.lua" value="1"/>
+        <plugin key="faq.lua" value="2"/>
+        <plugin key="bmap.lua" value="1">
+          <windows>
+            <window name="Автокарта Былин" left="1293" right="1593" top="416" bottom="716" side="4" lastside="4" width="300" height="300"/>
+          </windows>
+        </plugin>
+        <plugin key="autosbor.lua" value="0"/>
+        <plugin key="autoalias.lua" value="2"/>
+        <plugin key="autoresc.lua" value="2"/>
+        <plugin key="bell.lua" value="2"/>
+        <plugin key="bellcmd.lua" value="1"/>
+        <plugin key="cmdfilter.lua" value="2"/>
+        <plugin key="enterb.lua" value="2"/>
+        <plugin key="generic.lua" value="2"/>
+        <plugin key="helpers.lua" value="2"/>
+        <plugin key="inveq.lua" value="0"/>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="mapper.dll" value="2"/>
+        <plugin key="miner.lua" value="2"/>
+        <plugin key="msdpmapper.lua" value="2"/>
+        <plugin key="pcrecalc.dll" value="2"/>
+        <plugin key="send.lua" value="2"/>
+        <plugin key="sound.dll" value="2"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="spit.lua" value="2"/>
+        <plugin key="status.lua" value="1"/>
+        <plugin key="tick.lua" value="1">
+          <windows>
+            <window name="Тик" left="100" right="180" top="250" bottom="330" side="4" lastside="4" width="80" height="80"/>
+          </windows>
+        </plugin>
+        <plugin key="timeline.lua" value="2"/>
+        <plugin key="trswitch.lua" value="2"/>
+        <plugin key="voice.lua" value="2"/>
+        <plugin key="write.lua" value="2"/>
+        <plugin key="testPlugin.lua" value="2"/>
+      </plugins>
+    </display>
+  </displays>
+</profile>

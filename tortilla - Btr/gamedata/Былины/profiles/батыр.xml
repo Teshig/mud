@@ -1,0 +1,1238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+  <viewsize value="3000"/>
+  <cmdsize value="500"/>
+  <systemcmds value="0"/>
+  <newlinecmds value="0"/>
+  <clearbar value="1"/>
+  <disableya value="0"/>
+  <disableosc value="1"/>
+  <historytab value="1"/>
+  <plogs value="1"/>
+  <plogswnd value="0"/>
+  <softscroll value="0"/>
+  <unknowncmd value="0"/>
+  <anyfont value="0"/>
+  <disablealt value="1"/>
+  <tray value="0"/>
+  <disablemccp value="0"/>
+  <codepage value="win"/>
+  <logformat value="txt"/>
+  <prompt value="0"/>
+  <ptemplate value=""/>
+  <rebar value="2;60160;168;1;1;60161;131;1;1;"/>
+  <colors>
+    <color id="background" r="0" g="0" b="0"/>
+    <color id="0" r="64" g="64" b="64"/>
+    <color id="1" r="128" g="0" b="0"/>
+    <color id="2" r="0" g="128" b="0"/>
+    <color id="3" r="128" g="128" b="0"/>
+    <color id="4" r="0" g="64" b="128"/>
+    <color id="5" r="128" g="0" b="128"/>
+    <color id="6" r="0" g="128" b="128"/>
+    <color id="7" r="192" g="192" b="192"/>
+    <color id="8" r="128" g="128" b="128"/>
+    <color id="9" r="255" g="0" b="0"/>
+    <color id="10" r="0" g="255" b="0"/>
+    <color id="11" r="255" g="255" b="0"/>
+    <color id="12" r="0" g="128" b="255"/>
+    <color id="13" r="255" g="0" b="255"/>
+    <color id="14" r="0" g="255" b="255"/>
+    <color id="15" r="255" g="255" b="255"/>
+  </colors>
+  <font italic="0" bold="400" height="12" name="Consolas"/>
+  <actions>
+    <action key="Но никто не сражается с Иризарой!" value="#drop" group="default"/>
+    <action key="Иризара медленно появилась из пустоты." value="пом ириз;моло" group="default"/>
+    <action key="Зауч:0 [Тормунд:Тяжело ранен] [" value="рек" group="default"/>
+    <action key="%0 сообщил%0 группе : 'рек'" value="рек" group="default"/>
+    <action key="Вы присоединились к битве, помогая" value="моло;#drop" group="default"/>
+    <action key="С вас содрали %0 кун за постой" value="лут1;осм сум" group="default"/>
+    <action key="%0 отдал%0 приказ." value="пом;моло;#drop" group="default"/>
+    <action key="%0 сообщил%0 группе : 'Тормунд %0'" value="%0" group="default"/>
+    <action key="%0 сказал%1 вам : 'след'" value="след %0;прикры %0" group="default"/>
+    <action key="Вы попытаетесь нанести богатырский удар по" value="#drop" group="default"/>
+    <action key="Невозможно. Вы сражаетесь сами." value="#drop" group="default"/>
+    <action key="Кому вы хотите помочь?" value="#drop" group="default"/>
+    <action key="Минул час." value="клич отва" group="default"/>
+    <action key=". Вы чувствуете себя Иудой!" value="пом;моло" group="default"/>
+    <action key="героически спас Годну!" value="пом;моло" group="default"/>
+    <action key="Ваш опыт повысился на " value="пом;моло" group="default"/>
+    <action key="Годна отдала приказ." value="пом;#drop" group="default"/>
+    <action key="Вы встали." value="молот" group="default"/>
+    <action key="Кого вы хотите СИЛЬНО ударить?" value="#drop" group="default"/>
+    <action key="Действие клича отваги закончилось." value="клич отва" group="default"/>
+    <action key="Вы СИЛЬНО ударили себя. Но вы и не спали." value="й 2.т" group="default"/>
+    <action key="Черный муравей ползет за очередной ношей." value="й мур" group="агр"/>
+    <action key="Ваш богатырский удар пошатнул %0." value="моло" group="default"/>
+    <action key="Ваш богатырский удар сотряс %0." value="моло" group="default"/>
+    <action key="Ваш богатырский удар пропал впустую." value="моло" group="default"/>
+    <action key="Ваш богатырский удар задел %0." value="моло" group="default"/>
+    <action key="Десятник стражи обходит вверенный ему участок поместья." value="й дес" group="default"/>
+    <action key="Оруженосец отдыхает здесь. " value="й ору" group="default"/>
+    <action key="Повар бегает тут, следя за обедом." value="й пов" group="default"/>
+    <action key="Статный мужчина стоит здесь, рассматривая клинок." value="й стра" group="default"/>
+    <action key="Служанка бежит за боярыней." value="й служ" group="default"/>
+    <action key="Боярская дочка Лагода скучая бродит по дому" value="й доч" group="default"/>
+    <action key="Согнувшийся в поклоне слуга семенит тут." value="й слу" group="default"/>
+    <action key="Стражник стоит здесь, проверяя свой самострел." value="й стра" group="default"/>
+    <action key="Здоровенный мужик с деревянной ногой стоит за стойкой." value="й трак" group="default"/>
+    <action key="Взрослый вор небрежно вертит в руках кубок вина, обдумывая очередное дело." value="й вор" group="default"/>
+    <action key="Веселый шулер предлагает сыграть в кости на интерес." value="й шул" group="default"/>
+    <action key="Грустный человек в рваном плаще уставился в свой кувшин." value="й вор" group="default"/>
+    <action key="Сильно поддатый вор сидит за столом." value="й вор" group="default"/>
+    <action key="Ловкий вор высматривает чужаков." value="й вор" group="default"/>
+    <action key="Лесоруб сидит здесь." value="й лес" group="default"/>
+    <action key="Здоровый мужичина с топором наперевес." value="й лес" group="default"/>
+    <action key="Тать спрятался в кустах." value="й ашу" group="default"/>
+    <action key="Искоростенский купец мечтательно уставился вдаль." value="й куп" group="default"/>
+    <action key="Старшина возглавляет дозор древлян близ Искоростеня." value="й стар" group="default"/>
+    <action key="Витязь-древлянин служит в дозоре." value="й вит" group="default"/>
+    <action key="Разбойничий атаман стоит здесь, готовясь напасть." value="й атам" group="default"/>
+    <action key="Дозорный разбойник зорко осматривает округу." value="й раз" group="default"/>
+    <action key="Синюшная нежить плавает здесь." value="й неж" group="default"/>
+    <action key="Дозорный страж купеческого дома внимательно смотрит вдаль." value="й доз" group="default"/>
+    <action key="Устрашающего вида волот-богатырь охраняет ворота." value="й вол" group="default"/>
+    <action key="Тень разрубленного пополам воина мстит за прошлую жизнь." value="й разру;й тень;й тень;й тень;" group="default"/>
+    <action key="Слуга с ужасом оглядывается по сторонам." value="й слу" group="default"/>
+    <action key="Душегуб сидит здесь. " value="й душе" group="default"/>
+    <action key="Болотный упырь сказал : 'Я сейчас к себе в трясину еще кое за чем схожу.'" value="й упы" group="default"/>
+    <action key="Хмурый дозорный воин прохаживается по периметру лагеря." value="й дозо" group="default"/>
+    <action key="Живой труп ходит здесь." value="й жив" group="default"/>
+    <action key="Полупрозрачный силуэт женщины медленно проплывает мимо Вас." value="й приз" group="default"/>
+    <action key="Половец-охранник стоит тут, сторожа пленников." value="й пол" group="default"/>
+    <action key="Десятник проходит тут, следя за порядком в лагере." value="й дес" group="default"/>
+    <action key="Нукер батыра сидит тут, оберегая покой господина." value="й нук" group="default"/>
+    <action key="Половец-стражник стоит тут, охраняя проход." value="й пол" group="default"/>
+    <action key="Напившийся до беспамятства разбойник спит здесь." value="й пья" group="default"/>
+    <action key="Тэйсацу, незаметно как тень крадется у Вас за спиной." value="й тэй" group="default"/>
+    <action key="Смешной медведь в доспехах русского богатыря лениво почесывает бок." value="й мед" group="default"/>
+    <action key="Веселая лиса в кожаных одеждах лукаво играет глазками." value="й лис" group="default"/>
+    <action key="Серый волк докуривает здесь свой окурок." value="й вол" group="default"/>
+    <action key="Черный заяц в тяжелом доспехе дружинника грызет семечки." value="й зая" group="default"/>
+    <action key="Грустный прусский страж бродит по коридорам замка." value="й пру" group="default"/>
+    <action key="Несчастный каженник бродит по лесу в поисках себя." value="й каж" group="default"/>
+    <action key="Утопший купец с горя напивается тут." value="й куп" group="default"/>
+    <action key="Одурманенный гость смотрит вокруг блуждающим взглядом." value="й гос" group="default"/>
+    <action key="Мощный мужик в мясницком фартуке сшивает куски тел." value="й черн" group="default"/>
+    <action key="Мастер-убийца ждет приказа главы." value="й душ" group="default"/>
+    <action key="Сморщенный старикашка в дурацком колпаке со звездочками потягивает какое-то зелье из склянки." value="й колд" group="default"/>
+    <action key="Раненый рыцарь безропотно переносит боль." value="й ран" group="default"/>
+    <action key="Крупный поджарый пес в черных пятнах крутится под ногами рыцарей, выискивая поживу." value="й пес" group="default"/>
+    <action key="Лучник прищурясь смотрит на Вас." value="й луч" group="default"/>
+    <action key="Рыцарь мучающийся расстройством желудка жалобно постанывает." value="й рыц" group="default"/>
+    <action key="Пехотинец неторопливо проходит мимо, лязгая доспехами." value="й пех" group="default"/>
+    <action key="Полоцкий лесник сказал : 'Отнеси грамотку мою. Тут совсем недалеко. Без награды не останешься!'" value="й поло" group="default"/>
+    <action key="Прусский %0 стоит тут." value="й прус" group="default"/>
+    <action key="Прусский %0 стоит здесь." value="й прус" group="default"/>
+    <action key="Призрак воина со стрелой в горле смотрит не мигающим взглядом на Вас." value="й приз" group="default"/>
+    <action key="Призрак безголового всадника чувствует присутствие живых." value="й приз" group="default"/>
+    <action key="Призрак заживо сожженного волхва складывает руны." value="й приз" group="default"/>
+    <action key="Призрак воина, разрубленного мечом от плеча до пояса, ищет отмщения." value="й приз" group="default"/>
+    <action key="Призрак воина тщетно пытается вынуть копье из своей груди." value="й приз" group="default"/>
+    <action key="Монах-землепашец прохаживается по огороду." value="й мон" group="default"/>
+    <action key="Варяг-лучник не сводит с Вас взгляд." value="й вар" group="default"/>
+    <action key="Норвежец-берсерк с мутными глазами и пеной у рта тупо глядит на Вас." value="й бер" group="default"/>
+    <action key="Большой серый волк не сводит с вас взгляд." value="й волк" group="default"/>
+    <action key="Молодой воин охраняет покой своего хозяина" value="й вои" group="default"/>
+    <action key="Большой богатырь стоит на распутье" value="й бог" group="default"/>
+    <action key="Дозорный мечник крутит в руках свое оружие" value="й меч" group="default"/>
+    <action key="Закованный в броню дружинник обходит сад по периметру." value="й дру" group="default"/>
+    <action key="Панский слуга прохаживается здесь." value="й гайд" group="default"/>
+    <action key="Пьяный утопленник выпивает здесь за здравие морского царя." value="й утоп" group="default"/>
+    <action key="Закованный в латы сэр Валентин уверен в своей непобедимости." value="й вал" group="default"/>
+    <action key="Греческий воин хочет получить награду за победу." value="й грек" group="default"/>
+    <action key="Следопыт кочевник злобно щурится, глядя на вас, или не щурится, кто его разберет." value="й сле" group="default"/>
+    <action key="Варяг жаждет сражения с вами." value="й вар" group="default"/>
+    <action key="Дух паука плетет полупрозрачную паутину" value="й пау" group="default"/>
+    <action key="Разноцветная стрекоза летает тут." value="й стр" group="default"/>
+    <action key="Еж семенит маленькими лапками под вашими ногами." value="й еж" group="default"/>
+    <action key="Худой волк втягивает ноздрями воздух, обнажив свои острые клыки." value="й волк" group="default"/>
+    <action key="Трусливый заяц сидит тут, прижимая уши к земле." value="й зая" group="default"/>
+    <action key="Хитрая лиса, прищурив глаз, осматривается по сторонам." value="й лиса" group="default"/>
+    <action key="Крот с лопатой роет тут нору." value="й кро" group="default"/>
+    <action key="Бдительный охранник стоит тут, сжимая в руках засов от дубовой двери." value="й охр" group="default"/>
+    <action key="Вестник весны жаворонок пролетает над Вами." value="й жав" group="default"/>
+    <action key="Вы слишком устали." value="~;спа;просн" group="default"/>
+    <action key="Карлик рудокоп всю жизнь провел в шахте от того и характер паршивый у него." value="й кар" group="default"/>
+    <action key="Сонный водяник отдыхает тут до весны." value="й сонн" group="default"/>
+    <action key="Голодный худой лев видит в вас сочный кусок мяса." value="й лев" group="default"/>
+    <action key="Больной бешенством лис скалит на вас свои зубы." value="й лис" group="default"/>
+    <action key="Дозорный лучник пристально вслушивается в звуки за стеной." value="й луч" group="default"/>
+    <action key="Широкоплечий кузнец машет здесь огромным молотом" value="й кузн" group="default"/>
+    <action key="Дозорный лучник прохаживается здесь" value="й луч" group="default"/>
+    <action key="Доблестный воин прошлого поднялся из могилы." value="й геро" group="default"/>
+    <action key="Асигару одинаково готов как к своей, так и к чужой смерти." value="й аси" group="default"/>
+    <action key="Громадное количество летунов хочет наброситься на вас." value="й лет" group="default"/>
+    <action key="Большая летучая мышь висит под потолком." value="й мыш" group="default"/>
+    <action key="Маленький болотный  упырь стоит тут." value="й упыренок" group="default"/>
+    <action key="Страшная тварь в обличии паука накинулась на вас!" value="й пау" group="default"/>
+    <action key="Несуразное создание дергает и тянет за веревки." value="й трех" group="default"/>
+    <action key="Костяной дракон, порождение Ужаса, готов разорвать любого по приказу хозяина." value="й драк" group="default"/>
+    <action key="Рыжая крыса копается в грязи." value="й кры" group="default"/>
+    <action key="Рыжий пес злобно скалится на вас." value="й пес" group="default"/>
+    <action key="Привратный воин смотрит на вас косыми ошалелыми глазами." value="й прив" group="default"/>
+    <action key="Чудский ополченец охраняет свое селение от варягов." value="й чуд" group="default"/>
+    <action key="Воин племени чудь с подозрением посматривает на Вас." value="й чуд" group="default"/>
+    <action key="Послушник стоит здесь." value="й послу" group="default"/>
+    <action key="Монах стоит здесь." value="й мон" group="default"/>
+    <action key="Латинский рыцарь стоит здесь." value="й лати" group="default"/>
+    <action key="Оруженосец рыцаря стоит здесь." value="й ору" group="default"/>
+    <action key="Отец-%0 стоит здесь." value="й оте" group="default"/>
+    <action key="Молоденький монашек пробегает мимо." value="й мона" group="default"/>
+    <action key="Повариха стоит здесь, занятая приготовлением обеда." value="й пова" group="default"/>
+    <action key="Кумушка-сватья проходит мимо." value="й куму" group="default"/>
+    <action key="Приказчик проходит мимо, спеша по торговым делам." value="й прик" group="default"/>
+    <action key="Дворовая девка проходит мимо, спеша по поручению хозяйки." value="й дев" group="default"/>
+    <action key="Наемный охранник прохаживается здесь." value="й наем" group="default"/>
+    <action key="Болтливая кумушка стоит здесь, не прочь посплетничать с Вами." value="й кум" group="default"/>
+    <action key="Шустрый поваренок пробегает мимо." value="й пов" group="default"/>
+    <action key="Башковитый разбойничек бредет здесь." value="й разб" group="default"/>
+    <action key="Ходовитый разбойничек подкарауливает свою жертву." value="й разб" group="default"/>
+    <action key="Дозорный разбойничек подкарауливает свою жертву." value="й разб" group="default"/>
+    <action key="Хозяйственный разбойничек занят своими делами." value="й разб" group="default"/>
+    <action key="Хитрая мавка чуть слышно шелестит в лесной пуще." value="й мав" group="default"/>
+    <action key="Пущевик готов предсказать вашу жалкую участь." value="й пущ" group="default"/>
+    <action key="Приставучая листина пытается сбить вас с дороги." value="й лист" group="default"/>
+    <action key="Земляная кошка охраняет свою территорию." value="й кошк" group="default"/>
+    <action key="Водяник гуляет тут по своему родному болоту." value="й водя" group="default"/>
+    <action key="Нечто этакое бесплотное находится рядом." value="й страх" group="default"/>
+    <action key="Черный паук плетет паутину." value="й пау" group="default"/>
+    <action key="Дух умершего парит не высоко над землей." value="й дух" group="default"/>
+    <action key="Пьяница спит здесь." value="й забул" group="default"/>
+    <action key="Крестьянин в доспехах прохлаждается здесь." value="й ох" group="default"/>
+    <action key="Маркитантка проходит мимо, игриво улыбаясь вам." value="й мар" group="default"/>
+    <action key="Закованный в кандалы шведский воин сидит в углу темницы." value="й шве" group="default"/>
+    <action key="^свиток возврата [%0]" value="#wait 1 {#out --- %0 реколов ---}" group="default"/>
+    <action key="Унылый раб, работает на  великана Суттунга." value="й раб" group="default"/>
+    <action key="Из глубины к вам тянется щупальце подводного монстра." value="й щуп" group="default"/>
+    <action key="Боевой хазарский конь доверчиво обнюхивает вас." value="й кон" group="default"/>
+    <action key="-Ты умрешь в этих местах, человек!" value="лезть вверх" group="default"/>
+    <action key="Молодой мужчина, исполняющий любые приказы своего хозяина, стоит здесь" value="й слу" group="default"/>
+    <action key="Дозорный воин зорко вглядывается в горизонт мутными глазами." value="й дозо" group="default"/>
+    <action key="Красивая горничная хлопочет по хозяйству." value="й кра" group="default"/>
+    <action key="Черная девка бредет, понурив голову." value="й дев" group="default"/>
+    <action key="Черная галка роется в щепках и черепках." value="й гал" group="default"/>
+    <action key="Огромный черный волк злобно скалится на вас." value="й волк" group="default"/>
+    <action key="Невысокий хазарский лучник-стрелец внимательно озирается вокруг." value="й стре" group="default"/>
+    <action key="Низний и кривой в спине, но удивительно шустрый страж." value="й крив" group="default"/>
+    <action key="Уставший монах мирно дремлет в своей келье." value="й мон" group="default"/>
+    <action key="Комтур обходит лагерь, приглядываясь к повседневной его жизни." value="й ком" group="default"/>
+    <action key="Ливонский рыцарь дышит свежим воздухом, гуляя по лагерю." value="й рыц" group="default"/>
+    <action key="Малый змей шипит здесь." value="й зме" group="default"/>
+    <action key="Большой змей злобно шипит здесь." value="й зме" group="default"/>
+    <action key="Шеер сообщил группе : 'Морис %0'" value="%0" group="default"/>
+    <action key="Призрак туманного леса охраняет здесь тайны." value="й при" group="default"/>
+    <action key="Сотник новгородской дружины обходит с проверкой караулы на башнях." value="й сот" group="default"/>
+    <action key="Людин-стражник хлопочет по хозяйству возле своего терема." value="й люд" group="default"/>
+    <action key="Новгородский конный витязь патрулирует улицы Кремля." value="й витя" group="default"/>
+    <action key="Новгородский лучник зорко следит с башен Кремля за окрестностями." value="й лучн" group="default"/>
+    <action key="Новгородский дружинник готов умереть в бою за святую Софию." value="й друж" group="default"/>
+    <action key="Бурый медведь развалился в своей берлоге." value="й медв" group="default"/>
+    <action key="Странный человек, похожий на дерево, стоит здесь." value="й дух" group="default"/>
+    <action key="Большой светящийся паук бросился на вас." value="й пау" group="default"/>
+    <action key="Патрульный рыцарь внимательно смотрит на вас." value="й рыц" group="default"/>
+    <action key="Вооруженный гизармой кнехт обходит лагерь." value="й кне" group="default"/>
+    <action key="Дозорный ливонец любуется живописным пейзажем." value="й доз" group="default"/>
+    <action key="Монгольский сарбаз-воин размахивает своей саблей." value="й сар" group="default"/>
+    <action key="Огромный полупрозрачный змей стоит здесь." value="ц зме;й зме" group="default"/>
+    <action key="Полупрозрачный змей%0 стоит здесь." value="й зме" group="default"/>
+    <action key="Малый полупрозрачный змей агрессивно посматривает вокруг." value="й зме" group="default"/>
+    <action key="Зеленый змей прячется здесь." value="й зме" group="default"/>
+    <action key="Огромный зеленый змей стоит здесь." value="ц зме" group="default"/>
+    <action key="Огромный черный змей стоит здесь, медленно покачиваясь." value="ц зме" group="default"/>
+    <action key="Огромный белый змей стоит здесь, готовясь к бою." value="ц зме" group="default"/>
+    <action key="Огромный красный змей высится здесь, как гора." value="ц зме" group="default"/>
+    <action key="Вас сильно мучает жажда." value="син" group="default"/>
+    <action key="змей злобно озирается здесь." value="й зме" group="default"/>
+    <action key="готовится к нападению здесь." value="й зме" group="default"/>
+    <action key="змей готовится к атаке." value="й зме" group="default"/>
+    <action key="змей ползает в поисках добычи." value="й зм" group="default"/>
+    <action key="Старый %0 змей стоит здесь." value="й зме" group="default"/>
+    <action key="змей-детеныш ползает здесь." value="й зме" group="default"/>
+    <action key="змей кружит кольца перед атакой!" value="й зм" group="default"/>
+    <action key="змей готовится атаковать Вас." value="й зме" group="default"/>
+    <action key="Рысь, притаившись и изогнув спину, готовится к прыжку." value="й рыс" group="агр"/>
+    <action key="Перед выходом [37811]" value="рубить паутина" group="default"/>
+    <action key="Вы взяли чешуйку %0 из трупа %1." value="брос чешу" group="default"/>
+    <action key="Вы взяли шерсть %0 из трупа %1." value="брос чешу" group="default"/>
+    <action key="Вы взяли глаз %0 из трупа %1." value="брос глаз" group="default"/>
+    <action key="Вы взяли печень %0 из трупа %1." value="брос пече" group="default"/>
+    <action key="Вы очень голодны." value="син" group="default"/>
+    <action key="Низенький мужичок, весь в листьях, стоит тут." value="й муж" group="default"/>
+    <action key="Перешум исчезает в одном месте и появляется в другом." value="й пер" group="default"/>
+    <action key="Плетяка раскинул свои ручищи-лапищи." value="й пле" group="default"/>
+    <action key="Ендаренок ростом в несколько вершков стоит тут." value="й енд" group="default"/>
+    <action key="Зыбочник качается на ветви и ухмыляется вам." value="й зыб" group="default"/>
+    <action key="Зеленая девка с всклокоченными волосами подмигнула вам." value="й дев" group="default"/>
+    <action key="Шишига выбежала из-за старого пня." value="й ши" group="агр"/>
+    <action key="Броснень растопырился между деревьев." value="й бро" group="агр"/>
+    <action key="Сухой куст внезапно обернулся лесным духом - пущевиком." value="й кус" group="агр"/>
+    <action key="Старичок с локоток в зеленой шапке тихо бормочет что-то." value="й ста" group="агр"/>
+    <action key="Откуда ни возьмись, появились семь богатырей, и давай пана плетями хлестать." value="вост" group="default"/>
+    <action key="Синоби бесшумной тенью подкрался сзади." value="й сино" group="агр"/>
+    <action key="%0 (средний уровень: %1)." value="#var place &quot;%0&quot;" group="default"/>
+    <action key="Вы получили %0 гривен." value="гдея;эм гривны [$place] $DATE $TIME" group="default"/>
+    <action key="Маг по найму сказал вам : '" value="#stop" group="default"/>
+    <action key="Мэцукэ строго следит за порядком на вверенной ему территории." value="й мэц" group="агр"/>
+    <action key="Буси в красном кимоно бросился на Вас." value="й бус" group="default"/>
+    <action key="Сохэй сейчас Вам покажет что значит буси-до." value="й сох" group="default"/>
+    <action key="Кайсяку уже обнажил свой меч и готов посмотреть Смерти в лицо." value="й кай" group="default"/>
+    <action key="Хатамото гордится своим древним родом и не желает его опозорить." value="й хат" group="агр"/>
+    <action key="Приземистый ендарь на коротких ножках выскочил из-под корней дуба." value="й енд" group="default"/>
+    <action key="Человечек с тонкими ножками и ручками выскочил из дупла." value="й дуп" group="default"/>
+    <action key="Заплут с шумом и треском ломится через кусты." value="й запл" group="агр"/>
+    <action key="Горбатый мужичок-боровик пробегает тут." value="й" group="default"/>
+    <action key="Вы взяли сердце %0 из трупа" value="брос серд" group="default"/>
+    <action key="Такой уродец, что ни в сказке сказать, ни пером описать." value="й уро" group="агр"/>
+    <action key="Вы взяли шерсть %0 из трупа " value="брос шерст" group="default"/>
+    <action key="Попавший в плен воин когда-то сражался с русскими витязями." value="й вое" group="агр"/>
+    <action key="Вы взяли глаз % из трупа" value="брос глаз" group="default"/>
+    <action key="Вы взяли прядь %0 из трупа" value="брос прядь" group="default"/>
+    <action key="Как истинный еврей вы оставили 1 куну (которые не смогли разделить нацело) себе." value="#drop" group="дроп"/>
+    <action key="Вы дрались лежа? Это что-то новенькое." value="#drop" group="дроп"/>
+    <action key="Вы не нашли здесь 'труп'." value="#drop" group="дроп"/>
+    <action key="Вы выпили зелья из бочонка с черным колдовским зельем." value="#drop" group="дроп"/>
+    <action key="Молодой конюх дал вам что-то." value="#drop" group="дроп"/>
+    <action key="Чернодар отдал приказ." value="#drop" group="дроп"/>
+    <action key="Хорошо. Вы попытаетесь подсечь досина." value="#drop" group="дроп"/>
+    <action key="Молодой конюх сказал : 'Вот, извольте.'" value="#drop" group="дроп"/>
+    <action key="...%0 аура" value="#drop" group="дроп"/>
+    <action key="Схваченный за колдовство колдун хочет отомстить." value="й колд" group="агр"/>
+    <action key="Ваше деяние никто не оценил." value="лут" group="default"/>
+    <action key="Пойманный на воровстве мужичок теперь сражается на арене." value="й вор" group="агр"/>
+    <action key="Утопленник стоит тут." value="й утоп" group="агр"/>
+    <action key="%0 сказал вам : 'Эта услуга будет стоить 110 кун.'" value="#drop" group="дроп"/>
+    <action key="Прошедший через сотни боев суровый ветеран следит за порядком." value="й вет" group="агр"/>
+    <action key="Рыцарь тевтонского ордена в синем плаще с черным крестом следит за порядком." value="й рыц" group="агр"/>
+    <action key="Рыцарь-наемник из Ордена Тамплиеров охраняет монастырь." value="й там" group="агр"/>
+    <action key="Пятнистая зебра мирно пасется на берегу." value="й зеб" group="агр"/>
+    <action key="Бык жует траву." value="й бык" group="агр"/>
+    <action key="%0 дал вам посылку (отправитель" value="вз все посы;брос посы" group="default"/>
+    <action key="Корова гоняет мух своим хвостом." value="й коро" group="агр"/>
+    <action key="Бурый медведь пробирается сквозь чащобу, ломая сучья." value="й мед" group="агр"/>
+    <action key="Гадюка кусучая ползает тут." value="й гад" group="агр"/>
+    <action key="Каженник бесцельно машет руками, аки мельница." value="й каж" group="агр"/>
+    <action key="Злобный ведьмак стоит тут, нахально улыбаясь." value="й вед" group="агр"/>
+    <action key="Клен льдины руки проходит тут." value="й клен" group="агр"/>
+    <action key="Метатель змеи тетивы зорко высматривает цель здесь." value="й мет" group="агр"/>
+    <action key="Мародер несет что-то." value="й мар" group="агр"/>
+    <action key="Снежный ковер лежит у вас под ногами." value="#drop" group="дроп"/>
+    <action key="сказал вам : 'Я не собираюсь иметь дела с этой вещью.'" value="#drop" group="дроп"/>
+    <action key="%0 сказал вам : 'Такое я не покупаю.'" value="#drop" group="дроп"/>
+    <action key="Одичавший пес лает здесь." value="й пес" group="агр"/>
+    <action key="Дорожный разбойник, ухмыляясь, направляется к вам." value="й раз" group="агр"/>
+    <action key="Самоуверенный разбойник лениво осматривается здесь." value="й разб" group="агр"/>
+    <action key="Рогатый лось бредет между деревьев." value="й лос" group="агр"/>
+    <action key="Уточните направление." value="#drop" group="дроп"/>
+    <action key="Бурый медведь стоит тут." value="й мед" group="агр"/>
+    <action key="Толстый хряк роет носом землю." value="й хря" group="агр"/>
+    <action key="Рыжая лиса стоит тут." value="й лис" group="агр"/>
+    <action key="Серый волк обнажил свои клыки." value="й волк" group="агр"/>
+    <action key="Вы не видите 'труп'." value="#drop" group="дроп"/>
+    <action key="Слишком темно..." value="#drop" group="дроп"/>
+    <action key="А вы уже стоите." value="#drop" group="дроп"/>
+    <action key="Ни за что! Вы сражаетесь за свою жизнь!" value="#drop" group="дроп"/>
+    <action key="Да отперли уже все..." value="#drop" group="дроп"/>
+    <action key="Житель Белой Руси проходит мимо." value="й сел" group="агр"/>
+    <action key="Жительница Белой Руси проходит мимо." value="й дев" group="агр"/>
+    <action key="Оскалившись, волк смотрит на Вас." value="й волк" group="агр"/>
+    <action key="Оторванная рука с торчащим куском кости шустро семенит на пальцах." value="й рук" group="агр"/>
+    <action key="сноровисто починил %0." value="#drop" group="default"/>
+    <action key="Тоненький ледок вот-вот проломится под вами." value="#drop" group="default"/>
+    <action key="У вас под ногами достаточно толстый лед." value="#drop" group="default"/>
+    <action key="У вас нет ничего похожего на 'мяс'." value="#drop" group="default"/>
+    <action key="Вы прекратили прятаться." value="#drop" group="default"/>
+    <action key="Вы бросили %0 мяса." value="#drop" group="default"/>
+    <action key="У вас нет ничего похожего на 'труп'." value="#drop" group="default"/>
+    <action key="Вы что-то не видите здесь 'труп'." value="#drop" group="default"/>
+    <action key="Вы не видите здесь 'труп'." value="#drop" group="default"/>
+    <action key="Труп %0 пуст." value="#woutput 2 'труп %0 пуст ';#drop" group="default"/>
+    <action key="Вы взяли одну куну из трупа" value="#drop" group="default"/>
+    <action key="кун было немедленно отправлено в казну вашей дружины." value="#drop" group="default"/>
+    <action key="куны были немедленно отправлены в казну вашей дружины." value="#drop" group="default"/>
+    <action key="куна была немедленно отправлена в казну вашей дружины." value="#drop" group="default"/>
+    <action key="^Это составило %0" value="#woutput 2 '%0 ';#drop" group="default"/>
+    <action key="Вы взяли %0 кун из трупа" value="#drop" group="default"/>
+    <action key="Вы бросили труп %0." value="#woutput 2 'бросил %0 ';#drop" group="default"/>
+    <action key="Вы подняли труп %0." value="#woutput 2 'поднял %0 ';#drop" group="default"/>
+    <action key="Этот труп невозможно освежевать." value="#drop" group="default"/>
+    <action key="Кого вы так сильно ненавидите, что хотите заколоть?" value="#drop" group="default"/>
+    <action key="Но вы ведь ни с кем не сражаетесь!" value="#drop" group="default"/>
+    <action key="Вы просто увязаете в грязи." value="#drop" group="default"/>
+    <action key="Небольшой костерок едва теплится здесь." value="#drop" group="default"/>
+    <action key="Огромный костер пылает здесь, распространяя тепло." value="#drop" group="default"/>
+    <action key="У вас под ногами толстый лед." value="#drop" group="default"/>
+    <action key="Прозрачный дух еле виден здесь." value="й дух" group="агр"/>
+    <action key="Одноногий мертвяк ползает здесь, оставляя за собой полосу слизи." value="й мер" group="агр"/>
+    <action key="Большой мертвяк ищет поживу." value="й мер" group="агр"/>
+    <action key="Жуткий мертвяк таращится на вас пустыми глазницами." value="й мер" group="агр"/>
+    <action key="Злобный водяной высосет жизнь из любого, кого увидит." value="й вод" group="агр"/>
+    <action key="Этот леший не понимает как он здесь оказался." value="й леш" group="агр"/>
+    <action key="Хорошо, вы попытаетесь спрятаться." value="#drop" group="default"/>
+    <action key=" С драконьей иглы скатилась капля крови и упала под ноги." value="#drop" group="default"/>
+    <action key="Увлекшийся черной магией грязнокнижник холодно смотрит по сторонам." value="й гря" group="агр"/>
+    <action key="%0 сказал вам : '%0 не нужно чинить.'" value="#drop" group="default"/>
+    <action key="Существо из другого мира, черт нарезает круги в воздухе." value="й чер" group="агр"/>
+    <action key="Пойманная в реке русалка выглядит очень злой." value="й рус" group="агр"/>
+    <action key="Человек с большим топором ищет себе жертву." value="й руб" group="агр"/>
+    <action key="Выживший из ума разбойник расплачивается за преступления кровью." value="й разб" group="агр"/>
+    <action key="Сельский староста сказал : 'Сходи к нему, может, что и подскажет.'" value="дать отв ста" group="default"/>
+    <action key="Вы подняли свинью-копилку." value="разбить копилка" group="default"/>
+    <action key="Шрамолицый воин следит за порядком." value="ц шра" group="агр"/>
+    <action key="Крепкий раб бредет к речному волоку." value="й раб" group="агр"/>
+    <action key="пузырек с кристально-чистой жидкостью  &lt;" value="вз хилл сум;перел крист хилл;пол хилл сум" group="default"/>
+    <action key="колба с мутно-белой жидкостью  &lt;" value="вз сила сум;перел колб сила;пол сила сум" group="default"/>
+    <action key="ядовито-желтое зелье  &lt;" value="вз зельещит сум;перел ядов зельещит;пол зельещит сум" group="default"/>
+    <action key="Иноземный купец идет куда-то, держась за кошель." value="й куп" group="default"/>
+    <action key=" жука хрумкает травой." value="й кол" group="default"/>
+    <action key=" грызет здесь траву." value="й кол" group="default"/>
+    <action key=" грызет здесь листву." value="й кол" group="default"/>
+    <action key="Желтый крокодил плавает в затхлой воде пруда." value="й кр" group="default"/>
+    <action key="Трясина [63847]" value="зап" group="default"/>
+    <action key="Горящий зеленым пламенем призрак пса громко воет здесь." value="й ба" group="default"/>
+    <action key="Костяная гончая стоит здесь, ожидая приказа своего хозяина." value="й гон" group="default"/>
+    <action key="Покрытый шрамами огромный мертвяк громко сопит и сглатывает." value="й мер" group="default"/>
+    <action key="Человеческая голова на паре рук шустро пробегает мимо." value="й гол" group="default"/>
+    <action key="Обтянутый черной кожей скелет стоит тут." value="й ск" group="default"/>
+    <action key="Молодой кабанчик весело бежит сквозь лесную чащу." value="й каб" group="default"/>
+    <action key="Огромная щука подкарауливает добычу здесь." value="й муд" group="default"/>
+    <action key="Змея-скоропея угрожающе зашипела." value="й зме" group="default"/>
+    <action key="Лупоглазый упырь, чавкая, вылез откуда-то." value="й упы" group="default"/>
+    <action key="Огромный судак застыл тут в засаде." value="ц мудр" group="default"/>
+    <action key="Огромный окунь стережет свою добычу тут." value="ц мудр" group="default"/>
+    <action key="Свитежанка ищет свою, а может быть чужую смерть." value="й свит" group="default"/>
+    <action key="Супруга водяного гопляна перебирает на дне камушки." value="й гоп" group="default"/>
+    <action key="Вредное существо западлина строит здесь свои козни." value="й зап" group="default"/>
+    <action key="Дивная дева водяна-перебродница поет колыбельную." value="й во" group="default"/>
+    <action key="Молодой бес с едва виднеющимися рожками стоит тут." value="й бес" group="default"/>
+    <action key="Ведьма бродит тут в поисках живой души." value="й вед" group="default"/>
+    <action key="Страшное чудовище с длинными зубами стоит тут." value="й уп" group="default"/>
+    <action key="дал вам посылку (отправитель" value="вз все посы;брос посы" group="default"/>
+    <action key="Златолюб сообщил группе : 'Ратак %0'" value="%0" group="default"/>
+    <action key="Переяславльский стражник прошептал вам : 'Ведутся секретные строительные работы.'" value="дать 100 кун стра" group="default"/>
+    <action key="Черный пес угрожающе рычит в вашу сторону." value="й пес" group="default"/>
+    <action key="Вы умело освежевали труп %0" value="#woutput 2 'освежевал %0';брос все.мяс;#drop" group="default"/>
+    <action key="Деспор сообщил группе : 'Финли %0'1" value="%0" group="default"/>
+    <action key="Страшная коряга издает скрипучие звуки." value="й кор" group="default"/>
+    <action key="Ожившее дерево шевелит корявыми ветками." value="й дер" group="default"/>
+    <action key="Рыжеволосый гридень смотрит на вас, почесывая затылок." value="й гри" group="default"/>
+    <action key="Хмурый лучник прохаживается по заставе." value="й луч" group="default"/>
+    <action key="Могучий богатырь улыбается вам, поигрывая мышцами." value="й бог" group="default"/>
+    <action key="Дикая кабаниха пробегает мимо вас." value="й каб" group="default"/>
+    <action key="Собака с весьма безумным взглядом пробегает мимо." value="й соб" group="default"/>
+    <action key="Любопытная нерпа с интересом смотрит на Вас." value="й нер" group="default"/>
+    <action key="Толстый усатый морж выглядывает из воды." value="й мор" group="default"/>
+    <action key="Белый медведь медленно проходит мимо Вас." value="й мед" group="default"/>
+    <action key="Соболь занят поиском съестного." value="й соб" group="default"/>
+    <action key="Горностай занят поиском пищи." value="й гор" group="default"/>
+    <action key="Волк смотрит на Вас голодными глазами." value="й волк" group="default"/>
+    <action key="Огромный медведь росомаха уныло бредет мимо." value="й росом" group="default"/>
+    <action key="Северный олень бродит здесь в поисках пищи." value="й оле" group="default"/>
+    <action key="Огромный лось что-то пытается найти под снегом." value="й лос" group="default"/>
+    <action key="Пятнистая рысь грациозно бежит куда-то." value="й рыс" group="default"/>
+    <action key="Бурый медведь безразлично глядит в Вашу сторону." value="й мед" group="default"/>
+    <action key="Ласка быстро бежит по снегу мимо Вас." value="й лас" group="default"/>
+    <action key="Красная лисица пробегает мимо Вас." value="й лис" group="default"/>
+    <action key="Песец бросился на Вас, как только заметил!!" value="й пес" group="default"/>
+    <action key="Снежный баран бессмысленно смотрит на Вас." value="й бар" group="default"/>
+    <action key="Страж купеческого лагеря зорко наблюдает за всеми." value="й ст" group="default"/>
+    <action key="Высокий и статный житель Дании неторопливо идет мимо Вас, неся топор на плече." value="й дат" group="default"/>
+    <action key="Швед, укутанный в меха и шкуры гордо проходит рядом." value="й шв" group="default"/>
+    <action key="Воин, укутанный в желтый плед, идет мимо." value="й гад" group="default"/>
+    <action key="Невиданного вида летучая мышь парит в воздухе." value="й к" group="default"/>
+    <action key="Солдат в кожаных доспехах ходит в дозоре по лагерю." value="й доз" group="default"/>
+    <action key="Караульный солдат с мечом наперевес ходит здесь." value="й кар" group="default"/>
+    <action key="Воитель стоит рядом со своим начальником." value="й вои" group="default"/>
+    <action key="Собака похожая на волка бегает вокруг вас и лает." value="й пес" group="default"/>
+    <action key="Свирепый кабан разгребает листву в поисках пищи." value="й каб" group="default"/>
+    <action key="Морской витязь плывет в дозоре, внимательно оглядываясь." value="й вит" group="default"/>
+    <action key="Морской великан охраняет спокойствие острова." value="й вел" group="default"/>
+    <action key="Молодой морской витязь стоит в дозоре." value="й вит" group="default"/>
+    <action key="Морской богатырь проплывает мимо Вас." value="й бог" group="default"/>
+    <action key="Дух парит в воздухе." value="й ду" group="default"/>
+    <action key="Кое-кто делает кое-что." value="й кое" group="default"/>
+    <action key="Некто такой собирается сотворить нечто такое." value="й не" group="default"/>
+    <action key="Дикая лиса яростно осматривается вокруг." value="й лис" group="default"/>
+    <action key="Кто-то делает что-то не то." value="й кто" group="default"/>
+    <action key="Сами знаете кто, делает понятно что." value="й сам" group="default"/>
+    <action key="Матерый воровской вожак развалился на диване подле кальяна." value="й кур" group="default"/>
+    <action key="Разгневанная великанша Гуннлед призвала вас!" value="~;зап" group="default"/>
+    <action key=" - старика %0 кун." value="дать %0 кун ста" group="default"/>
+    <action key="Мужичок-болотник сказал вам : 'Переправа через болота стоит %0 кун.'" value="дать %0 кун бол" group="default"/>
+    <action key="Хромой старик сказал вам : 'Но не даром конечно, кун %0 нам на пропитанье и ты там!'" value="дать %0 кун ста" group="default"/>
+    <action key="Безногий богатырь сказал : 'Может поможешь нам одолеть эту напасть? А уж мы за оплатой не постоим.'" value="г помогу" group="default"/>
+    <action key="Вы пропали в пустоте этого мира." value="см" group="default"/>
+    <action key="^Закрыто." value="огл" group="default"/>
+    <action key="%0:  закрыто (%1 %2)." value="отп %(2)2 %0" group="default"/>
+    <action key="%0:  закрыто (%1)." value="отп %1 %0" group="default"/>
+    <action key="Вы голодны." value="син" group="default"/>
+    <action key="^Цибуля сообщил группе : '! %0'" value="%0" group="default"/>
+    <action key="%0 прекратил следовать за вами." value="вз все;#woutput 1 '[престал] %0 '" group="default"/>
+    <action key="Ваша кожа вновь стала мягкой и бархатистой." value="гг камнекожа офф" group="default"/>
+    <action key="Вы почувствовали себя менее защищенно." value="гг защита офф" group="default"/>
+    <action key="Вы почувствовали себя менее доблестно." value="гг добла офф" group="default"/>
+    <action key="%0 дружине: '%1'" value="#woutput 1 '[дружина] %0: %1 '" group="default"/>
+    <action key="%0 закричал%2 : '%1'" value="#woutput 1 '[кричал ] %0: %1 '" group="default"/>
+    <action key="%0 союзникам: '%1'" value="#woutput 1 '[союзник] %0: %1 '" group="default"/>
+    <action key="[оффтоп] %0 : '%1'" value="#woutput 1 '[оффтоп ] %0: %1 '" group="default"/>
+    <action key="%0 заметил%2 : '%1'" value="#woutput 1 '[заметил] %0: %1 '" group="default"/>
+    <action key="%0 сказал%2 вам : '%1'" value="#woutput 1 '[сказал ] %0: %1 '" group="default"/>
+    <action key="%0 заорал%2 : '%1'" value="#woutput 1 '[заорал] %0: %1 '" group="default"/>
+    <action key="%0 сообщил%1 группе : '%2'" value="#woutput 1 '[группа ] %0: %2 '" group="default"/>
+    <action key="%0 полез сквозь кусты." value="#wait 2 {раздвинуть ветки}" group="default"/>
+    <action key="Закрыто (%0 %1)." value="отк %1" group="default"/>
+    <action key="Закрыто (%0)." value="отк %0" group="default"/>
+    <action key="Нет... Вы слишком расслаблены..." value="вст" group="default"/>
+    <action key="Вам лучше встать на ноги!" value="вст" group="default"/>
+    <action key="Пожалуй, вам лучше встать на ноги." value="вст" group="default"/>
+    <action key="^Select one :$" value="2" group="default"/>
+    <action key="Вы проснулись и сели." value="встать" group="default"/>
+    <action key="Нет... Вы слишком расслаблены.." value="встать" group="default"/>
+    <action key="Вы слишком устали...  Спать... Спа..." value="просн" group="default"/>
+    <action key="На крыше возле петушка [10131]" value="выковырять самоцвет" group="квесты"/>
+    <action key="Гранитный голем сторожит развилку." value="й голем" group="квесты"/>
+    <action key="Обсидиановый голем преградил Вам дорогу." value="й голем" group="квесты"/>
+    <action key="Таямник отдал приказ." value="пом;" group="default"/>
+    <action key="Загребая воду руками, %0 поплыл к берегу." value="#wait 2 {вынырнуть}" group="default"/>
+    <action key="Оттолкнувшись, %0 прыгнул в озеро." value="#wait 2 {нырнуть в озеро}" group="default"/>
+    <action key="Разбежавшись, %0 прыгнул в озеро." value="нырнуть озеро" group="default"/>
+    <action key="Работая руками и ногами, %0 погреб к берегу." value="выплыть" group="default"/>
+    <action key="Серый волк пробегает мимо вас." value="й волк" group="default"/>
+    <action key="Волколак со злобой смотрит в ваши глаза." value="й волк" group="default"/>
+    <action key="Паук, брюхо - пивная бочка, оценивает вас как мелкую добычу." value="й па" group="default"/>
+    <action key="Жирный людоед стоит здесь." value="й лю" group="default"/>
+    <action key="Большой и лохматый зверь стоит здесь." value="й зв" group="default"/>
+    <action key="Черно-рыжая мохнатая пчела ростом с подростка издает страшное гудение." value="й пч" group="default"/>
+    <action key="Рыжий муравей огромных размеров носится туда-сюда." value="й мур" group="default"/>
+    <action key="(летит) Мотылек с брюхом больше чем у откормленной свиньи еле держится в воздухе." value="й мот" group="default"/>
+    <action key="Серая ящерка, больше похожая на Змея Горыныча, оскалила свою пасть." value="й ящ" group="default"/>
+    <action key="Красный кабан мирно жует листву." value="й каб" group="агр"/>
+    <action key="Полосатый олень бредет тут в поисках травы." value="й оле" group="агр"/>
+    <action key="Мошкара покрыла Вас с головы до пят, и пьет Вашу кровь!" value="й мо" group="агр"/>
+    <action key="Красивая зеленая ящерка быстро бежит по стене пещеры." value="й мала" group="агр"/>
+    <action key="Гадюка ползает тут." value="й га" group="агр"/>
+    <action key="Хитрая гадюка подколодная уставилась на вас." value="й га" group="агр"/>
+    <action key="Свободный от работ по лагерю, рыцарь отдыхает здесь." value="й рыц" group="агр"/>
+    <action key="Облаченный в белую рясу монах-доминиканец торопливо идет между шатров." value="й дом" group="агр"/>
+    <action key="Монах, облаченный в алые одежды стоит здесь." value="ц кли" group="агр"/>
+    <action key="Закованная в матово-черные доспехи фигура стоит здесь." value="ц воин" group="агр"/>
+    <action key="Огромная гусеница ползет в вашу сторону." value="й гу" group="агр"/>
+    <action key="Пестрый дятел усердно долбит кору в поисках жучков." value="й дя" group="агр"/>
+    <action key="Древесный медведь угрожающе надвигается на вас." value="й мед" group="агр"/>
+    <action key="Бурундук пробегает у ваших ног." value="й бу" group="агр"/>
+    <action key="Зубастая белка хищно осмотрела вас." value="й бел" group="агр"/>
+    <action key="Росомаха рыскает по дереву, в поисках пищи." value="й рос" group="агр"/>
+    <action key="Пестрый дятел летает здесь." value="й дя" group="агр"/>
+    <action key="Паук-мохнолап насторожено втянул лапки при виде вас." value="й пау" group="агр"/>
+    <action key="Старичок-болотник, тихо перебирая ногами, бредет куда-то." value="й бол" group="агр"/>
+    <action key="Дикая лошадь пасется здесь." value="й дик" group="агр"/>
+    <action key="Дикий кабан носится по острову." value="й дик" group="агр"/>
+    <action key="Большой удав висит на дереве." value="й уда" group="агр"/>
+    <action key="Местный житель пугливо смотрит на Вас." value="й аб" group="агр"/>
+    <action key="Рабочий крот толкает деревянную тележку." value="й кр" group="агр"/>
+    <action key="Водяница хищно осмотрела вас." value="й вод" group="агр"/>
+    <action key="Рысь ловко карабкается по веткам дуба." value="й ры" group="агр"/>
+    <action key="Маленький комарик, размером с поросенка, летает тут со страшным гулом." value="й ком" group="агр"/>
+    <action key="Маленький (с лисицу) белый мотылек пролетает тут." value="й мот" group="агр"/>
+    <action key="Тля, мелкое насекомое величиной с кошку, стоит тут." value="й тл" group="агр"/>
+    <action key="Гусеница вся в острых длинных разноцветных колючках ужасает вас." value="й гус" group="агр"/>
+    <action key="Серый паучок проносится между деревьями." value="й пау" group="агр"/>
+    <action key="Ярко раскрашенная оса с бронзовым жалом вьется тут." value="й ос" group="агр"/>
+    <action key="Черный жук с большими ветвистыми рогами кинулся на вас." value="й жу" group="агр"/>
+    <action key="Зеленая гусеница переползает с места на место." value="й гус" group="агр"/>
+    <action key="Серая улитка, толстая как корова, проползает мимо." value="й ули" group="агр"/>
+    <action key="Жук шевелит усами, приглядываясь к вам." value="й жу" group="агр"/>
+    <action key="Плотоядный дятел тщательно чистит о листву клюв." value="й дя" group="агр"/>
+    <action key="Цапля бродит в поисках лягушек." value="й ца" group="агр"/>
+    <action key="Ленивый крот расселся тут, протянув свои ноги." value="й к" group="агр"/>
+    <action key="Пучеглазый рак машет своими клешнями." value="й ра" group="агр"/>
+    <action key="Заросший кабан бродит тут в поиске желудей." value="й каб" group="агр"/>
+    <action key="Толстая гадюка, приподнимаясь, взирает на вас не мигающим взглядом." value="й га" group="агр"/>
+    <action key="Белокрылый дятел прячется в листве дерева." value="й дя" group="агр"/>
+    <action key="Кикимора болотная хитро посматривает на вас." value="й кик" group="агр"/>
+    <action key="Хмырь болотный хищно копошится во мху, в поисках пищи." value="й хм" group="агр"/>
+    <action key="Русалка-лобаста ехидно улыбнулась вам." value="й ру" group="агр"/>
+    <action key="Серый волк пробегает невдалеке от вас." value="й вол" group="агр"/>
+    <action key="Старичок-моховичок понуро бредет в вашу сторону." value="й ста" group="агр"/>
+    <action key="Старичок-полевичок шатаясь, идет по своим делам." value="й ста" group="агр"/>
+    <action key="Лесунька приветливо вам улыбнулась." value="й лес" group="агр"/>
+    <action key="Гриб-живоглот растет тут." value="й гри" group="агр"/>
+    <action key="Лесной шишига куда-то спешит, не замечая вас." value="й шиш" group="агр"/>
+    <action key="Старичок-лесовичок бредет, в поисках целебных трав." value="й ста" group="агр"/>
+    <action key="Толстая лягушка смотрит на вас, выпучив огромные глаза." value="й ля" group="агр"/>
+    <action key="Серо-коричневый крот бредет куда глаза глядят." value="й кр" group="агр"/>
+    <action key="Толстый уж медленно собирается в кольца." value="й уж" group="агр"/>
+    <action key="Огромный сом пускает тут пузыри." value="й сом" group="агр"/>
+    <action key="Хищная щука гоняется тут за мальками." value="й щу" group="агр"/>
+    <action key="Карась с выпученными глазами молчаливо открывает рот." value="й ка" group="агр"/>
+    <action key="Стайка мальков плавает тут в поисках пищи." value="й ст" group="агр"/>
+    <action key="Вы, определенно, садомазохист!" value="й 2.ф" group="агр"/>
+    <action key="Пучеглазый пескарь пытается от вас удрать." value="й пес" group="агр"/>
+    <action key="Полосатый окунь плавает тут в поиске пищи." value="й ок" group="агр"/>
+    <action key="Темно-серый крот, зевая, смотрит по сторонам." value="й кр" group="агр"/>
+    <action key="Пушистый крот бродит тут, шевеля белыми усами." value="й кр" group="агр"/>
+    <action key="Черный крот встал отдохнуть, чтобы продолжить свой путь позже." value="й кр" group="агр"/>
+    <action key="Черно-бурый крот задумчиво уставился себе под ноги." value="й кр" group="агр"/>
+    <action key="Толстая утка переваливается с бока на бок." value="й у" group="агр"/>
+    <action key="Бескрылый дятел бежит по ветке в поисках пищи." value="й дя" group="агр"/>
+    <action key="Старый дятел бредет по ветке, часто спотыкаясь." value="й дя" group="агр"/>
+    <action key="Пестрый дятел долбит клювом дерево." value="й дя" group="агр"/>
+    <action key="Плотоядный дятел грызет чью-то косточку." value="й дя" group="агр"/>
+    <action key="Пятнистая кукушка о чем-то печально кукует." value="й ку" group="агр"/>
+    <action key="Златоклювый дятел беспечно прыгает по ветке." value="й дя" group="агр"/>
+    <action key="Молодой дятел разминает крылья перед полетом." value="й дя" group="агр"/>
+    <action key="Зубастая белка беспечно бежит по поляне." value="й бел" group="агр"/>
+    <action key="Прозрачный дух пирата летает по пещере." value="й ду" group="агр"/>
+    <action key="Тетерев-косач сидит на ветке здесь." value="й тет" group="агр"/>
+    <action key="Глухарь сидит на ветке." value="й гл" group="агр"/>
+    <action key="Хорек вынюхивает добычу." value="й х" group="агр"/>
+    <action key="Заяц-русак сиганул через полянку." value="й за" group="агр"/>
+    <action key="Рябчик прыгает среди веток." value="й ря" group="агр"/>
+    <action key="Кукушка сидит высоко на ветке здесь." value="й ку" group="агр"/>
+    <action key="Перепел прячется здесь." value="й пе" group="агр"/>
+    <action key="Куропатка спряталась здесь." value="й ку" group="агр"/>
+    <action key="Дупель прячется среди веток здесь." value="й ду" group="агр"/>
+    <action key="Седоголовый лунь кружит в поисках добычи." value="й лу" group="агр"/>
+    <action key="Выпь орет здесь не человечьим голосом." value="й вы" group="агр"/>
+    <action key="Гусь злобно шипит на Вас." value="й гус" group="агр"/>
+    <action key="Выдра пробегает мимо Вас." value="й вы" group="агр"/>
+    <action key="Аист величаво кружит в небе." value="й аи" group="агр"/>
+    <action key="Белый лебедь изящно выгнул шею." value="й леб" group="агр"/>
+    <action key="Гадюка извивается у Ваших ног." value="й га" group="агр"/>
+    <action key="Малиновка пробегает мимо Вас." value="й ма" group="агр"/>
+    <action key="Веселая пчелка собирает пыльцу." value="й пч" group="агр"/>
+    <action key="Маленький муравей тащит что-то в свой муравейник." value="й мур" group="агр"/>
+    <action key="Мышь-полевка быстро бежит к своей норке." value="й мы" group="агр"/>
+    <action key="Маленькая змея прошмыгнула у ног." value="й зм" group="агр"/>
+    <action key="Шмель жужжит у Вас над головой." value="й шм" group="агр"/>
+    <action key="Толстопузый чебак плавает здесь." value="й чеб" group="агр"/>
+    <action key="Медленный рак ползает по дну." value="й рак" group="агр"/>
+    <action key="Большой сом плавает здесь." value="й сом" group="агр"/>
+    <action key="Зеленый лесной клоп проползает мимо." value="й кл" group="default"/>
+    <action key="Мелкий паучок цвета травы, величиной с большую лохань, быстро бежит через лес." value="й пау" group="default"/>
+    <action key="Берегиня с тоской всматривается в водную гладь." value="й бер" group="default"/>
+    <action key="Черный волк трусит мимо, выискивая поживу." value="й волк" group="default"/>
+    <action key="Черный ворон с недобрым глазом ищет добычу здесь." value="й вор" group="default"/>
+    <action key="Стервятник кружит в небе, выискивая поживу." value="й ст" group="default"/>
+    <action key="Ползучий гад скользит в траве, выискивая поживу." value="й гад" group="default"/>
+    <action key="Крохотная черная мушка величиной с сокола летает вокруг." value="й му" group="default"/>
+    <action key="Черный наездник с длинным яйцекладом летит прямо на вас." value="й нае" group="default"/>
+    <action key="Небольшая бабочка хлопает крыльями так, что вы едва стоите на ногах." value="й баб" group="default"/>
+    <action key="Клоп с красным в черно-белых узорах панцирем ползет по траве." value="й клоп" group="default"/>
+    <action key="Юркий жерех плавает здесь." value="й же" group="агр"/>
+    <action key="Грустный карп медленно плывет здесь." value="й кар" group="агр"/>
+    <action key="Жирный слепень несется к вам, издавая чудовищный грохот." value="й сле" group="default"/>
+    <action key="Желтый утенок семенит за своей матерью." value="й ут" group="default"/>
+    <action key="Зеленая ящерица греется на солнышке." value="й ящ" group="default"/>
+    <action key="Краснобрюхий комар противно жужжит над вашим ухом." value="й ком" group="default"/>
+    <action key="Взмыленный крот куда-то тащит груз." value="й кр" group="default"/>
+    <action key="Плоский лещ плавает здесь." value="й лещ" group="агр"/>
+    <action key="Тонкий елец плавает здесь." value="й ел" group="агр"/>
+    <action key="Карась плавает здесь." value="й ка" group="агр"/>
+    <action key="Скользкий налим плавает здесь." value="й н" group="агр"/>
+    <action key="Веселый ерш играется в воде." value="й е" group="агр"/>
+    <action key="Полевая мышь шевелит длинным хвостом." value="й мы" group="default"/>
+    <action key="Быстрый окунь проплывает здесь." value="й ок" group="агр"/>
+    <action key="Утка плавает здесь, мерно крякая." value="й ут" group="агр"/>
+    <action key="Камышовый кот тихо крадется мимо Вас." value="й кот" group="агр"/>
+    <action key="Журавль бредет на длинных ногах." value="й жу" group="агр"/>
+    <action key="^Вы взяли %0 из трупа %1." value="#woutput 2 Вы взяли %0 из трупа %1;#out ------   %0   ----- из %1;#drop" group="default"/>
+  </actions>
+  <aliases>
+    <alias key="лут1" value="синоним лут взять все все.труп+брос все.труп;осм сум" group="default"/>
+    <alias key="садко" value="с;с;з;з;ю;ю;ю;з;з;ю;ю;з;ю;ю;з;ю;ю;ю;ю;в;й разб;ю;в;ю;ю;й раз;в;крас в;й раз;крас севе;ц глав;й глав" group="default"/>
+    <alias key="камни" value="сн офф;дер кам.зелен;вставить камень;#wait 6 {ю;дер кам.кра;вставить камень};#wait 12 {в;дер кам.черн;вставить камень};#wait 18 {ю;дер кам.бел;вставить камень};#wait 24 {дер офф}" group="default"/>
+    <alias key="вар" value="вз жидк сум;вз крупа сум;вз тварь сум;вз посуд сум;варить !настой на медвежьей крови! посу жидк твар круп" group="default"/>
+    <alias key="осу" value="осуш %0;дер офф" group="default"/>
+    <alias key="гх" value="вз льв.ус сум;сн офф;дер ус;прим ус;сн ус;дер офф;пол ус сум" group="default"/>
+    <alias key="лоо" value="#out ЛУТОФФ;#action 'Ваш опыт повысился' ''" group="default"/>
+    <alias key="ло" value="#out ЛУТОН;#action 'Ваш опыт повысился' 'лут'" group="default"/>
+    <alias key="стоп" value="#swalk stop" group="default"/>
+    <alias key="лист" value="#swalk list" group="default"/>
+    <alias key="го" value="сн прайм;#swalk go %0;#wait 5 {воор прайм}" group="default"/>
+    <alias key="ретурн" value="#swalk return %0" group="default"/>
+    <alias key="старт" value="#swalk start" group="default"/>
+    <alias key="сейв" value="#swalk save %0" group="default"/>
+    <alias key="раздв" value="раздвинуть ветки" group="default"/>
+    <alias key="щит" value="вз зельещит сум;пить зельещит;пол зельещит сум;сняд" group="default"/>
+    <alias key="о121" value="о11;#wait 4 {о22};#wait 8 {о31};" group="default"/>
+    <alias key="о124" value="о11;#wait 4 {о22};#wait 8 {о34};" group="default"/>
+    <alias key="о214" value="о12;#wait 4 {о21};#wait 8 {о34};" group="default"/>
+    <alias key="о211" value="о12;#wait 4 {о21};#wait 8 {о31};" group="default"/>
+    <alias key="о11" value="дать крив олг" group="default"/>
+    <alias key="о12" value="дать остр олг" group="default"/>
+    <alias key="о13" value="дать длин олг" group="default"/>
+    <alias key="о21" value="дать серо олг" group="default"/>
+    <alias key="о22" value="дать сизо олг" group="default"/>
+    <alias key="о23" value="дать черн олг" group="default"/>
+    <alias key="о31" value="дать золо олг" group="default"/>
+    <alias key="о34" value="дать бел олг" group="default"/>
+    <alias key="о35" value="дать блест олг" group="default"/>
+    <alias key="сняд" value="вз сняд сум;пить сняд;пол сняд сум" group="default"/>
+    <alias key="хил" value="вз хилл сум;пить хилл;пол хилл сум" group="default"/>
+    <alias key="яд" value="вз колб сум;осу колб;дер офф" group="default"/>
+    <alias key="й" value="моло %0;#if '%0!=$!' '#var aim %0'" group="default"/>
+    <alias key="щит1" value="вз реч.жем сум;сн офф;дер реч.жем;прим реч.жем;сн реч.жем;пол реч.жем сум;дер офф" group="default"/>
+    <alias key="са" value="вз санк сум;сн 38;од санк" group="default"/>
+    <alias key="санк" value="вз санк сум;сн 38;сн офф;#action 'Вы провели подсечку, ловко усадив' 'од санк;й $aim;сн санк;беж'" group="default"/>
+    <alias key="санкофф" value="пол санк сум;од 38;дер офф;#action 'Вы провели подсечку, ловко усадив' 'й $aim'" group="default"/>
+    <alias key="сао" value="сн санк;пол санк сум;од 38" group="default"/>
+    <alias key="пр" value="вз призм сум;сн 38;од призм" group="default"/>
+    <alias key="про" value="сн призм;пол призм сум;од 38" group="default"/>
+    <alias key="2б" value="#swalk go 2б" group="default"/>
+    <alias key="шар" value="#swalk go шар" group="default"/>
+    <alias key="Тупик [70363]" value="лезть гобелен" group="default"/>
+    <alias key="руб" value="сн прайм;сн офф;воор топор;рубить лес;сн топор;воор прайм;дер офф" group="default"/>
+    <alias key="уд" value="удави %0" group="default"/>
+    <alias key="сне" value="#var b 1" group="default"/>
+    <alias key="сно" value="#var b 0" group="default"/>
+    <alias key="пер" value="вз бин сум;перевя;черн;пол бин сум" group="default"/>
+    <alias key="отр" value="вз белен сум;отрав прайм белен;отрав офф белен;пол белен сум" group="default"/>
+    <alias key="св" value="сн ть;вз пламен сум;од свет" group="default"/>
+    <alias key="сво" value="сн свет;пол све сум;од тьм" group="default"/>
+    <alias key="бэк" value="крас %0;й $aim;й $aim1;беж" group="default"/>
+    <alias key="согн" value="вз пятиугольник сум;согнуть пятиугольник;пол пят сум;вой" group="default"/>
+    <alias key="осв" value="осве труп" group="default"/>
+    <alias key="ц" value="моло %0;#if '%0!=$!' '#var aim %0'" group="default"/>
+    <alias key="син" value="вз син сум;пить син;пол син сум" group="default"/>
+    <alias key="кра" value="вз кра сум;пить кра;пол кра сум" group="default"/>
+    <alias key="бел" value="вз бел сум;пить бел;пол бел сум" group="default"/>
+    <alias key="вой" value="прик все вой пен;войт пен" group="default"/>
+    <alias key="рек" value="~;вз возв сум;зач возв %0" group="default"/>
+    <alias key="отп" value="отпер %0;отк %0;вз все %0" group="default"/>
+    <alias key="отпе" value="св;отпер %0;отк %0;вз все %0;сво" group="default"/>
+    <alias key="39" value="w;s;s;s;s;e;e;e;e;s;e;e;e;e;e;e;e;e;e;e;s;e;e;s;e;e;e;e;n;n;e;e;e;n;e;e;s;e;e;e;s;s;e;e;e;e;e;n;e;n;n;e;e;e;e;e;e;e;e;e;e;e;s;e;e;e;s;s;e;e;e;e;e;e;e;e;e;n;n;e;e;e;e;e;e;e;e;e;e;e;e;e;e;s;e;e;n;e;" group="default"/>
+    <alias key="391" value="в;в;ю;з;отп лю;вн;ю;отп дв з;отп дв в;з;в;в;з;ю;отп дв з;отп дв в;з;в;в;з;с;с;вв;e;n;e;e;e;s;s;s;s;e;e;у раз;оглу" group="default"/>
+  </aliases>
+  <hotkeys>
+    <hotkey key="`" value="беж" group="default"/>
+    <hotkey key="F1" value="#action {^%0 %1 %2 %3.} {й %(2)0;й %(2)1;й %(2)2;#unaction {^%%0 %%1 %%2 %%3.};#unaction {^%%0 %%1 %%2.};#stop};#action {^%0 %1 %2.} {й %(2)0;й %(2)1;й %(2)2;#unaction {^%%0 %%1 %%2.};#unaction {^%%0 %%1 %%2 %%3.};#stop};см" group="default"/>
+    <hotkey key="Ctrl+:" value="ю" group="default"/>
+    <hotkey key="Alt+:" value="крас ю" group="default"/>
+    <hotkey key="Ctrl+L" value="з" group="default"/>
+    <hotkey key="Alt+L" value="крас з" group="default"/>
+    <hotkey key="Ctrl+'" value="в" group="default"/>
+    <hotkey key="Alt+'" value="крас в" group="default"/>
+    <hotkey key="Ctrl+P" value="с" group="default"/>
+    <hotkey key="Alt+P" value="крас с" group="default"/>
+    <hotkey key="F3" value="лут" group="default"/>
+    <hotkey key="F2" value="гр" group="default"/>
+    <hotkey key="TAB" value="пом" group="default"/>
+    <hotkey key="Ctrl+NUM5" value="бэк ю" group="default"/>
+    <hotkey key="Ctrl+NUM4" value="бэк з" group="default"/>
+    <hotkey key="Ctrl+NUM6" value="бэк в" group="default"/>
+    <hotkey key="Ctrl+NUM8" value="бэк с" group="default"/>
+    <hotkey key="Ctrl+ADD" value="бэк вн" group="default"/>
+    <hotkey key="Ctrl+MIN" value="бэк вв" group="default"/>
+    <hotkey key="Ctrl+O" value="зак $aim" group="default"/>
+    <hotkey key="Ctrl+[" value="ц $aim" group="default"/>
+    <hotkey key="Alt+[" value="ц $aim" group="default"/>
+    <hotkey key="Alt+O" value="зак $aim" group="default"/>
+    <hotkey key="DIV" value="пну" group="default"/>
+    <hotkey key="Ctrl+`" value="~" group="default"/>
+    <hotkey key="F5" value="рек черн" group="default"/>
+    <hotkey key="F4" value="св;вз все;сво" group="default"/>
+    <hotkey key="MUL" value="моло" group="default"/>
+    <hotkey key="F12" value="~;вз возв сум;зач возв" group="default"/>
+    <hotkey key="ADD" value="d" group="default"/>
+    <hotkey key="MIN" value="u" group="default"/>
+    <hotkey key="NUM3" value="вых" group="default"/>
+    <hotkey key="NUM9" value="огл" group="default"/>
+    <hotkey key="Ctrl+Q" value="#disconnect;#connect bylins.su 110" group="default"/>
+    <hotkey key="NUM8" value="n" group="default"/>
+    <hotkey key="Alt+MIN" value="крас вв;спря" group="default"/>
+    <hotkey key="Alt+ADD" value="крас вн;спря" group="default"/>
+    <hotkey key="Alt+NUM8" value="крас с;спря" group="default"/>
+    <hotkey key="Alt+NUM4" value="крас з;спря" group="default"/>
+    <hotkey key="Alt+NUM5" value="крас ю;спря" group="default"/>
+    <hotkey key="Alt+NUM6" value="крас в;спря" group="default"/>
+    <hotkey key="NUM2" value="см" group="default"/>
+    <hotkey key="NUM4" value="w" group="default"/>
+    <hotkey key="NUM6" value="e" group="default"/>
+    <hotkey key="NUM7" value="сч" group="default"/>
+    <hotkey key="NUM1" value="инв" group="default"/>
+    <hotkey key="NUM0" value="ц $aim" group="default"/>
+    <hotkey key="NUMDEL" value="й $aim;моло $aim1" group="default"/>
+    <hotkey key="NUM5" value="s" group="default"/>
+    <hotkey key="Alt+F2" value="й г;й м;й ск" group="default"/>
+  </hotkeys>
+  <subs>
+    <sub key="Серебряный пятиугольник рассыпался." value="--- ПЯТИУГОЛЬНИК СПЫ ---" group="default"/>
+    <sub key="%0 выпил зелья из бочонка с черным колдовским зельем." value="-%0 лечится" group="default"/>
+    <sub key="Очередная пачка бинтов подошла к концу." value="---------------бинты офф----------------" group="default"/>
+    <sub key="Труп %0 лежит здесь." value="Труп %0" group="default"/>
+    <sub key="На земле осталось лежать что-то." value="-----------На земле осталось лежать что-то.-------------" group="default"/>
+    <sub key="%0 сказал вам : 'Получи за %1.'" value="Продажа %1" group="default"/>
+    <sub key="%0 сказал вам : 'Починка %0'" value="Починка %0" group="default"/>
+    <sub key="кривой беличий коготь  &lt;хорошо&gt;" value="ОЛГИНЬ 1-1" group="default"/>
+    <sub key="острый беличий коготь  &lt;хорошо&gt;" value="ОЛГИНЬ 1-2" group="default"/>
+    <sub key="длинный беличий коготь  &lt;хорошо&gt;" value="ОЛГИНЬ 1-3" group="default"/>
+    <sub key="серое перо  &lt;хорошо&gt;" value="ОЛГИНЬ 2-1" group="default"/>
+    <sub key="сизое перо  &lt;хорошо&gt;" value="ОЛГИНЬ 2-2" group="default"/>
+    <sub key="черное перо  &lt;хорошо&gt;" value="ОЛГИНЬ 2-3" group="default"/>
+    <sub key="золотая чешуйка  &lt;хорошо&gt;" value="ОЛГИНЬ 3-1" group="default"/>
+    <sub key="белая чешуйка  &lt;хорошо&gt;" value="ОЛГИНЬ 3-4" group="default"/>
+    <sub key="блестящая чешуйка  &lt;хорошо&gt;" value="ОЛГИНЬ 3-5" group="default"/>
+  </subs>
+  <asubs/>
+  <gags/>
+  <highlights>
+    <highlight key="попытался сбить вас с ног, но, в итоге, приземлился сам." value="txt[255,0,0],bkg[0,0,0],ubi[0,0,0]" group="default"/>
+    <highlight key="хотел завалить вас, но, не рассчитав сил, упал сам." value="txt[255,0,0],bkg[0,0,0],ubi[0,0,0]" group="default"/>
+    <highlight key="[system] %%" value="txt[0,128,255],bkg[0,0,0],ubi[0,0,0]" group="default"/>
+  </highlights>
+  <timers/>
+  <groups>
+    <group key="default" value="1"/>
+    <group key="off" value="0"/>
+    <group key="квесты" value="1"/>
+    <group key="общие" value="1"/>
+    <group key="агр" value="1"/>
+    <group key="дроп" value="1"/>
+    <group key="чат" value="1"/>
+    <group key="мусор" value="1"/>
+  </groups>
+  <tabwords/>
+  <variables>
+    <var key="aim" value="куп"/>
+    <var key="aim1" value="с"/>
+    <var key="place" value="Цыганский табор"/>
+  </variables>
+  <messages>
+    <actions value="0"/>
+    <aliases value="0"/>
+    <subs value="0"/>
+    <antisubs value="0"/>
+    <hotkeys value="0"/>
+    <highlights value="0"/>
+    <gags value="0"/>
+    <groups value="0"/>
+    <vars value="0"/>
+    <timers value="0"/>
+    <tabwords value="0"/>
+  </messages>
+  <displays>
+    <display width="1280" height="720">
+      <mainwindow left="267" right="1453" top="195" bottom="920" fullscreen="1"/>
+      <findwindow left="200" right="584" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="0" right="1280" top="0" bottom="85" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 2" left="140" right="490" top="140" bottom="340" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="reconnect.lua" value="0"/>
+        <plugin key="clickpad.dll" value="0"/>
+        <plugin key="autoresc.lua" value="0"/>
+        <plugin key="cmdfilter.lua" value="0"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="trswitch.lua" value="1"/>
+        <plugin key="affects.lua" value="0"/>
+        <plugin key="bellcmd.lua" value="0"/>
+        <plugin key="colorgamecmd.lua" value="0"/>
+        <plugin key="faq.lua" value="0"/>
+        <plugin key="historyfilter.lua" value="0"/>
+        <plugin key="jmc3import.dll" value="0"/>
+        <plugin key="mapper.dll" value="0">
+          <windows>
+            <window name="Карта" left="836" right="1192" top="90" bottom="490" side="5" lastside="4" width="356" height="400"/>
+          </windows>
+        </plugin>
+        <plugin key="msdpmapper.lua" value="0"/>
+        <plugin key="pcrecalc.dll" value="0"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="sound.dll" value="0"/>
+        <plugin key="status.lua" value="0"/>
+        <plugin key="statusbar.lua" value="0"/>
+        <plugin key="tray.dll" value="0"/>
+      </plugins>
+    </display>
+    <display width="1097" height="617">
+      <mainwindow left="-4" right="747" top="0" bottom="523" fullscreen="0"/>
+      <findwindow left="0" right="384" top="0" bottom="180" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="70" right="420" top="70" bottom="270" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 2" left="140" right="490" top="140" bottom="340" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="affects.lua" value="0"/>
+        <plugin key="autoalias.lua" value="0"/>
+        <plugin key="autoresc.lua" value="0"/>
+        <plugin key="autosbor.lua" value="0"/>
+        <plugin key="autowrap.lua" value="0"/>
+        <plugin key="bellcmd.lua" value="0"/>
+        <plugin key="bmap.lua" value="0"/>
+        <plugin key="clickpad.dll" value="0"/>
+        <plugin key="cmdfilter.lua" value="0"/>
+        <plugin key="colorgamecmd.lua" value="0"/>
+        <plugin key="enterb.lua" value="0"/>
+        <plugin key="faq.lua" value="0"/>
+        <plugin key="helpers.lua" value="0"/>
+        <plugin key="historyfilter.lua" value="0"/>
+        <plugin key="inveq.lua" value="0"/>
+        <plugin key="jmc3import.dll" value="0"/>
+        <plugin key="lor.lua" value="0"/>
+        <plugin key="miner.lua" value="0"/>
+        <plugin key="pcrecalc.dll" value="0"/>
+        <plugin key="prompt.dll" value="0"/>
+        <plugin key="reconnect.lua" value="0"/>
+        <plugin key="send.lua" value="1"/>
+        <plugin key="sound.dll" value="0"/>
+        <plugin key="speedwalk.lua" value="0"/>
+        <plugin key="spit.lua" value="0"/>
+        <plugin key="status.lua" value="0"/>
+        <plugin key="statusbar.lua" value="0"/>
+        <plugin key="tick.lua" value="0"/>
+        <plugin key="timeline.lua" value="0"/>
+        <plugin key="tray.dll" value="0"/>
+        <plugin key="trswitch.lua" value="0"/>
+        <plugin key="write.lua" value="0"/>
+      </plugins>
+    </display>
+    <display width="4480" height="1200">
+      <mainwindow left="108" right="1212" top="303" bottom="884" fullscreen="0"/>
+      <findwindow left="0" right="384" top="0" bottom="180" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="70" right="420" top="70" bottom="270" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 2" left="140" right="490" top="140" bottom="340" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="command.lua" value="0"/>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="send.lua" value="1"/>
+      </plugins>
+    </display>
+    <display width="3328" height="1152">
+      <mainwindow left="-1429" right="-469" top="26" bottom="566" fullscreen="0"/>
+      <findwindow left="0" right="384" top="0" bottom="180" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="70" right="420" top="70" bottom="270" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 2" left="140" right="490" top="140" bottom="340" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="autowrap.lua" value="0"/>
+        <plugin key="command.lua" value="0"/>
+        <plugin key="lor.lua" value="0"/>
+        <plugin key="send.lua" value="0"/>
+      </plugins>
+    </display>
+    <display width="4480" height="1446">
+      <mainwindow left="517" right="1811" top="329" bottom="1063" fullscreen="0"/>
+      <findwindow left="200" right="584" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="0" right="1278" top="0" bottom="96" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 2" left="140" right="490" top="140" bottom="340" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="affects.lua" value="0"/>
+        <plugin key="autoresc.lua" value="0"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="bellcmd.lua" value="0"/>
+        <plugin key="clickpad.dll" value="0"/>
+        <plugin key="cmdfilter.lua" value="1"/>
+        <plugin key="colorgamecmd.lua" value="1"/>
+        <plugin key="faq.lua" value="0"/>
+        <plugin key="historyfilter.lua" value="1"/>
+        <plugin key="jmc3import.dll" value="0"/>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="mapper.dll" value="0">
+          <windows>
+            <window name="Карта" left="1011" right="1411" top="356" bottom="756" side="5" lastside="4" width="400" height="400"/>
+          </windows>
+        </plugin>
+        <plugin key="msdpmapper.lua" value="0">
+          <windows>
+            <window name="MSDP автомаппер" left="4" right="300" top="0" bottom="523" side="2" lastside="2" width="300" height="300"/>
+          </windows>
+        </plugin>
+        <plugin key="pcrecalc.dll" value="0"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="reconnect.lua" value="0"/>
+        <plugin key="sound.dll" value="0"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="status.lua" value="0"/>
+        <plugin key="statusbar.lua" value="0"/>
+        <plugin key="tray.dll" value="0"/>
+        <plugin key="trswitch.lua" value="1"/>
+      </plugins>
+    </display>
+    <display width="1920" height="1080">
+      <mainwindow left="-10" right="1385" top="0" bottom="1030" fullscreen="1"/>
+      <findwindow left="200" right="776" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="0" right="965" top="0" bottom="144" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 2" left="965" right="1920" top="0" bottom="144" side="1" lastside="1" width="350" height="148"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="cmdfilter.lua" value="1"/>
+        <plugin key="colorgamecmd.lua" value="1"/>
+        <plugin key="historyfilter.lua" value="1"/>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="status.lua" value="1"/>
+        <plugin key="trswitch.lua" value="1"/>
+        <plugin key="autosbor.lua" value="1"/>
+        <plugin key="bmap.lua" value="1">
+          <windows>
+            <window name="Автокарта Былин" left="1405" right="1897" top="53" bottom="473" side="4" lastside="4" width="492" height="420"/>
+          </windows>
+        </plugin>
+        <plugin key="generic.lua" value="1"/>
+        <plugin key="send.lua" value="2"/>
+        <plugin key="command.lua" value="2"/>
+        <plugin key="affects.lua" value="2"/>
+        <plugin key="autoresc.lua" value="2"/>
+        <plugin key="bellcmd.lua" value="2"/>
+        <plugin key="clickpad.dll" value="2"/>
+        <plugin key="faq.lua" value="2"/>
+        <plugin key="jmc3import.dll" value="2"/>
+        <plugin key="mapper.dll" value="2"/>
+        <plugin key="msdpmapper.lua" value="2"/>
+        <plugin key="pcrecalc.dll" value="2"/>
+        <plugin key="reconnect.lua" value="2"/>
+        <plugin key="sound.dll" value="2"/>
+        <plugin key="statusbar.lua" value="2"/>
+        <plugin key="tray.dll" value="2"/>
+        <plugin key="autoalias.lua" value="2"/>
+        <plugin key="bell.lua" value="2"/>
+        <plugin key="enterb.lua" value="2"/>
+        <plugin key="helpers.lua" value="2"/>
+        <plugin key="inveq.lua" value="2"/>
+        <plugin key="miner.lua" value="2"/>
+        <plugin key="spit.lua" value="2"/>
+        <plugin key="tick.lua" value="2"/>
+        <plugin key="timeline.lua" value="2"/>
+        <plugin key="voice.lua" value="2"/>
+        <plugin key="write.lua" value="2"/>
+      </plugins>
+    </display>
+    <display width="6720" height="2169">
+      <mainwindow left="10" right="10" top="690" bottom="1831" fullscreen="0"/>
+      <findwindow left="200" right="776" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="0" right="926" top="0" bottom="144" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 2" left="926" right="1822" top="0" bottom="144" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="cmdfilter.lua" value="1"/>
+        <plugin key="colorgamecmd.lua" value="1"/>
+        <plugin key="historyfilter.lua" value="1"/>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="status.lua" value="1"/>
+        <plugin key="trswitch.lua" value="1"/>
+        <plugin key="autosbor.lua" value="1"/>
+        <plugin key="bmap.lua" value="1">
+          <windows>
+            <window name="Автокарта Былин" left="10" right="10" top="73" bottom="460" side="4" lastside="4" width="430" height="387"/>
+          </windows>
+        </plugin>
+        <plugin key="generic.lua" value="1"/>
+        <plugin key="walk.lua" value="0"/>
+      </plugins>
+    </display>
+    <display width="5600" height="1808">
+      <mainwindow left="10" right="10" top="394" bottom="1474" fullscreen="0"/>
+      <findwindow left="200" right="648" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="0" right="951" top="0" bottom="196" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 2" left="951" right="1902" top="0" bottom="196" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="autosbor.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="bmap.lua" value="1">
+          <windows>
+            <window name="Автокарта Былин" left="4400" right="4956" top="427" bottom="802" side="4" lastside="4" width="556" height="375"/>
+          </windows>
+        </plugin>
+        <plugin key="cmdfilter.lua" value="1"/>
+        <plugin key="colorgamecmd.lua" value="1"/>
+        <plugin key="generic.lua" value="1"/>
+        <plugin key="historyfilter.lua" value="1"/>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="status.lua" value="1"/>
+        <plugin key="trswitch.lua" value="1"/>
+        <plugin key="walk.lua" value="2"/>
+      </plugins>
+    </display>
+    <display width="1600" height="900">
+      <mainwindow left="392" right="1592" top="0" bottom="675" fullscreen="1"/>
+      <findwindow left="200" right="648" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="0" right="800" top="0" bottom="196" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 2" left="800" right="1600" top="0" bottom="196" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="autosbor.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="bmap.lua" value="1">
+          <windows>
+            <window name="Автокарта Былин" left="1209" right="1584" top="45" bottom="420" side="4" lastside="4" width="375" height="375"/>
+          </windows>
+        </plugin>
+        <plugin key="cmdfilter.lua" value="1"/>
+        <plugin key="colorgamecmd.lua" value="1"/>
+        <plugin key="generic.lua" value="1"/>
+        <plugin key="historyfilter.lua" value="1"/>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="status.lua" value="1"/>
+        <plugin key="trswitch.lua" value="1"/>
+        <plugin key="walk.lua" value="2"/>
+      </plugins>
+    </display>
+    <display width="2560" height="1440">
+      <mainwindow left="316" right="2236" top="84" bottom="1164" fullscreen="0"/>
+      <findwindow left="200" right="648" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="87" right="524" top="87" bottom="337" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 2" left="174" right="611" top="174" bottom="424" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 3" left="261" right="698" top="261" bottom="511" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 4" left="348" right="785" top="348" bottom="598" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 5" left="435" right="872" top="435" bottom="685" side="5" lastside="4" width="437" height="250"/>
+        <window name="Окно 6" left="522" right="959" top="522" bottom="772" side="5" lastside="4" width="437" height="250"/>
+      </windows>
+      <plugins>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="cmdfilter.lua" value="0"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="trswitch.lua" value="1"/>
+        <plugin key="colorgamecmd.lua" value="0"/>
+        <plugin key="historyfilter.lua" value="0"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="status.lua" value="0"/>
+        <plugin key="autosbor.lua" value="2"/>
+        <plugin key="bmap.lua" value="2"/>
+        <plugin key="generic.lua" value="2"/>
+        <plugin key="walk.lua" value="2"/>
+      </plugins>
+    </display>
+    <display width="3072" height="1728">
+      <mainwindow left="384" right="2688" top="216" bottom="1512" fullscreen="0"/>
+      <findwindow left="200" right="776" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="105" right="630" top="105" bottom="405" side="5" lastside="4" width="525" height="300"/>
+        <window name="Окно 2" left="210" right="735" top="210" bottom="510" side="5" lastside="4" width="525" height="300"/>
+        <window name="Окно 3" left="315" right="840" top="315" bottom="615" side="5" lastside="4" width="525" height="300"/>
+        <window name="Окно 4" left="420" right="945" top="420" bottom="720" side="5" lastside="4" width="525" height="300"/>
+        <window name="Окно 5" left="525" right="1050" top="525" bottom="825" side="5" lastside="4" width="525" height="300"/>
+        <window name="Окно 6" left="630" right="1155" top="630" bottom="930" side="5" lastside="4" width="525" height="300"/>
+      </windows>
+      <plugins>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="cmdfilter.lua" value="0"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="trswitch.lua" value="1"/>
+        <plugin key="colorgamecmd.lua" value="0"/>
+        <plugin key="historyfilter.lua" value="0"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="status.lua" value="0"/>
+        <plugin key="autosbor.lua" value="2"/>
+        <plugin key="bmap.lua" value="2"/>
+        <plugin key="generic.lua" value="2"/>
+        <plugin key="walk.lua" value="2"/>
+      </plugins>
+    </display>
+    <display width="1920" height="1200">
+      <mainwindow left="432" right="1872" top="175" bottom="1075" fullscreen="0"/>
+      <findwindow left="200" right="584" top="180" bottom="360" visible="0"/>
+      <windows>
+        <window name="Окно 1" left="70" right="420" top="70" bottom="270" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 2" left="140" right="490" top="140" bottom="340" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
+        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
+      </windows>
+      <plugins>
+        <plugin key="lor.lua" value="1"/>
+        <plugin key="autowrap.lua" value="1"/>
+        <plugin key="reconnect.lua" value="0"/>
+        <plugin key="clickpad.dll" value="0"/>
+        <plugin key="autoresc.lua" value="0"/>
+        <plugin key="cmdfilter.lua" value="0"/>
+        <plugin key="speedwalk.lua" value="1"/>
+        <plugin key="trswitch.lua" value="1"/>
+        <plugin key="affects.lua" value="0"/>
+        <plugin key="bellcmd.lua" value="0"/>
+        <plugin key="colorgamecmd.lua" value="0"/>
+        <plugin key="faq.lua" value="0"/>
+        <plugin key="historyfilter.lua" value="0"/>
+        <plugin key="jmc3import.dll" value="0"/>
+        <plugin key="mapper.dll" value="0"/>
+        <plugin key="msdpmapper.lua" value="0"/>
+        <plugin key="pcrecalc.dll" value="0"/>
+        <plugin key="prompt.dll" value="1"/>
+        <plugin key="sound.dll" value="0"/>
+        <plugin key="status.lua" value="0"/>
+        <plugin key="statusbar.lua" value="0"/>
+        <plugin key="tray.dll" value="0"/>
+        <plugin key="bmap.lua" value="2"/>
+        <plugin key="autosbor.lua" value="2"/>
+        <plugin key="autoalias.lua" value="2"/>
+        <plugin key="bell.lua" value="2"/>
+        <plugin key="enterb.lua" value="2"/>
+        <plugin key="generic.lua" value="2"/>
+        <plugin key="helpers.lua" value="2"/>
+        <plugin key="inveq.lua" value="2"/>
+        <plugin key="miner.lua" value="2"/>
+        <plugin key="send.lua" value="2"/>
+        <plugin key="spit.lua" value="2"/>
+        <plugin key="tick.lua" value="2"/>
+        <plugin key="timeline.lua" value="2"/>
+        <plugin key="voice.lua" value="2"/>
+        <plugin key="write.lua" value="2"/>
+        <plugin key="testPlugin.lua" value="2"/>
+      </plugins>
+    </display>
+  </displays>
+</profile>
