@@ -1064,7 +1064,7 @@
   </messages>
   <displays>
     <display width="1920" height="1200">
-      <mainwindow left="320" right="1848" top="197" bottom="1035" fullscreen="0"/>
+      <mainwindow left="344" right="1872" top="251" bottom="1089" fullscreen="0"/>
       <findwindow left="200" right="584" top="180" bottom="360" visible="0"/>
       <windows>
         <window name="Окно 1" left="1367" right="1717" top="218" bottom="540" side="4" lastside="4" width="350" height="322"/>

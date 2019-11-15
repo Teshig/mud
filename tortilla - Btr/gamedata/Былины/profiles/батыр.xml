@@ -20,7 +20,7 @@
   <logformat value="txt"/>
   <prompt value="0"/>
   <ptemplate value=""/>
-  <rebar value="2;60160;168;1;1;60161;131;1;1;"/>
+  <rebar value="2;60160;214;1;1;60161;171;1;1;"/>
   <colors>
     <color id="background" r="0" g="0" b="0"/>
     <color id="0" r="64" g="64" b="64"/>
@@ -54,7 +54,7 @@
     <action key="Вы попытаетесь нанести богатырский удар по" value="#drop" group="default"/>
     <action key="Невозможно. Вы сражаетесь сами." value="#drop" group="default"/>
     <action key="Кому вы хотите помочь?" value="#drop" group="default"/>
-    <action key="Минул час." value="клич отва" group="default"/>
+    <action key="Минул час." value="клич мощ" group="default"/>
     <action key=". Вы чувствуете себя Иудой!" value="пом;моло" group="default"/>
     <action key="героически спас Годну!" value="пом;моло" group="default"/>
     <action key="Ваш опыт повысился на " value="пом;моло" group="default"/>
@@ -797,7 +797,7 @@
   <variables>
     <var key="aim" value="куп"/>
     <var key="aim1" value="с"/>
-    <var key="place" value="Цыганский табор"/>
+    <var key="place" value="Замороченный лес"/>
   </variables>
   <messages>
     <actions value="0"/>
@@ -980,11 +980,11 @@
       </plugins>
     </display>
     <display width="1920" height="1080">
-      <mainwindow left="-10" right="1385" top="0" bottom="1030" fullscreen="1"/>
+      <mainwindow left="59" right="1454" top="0" bottom="1030" fullscreen="0"/>
       <findwindow left="200" right="776" top="180" bottom="360" visible="0"/>
       <windows>
-        <window name="Окно 1" left="0" right="965" top="0" bottom="144" side="1" lastside="1" width="350" height="200"/>
-        <window name="Окно 2" left="965" right="1920" top="0" bottom="144" side="1" lastside="1" width="350" height="148"/>
+        <window name="Окно 1" left="0" right="692" top="0" bottom="144" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 2" left="692" right="1373" top="0" bottom="144" side="1" lastside="1" width="350" height="148"/>
         <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
         <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
         <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
@@ -1036,11 +1036,11 @@
       </plugins>
     </display>
     <display width="6720" height="2169">
-      <mainwindow left="10" right="10" top="690" bottom="1831" fullscreen="0"/>
+      <mainwindow left="58" right="1126" top="313" bottom="1220" fullscreen="0"/>
       <findwindow left="200" right="776" top="180" bottom="360" visible="0"/>
       <windows>
-        <window name="Окно 1" left="0" right="926" top="0" bottom="144" side="1" lastside="1" width="350" height="200"/>
-        <window name="Окно 2" left="926" right="1822" top="0" bottom="144" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 1" left="0" right="534" top="0" bottom="144" side="1" lastside="1" width="350" height="200"/>
+        <window name="Окно 2" left="534" right="1046" top="0" bottom="144" side="1" lastside="1" width="350" height="200"/>
         <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
         <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
         <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
@@ -1059,11 +1059,36 @@
         <plugin key="autosbor.lua" value="1"/>
         <plugin key="bmap.lua" value="1">
           <windows>
-            <window name="Автокарта Былин" left="10" right="10" top="73" bottom="460" side="4" lastside="4" width="430" height="387"/>
+            <window name="Автокарта Былин" left="10" right="336" top="73" bottom="330" side="4" lastside="4" width="326" height="257"/>
           </windows>
         </plugin>
         <plugin key="generic.lua" value="1"/>
-        <plugin key="walk.lua" value="0"/>
+        <plugin key="affects.lua" value="2"/>
+        <plugin key="autoalias.lua" value="2"/>
+        <plugin key="autoresc.lua" value="2"/>
+        <plugin key="bell.lua" value="2"/>
+        <plugin key="bellcmd.lua" value="2"/>
+        <plugin key="clickpad.dll" value="2"/>
+        <plugin key="command.lua" value="2"/>
+        <plugin key="enterb.lua" value="2"/>
+        <plugin key="faq.lua" value="2"/>
+        <plugin key="helpers.lua" value="2"/>
+        <plugin key="inveq.lua" value="2"/>
+        <plugin key="jmc3import.dll" value="2"/>
+        <plugin key="mapper.dll" value="2"/>
+        <plugin key="miner.lua" value="2"/>
+        <plugin key="msdpmapper.lua" value="2"/>
+        <plugin key="pcrecalc.dll" value="2"/>
+        <plugin key="reconnect.lua" value="2"/>
+        <plugin key="send.lua" value="2"/>
+        <plugin key="sound.dll" value="2"/>
+        <plugin key="spit.lua" value="2"/>
+        <plugin key="statusbar.lua" value="2"/>
+        <plugin key="tick.lua" value="2"/>
+        <plugin key="timeline.lua" value="2"/>
+        <plugin key="tray.dll" value="2"/>
+        <plugin key="voice.lua" value="2"/>
+        <plugin key="write.lua" value="2"/>
       </plugins>
     </display>
     <display width="5600" height="1808">
@@ -1180,58 +1205,6 @@
         <plugin key="bmap.lua" value="2"/>
         <plugin key="generic.lua" value="2"/>
         <plugin key="walk.lua" value="2"/>
-      </plugins>
-    </display>
-    <display width="1920" height="1200">
-      <mainwindow left="432" right="1872" top="175" bottom="1075" fullscreen="0"/>
-      <findwindow left="200" right="584" top="180" bottom="360" visible="0"/>
-      <windows>
-        <window name="Окно 1" left="70" right="420" top="70" bottom="270" side="5" lastside="4" width="350" height="200"/>
-        <window name="Окно 2" left="140" right="490" top="140" bottom="340" side="5" lastside="4" width="350" height="200"/>
-        <window name="Окно 3" left="210" right="560" top="210" bottom="410" side="5" lastside="4" width="350" height="200"/>
-        <window name="Окно 4" left="280" right="630" top="280" bottom="480" side="5" lastside="4" width="350" height="200"/>
-        <window name="Окно 5" left="350" right="700" top="350" bottom="550" side="5" lastside="4" width="350" height="200"/>
-        <window name="Окно 6" left="420" right="770" top="420" bottom="620" side="5" lastside="4" width="350" height="200"/>
-      </windows>
-      <plugins>
-        <plugin key="lor.lua" value="1"/>
-        <plugin key="autowrap.lua" value="1"/>
-        <plugin key="reconnect.lua" value="0"/>
-        <plugin key="clickpad.dll" value="0"/>
-        <plugin key="autoresc.lua" value="0"/>
-        <plugin key="cmdfilter.lua" value="0"/>
-        <plugin key="speedwalk.lua" value="1"/>
-        <plugin key="trswitch.lua" value="1"/>
-        <plugin key="affects.lua" value="0"/>
-        <plugin key="bellcmd.lua" value="0"/>
-        <plugin key="colorgamecmd.lua" value="0"/>
-        <plugin key="faq.lua" value="0"/>
-        <plugin key="historyfilter.lua" value="0"/>
-        <plugin key="jmc3import.dll" value="0"/>
-        <plugin key="mapper.dll" value="0"/>
-        <plugin key="msdpmapper.lua" value="0"/>
-        <plugin key="pcrecalc.dll" value="0"/>
-        <plugin key="prompt.dll" value="1"/>
-        <plugin key="sound.dll" value="0"/>
-        <plugin key="status.lua" value="0"/>
-        <plugin key="statusbar.lua" value="0"/>
-        <plugin key="tray.dll" value="0"/>
-        <plugin key="bmap.lua" value="2"/>
-        <plugin key="autosbor.lua" value="2"/>
-        <plugin key="autoalias.lua" value="2"/>
-        <plugin key="bell.lua" value="2"/>
-        <plugin key="enterb.lua" value="2"/>
-        <plugin key="generic.lua" value="2"/>
-        <plugin key="helpers.lua" value="2"/>
-        <plugin key="inveq.lua" value="2"/>
-        <plugin key="miner.lua" value="2"/>
-        <plugin key="send.lua" value="2"/>
-        <plugin key="spit.lua" value="2"/>
-        <plugin key="tick.lua" value="2"/>
-        <plugin key="timeline.lua" value="2"/>
-        <plugin key="voice.lua" value="2"/>
-        <plugin key="write.lua" value="2"/>
-        <plugin key="testPlugin.lua" value="2"/>
       </plugins>
     </display>
   </displays>
